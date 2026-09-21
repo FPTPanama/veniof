@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIOF Website — Vista previa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500&family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#0A1A2F; --gold:#B08D57; --cream:#F4F1E8; --muted:#B9C3D1; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      background: linear-gradient(165deg, #0A1A2F 0%, #152844 55%, #0A1A2F 100%);
+      color: var(--cream);
+      font-family: 'Libre Franklin', Helvetica, sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      padding: 48px 24px;
+    }
+    main { max-width: 640px; width: 100%; }
+    .brand {
+      font-family: Gelasio, Georgia, serif;
+      font-size: 42px; letter-spacing: -0.02em; margin: 0 0 8px;
+    }
+    .eyebrow { color: var(--gold); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px; }
+    p { color: var(--muted); line-height: 1.6; font-size: 16px; }
+    ul { list-style: none; padding: 0; margin: 36px 0 0; display: grid; gap: 12px; }
+    a.card {
+      display: block; padding: 20px 22px;
+      border: 1px solid #2B3F5F; border-top: 3px solid var(--gold);
+      background: rgba(255,255,255,0.03);
+      color: var(--cream); text-decoration: none;
+      transition: background .2s, border-color .2s;
+    }
+    a.card:hover { background: rgba(176,141,87,0.08); border-color: var(--gold); }
+    a.card strong { display: block; font-family: Gelasio, Georgia, serif; font-size: 22px; font-weight: 400; margin-bottom: 6px; }
+    a.card span { color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .note { margin-top: 28px; font-size: 13px; color: #7A8799; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Venezuela Infrastructure Opportunity Fund</div>
+    <h1 class="brand">VIOF Website</h1>
+    <p>Borrador de sitio corporativo (EN/ES) guardado desde Outlook. Corregimos fuentes y enlaces locales para poder previsualizarlo en el navegador.</p>
+    <ul>
+      <li><a class="card" href="revised.html"><strong>Revised</strong><span>Versión limpia revisada — Home, Strategy, Projects, Team, Partner (y equivalentes en español).</span></a></li>
+      <li><a class="card" href="tracked-changes.html"><strong>Tracked Changes</strong><span>Misma estructura con marcas de revisión (texto tachado / insertado).</span></a></li>
+    </ul>
+    <p class="note">Abre cualquiera y usa el menú interno. La navegación EN ↔ ES está en el header de cada página.</p>
+  </main>
+</body>
+</html>

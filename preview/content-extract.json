@@ -1,0 +1,1074 @@
+{
+  "pages": {
+    "Main": [
+      {
+        "eyebrow": "A US fund with deep Venezuelan roots",
+        "title": "Rebuilding Venezuela's industrial backbone, from extraction to export.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF is a US-managed investment fund. We partner with proven operators and Venezuelan institutions to rehabilitate essential industrial and infrastructure assets, and carry their products to international markets."
+        ],
+        "cards": [],
+        "ctas": [
+          {
+            "label": "Partner with us",
+            "href": "partner"
+          }
+        ],
+        "links": [
+          {
+            "label": "Read our strategy",
+            "href": "strategy"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Who we are",
+        "title": "A fund built by people who have run the assets.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "The Venezuela Infrastructure Opportunity Fund (VIOF) was founded by a team that has owned and operated heavy industrial, logistics and construction businesses across Venezuela, the United States and Guyana. We have built and managed the kinds of assets we invest in, not only financed them.",
+          "Our principals are US persons and our fund entities are organized in the United States. Our operating roots are in Venezuela, where the team's companies have worked for more than sixty years and continue to move steel and heavy cargo along the Orinoco today.",
+          "That shows up in three ways day to day: river bulk transport and heavy lifting equipment in active service on the Orinoco, ongoing trading in minerals, raw materials and finished products, and a working knowledge of the industries and companies we target, built over years of doing business with them — not from the outside."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Two anchors",
+        "title": "One foot in the United States. One in Venezuela.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Most capital that looks at Venezuela doesn't have deep local operating relationships. Most local operators don't have access to institutional-scale capital. VIOF was built to bring both together in one structure."
+        ],
+        "cards": [
+          {
+            "title": "The US anchor",
+            "bullets": [
+              "US principals and fund entities organized in the United States",
+              "Sanctions compliance as a gating requirement, reviewed by specialized OFAC counsel",
+              "US banking, reporting and governance standards from day one",
+              "More than two decades of board-level involvement in US heavy steel fabrication"
+            ]
+          },
+          {
+            "title": "The Venezuela anchor",
+            "bullets": [
+              "Active steel distribution, processing and heavy transport businesses",
+              "Ocean-going tug and barge operations on the Orinoco, the logistics corridor at the center of our thesis",
+              "Long-standing working relationships with Guayana's basic industries, their suppliers and engineering firms",
+              "Native command of the legal, labor and operating environment"
+            ]
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Our thesis",
+        "title": "How we think about the opportunity.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Two decades of underinvestment left Venezuela's industrial base running far below its design capacity. We think capital and hands-on execution can close most of that gap faster, and more cheaply, than starting over — the Strategy page goes into how."
+        ],
+        "cards": [
+          {
+            "title": "De-bottlenecking",
+            "body": "Targeted interventions that unlock stranded capacity in existing plants with proportionately low capital."
+          },
+          {
+            "title": "Downstream value capture",
+            "body": "Converting raw outputs into higher-margin, export-ready products sold at international prices."
+          },
+          {
+            "title": "Enabling infrastructure",
+            "body": "Power, river logistics, terminals and processing capacity that every operator in a sector depends on."
+          },
+          {
+            "title": "Integrated platforms",
+            "body": "Linking rehabilitated assets into operating platforms that are stronger together than apart."
+          }
+        ],
+        "ctas": [],
+        "links": [
+          {
+            "label": "Explore the strategy",
+            "href": "strategy"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Where we focus",
+        "title": "Sectors whose products are priced and sold in US dollars.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "We look across three sectors whose output is priced and sold in US dollars: mine-to-metal value chains, steelmaking and building materials in metals and basic industries; brownfield production enhancement and gas monetization in oil and gas, with no high-risk exploration; and the river transport, export terminals and hydroelectric rehabilitation that the other two depend on."
+        ],
+        "cards": [
+          {
+            "title": "Several projects in active development, alongside partners we've worked with before.",
+            "body": "We are in diligence and negotiation on multiple projects with internationally recognized industrial operators, commodity houses and engineering firms. Project and partner names remain confidential until our agreements allow disclosure."
+          }
+        ],
+        "ctas": [
+          {
+            "label": "See projects and track record",
+            "href": "projects"
+          }
+        ],
+        "links": []
+      },
+      {
+        "eyebrow": "Who we work with",
+        "title": "Three kinds of partners, one standard of conduct.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "Investors",
+            "body": "Institutional investors, family offices and qualified individuals seeking disciplined exposure to Venezuela's industrial recovery."
+          },
+          {
+            "title": "Government and state enterprises",
+            "body": "Public institutions looking for a serious, well-capitalized counterpart that brings experienced operators and respects national ownership of strategic assets."
+          },
+          {
+            "title": "Strategic and operating partners",
+            "body": "Operators, commodity traders, engineering firms and lenders that want a trusted local partner with institutional-grade governance."
+          }
+        ],
+        "ctas": [],
+        "links": [
+          {
+            "label": "Information for investors",
+            "href": "partner"
+          },
+          {
+            "label": "Working with the public sector",
+            "href": "partner"
+          },
+          {
+            "label": "Partnering on projects",
+            "href": "partner"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Leadership",
+        "title": "Engineers, operators and investors.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [],
+        "ctas": [],
+        "links": [
+          {
+            "label": "Meet the team",
+            "href": "team"
+          }
+        ]
+      }
+    ],
+    "Strategy": [
+      {
+        "eyebrow": "Strategy",
+        "title": "Repair first. Then grow.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "Our strategy is to restore production at essential Venezuelan assets that already exist, in partnership with operators that have done it before, under structures that protect every party's interests."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Why Venezuela, why now",
+        "title": "The constraint is capital, not resources.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "A world-class resource base",
+            "body": "Venezuela holds the world's largest proven oil reserves, major iron ore and bauxite deposits, abundant natural gas and significant hydroelectric capacity. Much of the infrastructure that serves them has gone without investment for decades, but remains recoverable."
+          },
+          {
+            "title": "Repair, not build",
+            "body": "Rehabilitating assets with proven operating histories means less capital per unit of output, a shorter path to production and known performance baselines compared with greenfield development."
+          },
+          {
+            "title": "An evolving US framework",
+            "body": "US sanctions policy toward Venezuela is dynamic, and recent general licenses authorize defined activities in specific sectors. We act only within those authorizations and structure our agreements accordingly."
+          },
+          {
+            "title": "Early, disciplined positioning",
+            "body": "Serious partnerships take time to build. Being present early, with credible operators and complete technical work, matters more than being first to announce."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "The playbook",
+        "title": "Four repeatable ways we create value.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "De-bottlenecking",
+            "body": "Venezuela's installed industrial base isn't obsolete — it has simply gone two decades without the investment it needs. Targeted interventions such as relining, repairs, spare parts and working capital for critical inputs unlock stranded capacity and generate early cash flow."
+          },
+          {
+            "title": "Downstream value capture",
+            "body": "Moving up the value chain from raw material to finished, export-ready product: ore to iron and steel products, bauxite to aluminum, gas to petrochemical derivatives. The margin sits between feedstock and international price."
+          },
+          {
+            "title": "Enabling infrastructure",
+            "body": "Power, river transport, terminals and shared processing capacity serve every operator in a sector. Owning or restoring them lowers costs across our projects and earns steady, service-based revenue from third parties."
+          },
+          {
+            "title": "Integrated platforms",
+            "body": "As assets stabilize, we connect them: production, logistics and energy working as one platform, attractive to long-term industrial and infrastructure owners. The sequence matters: early cash flow from de-bottlenecking funds the patience that downstream and platform investments require."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "The playbook by sector",
+        "title": "One playbook across three sectors.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "What we look for",
+        "title": "Five tests every project must pass.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Every project has to clear the same five tests before we commit: it's a brownfield asset with a proven operating history and a clear path from capital to production; it's paired with an operator that has run comparable assets elsewhere, so capital isn't learning an industry from scratch; its output is a finished, internationally tradeable product sold to creditworthy buyers; its revenue is priced and settled in US dollars by design, so returns don't depend on local monetary conditions; and its capital is released in stages, against independently verified milestones, never in one commitment."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "How we structure partnerships",
+        "title": "Structures designed to work for the State, the operator and the investor.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "For existing state assets, our preferred model pairs an international operator with a production-sharing agreement, which brings capital and know-how without transferring ownership. For new plants and infrastructure, the project company may own the asset outright. We choose the structure that fits each project.",
+          "Ownership follows the asset: existing strategic assets remain the State's, with our partners operating and investing under long-term agreements and production shared under an agreed formula, while new plants and infrastructure can be owned directly by the project company. Pricing is transparent and benchmark-linked — product is valued against published international references with explicit formulas, so every party can verify what it's owed.",
+          "On execution, each stage closes with a formal review of recovery, quality and readiness before the next release of capital, and export proceeds flow through independently administered accounts distributed under a contractual waterfall that includes the State's share. Governance is joint and reporting is continuous, and we rebuild with Venezuelan engineers, suppliers and workers — rehabilitation works when the people who know the plant are part of it."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Risk and compliance",
+        "title": "Protection is structural, not an afterthought.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "Revenue and currency",
+            "body": "Revenue is US dollar by design, from products sold in international markets, collected through independent accounts and ring-fenced project vehicles, with physical control of product through collateral management where appropriate."
+          },
+          {
+            "title": "Sanctions and integrity",
+            "body": "No project advances without sign-off from specialized sanctions counsel, every agreement is made contingent on the US authorizations it requires, and FCPA, anti-corruption and KYC/AML standards apply to every counterparty."
+          },
+          {
+            "title": "Execution and capital",
+            "body": "Capital is released only against independently verified milestones, technical due diligence is led by engineers who know the assets, and our base cases are conservative, tested below prevailing market prices."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      }
+    ],
+    "Projects": [
+      {
+        "eyebrow": "Projects",
+        "title": "A pipeline today. A portfolio as projects close.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF is in its development stage. Our first projects are advancing through diligence and negotiation with partners who operate at this scale, and this page will grow as they reach close."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Active pipeline",
+        "title": "What we are working on now.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Descriptions are intentionally general. Project names, counterparties and partners are confidential."
+        ],
+        "cards": [
+          {
+            "title": "Integrated metals value chain",
+            "body": "Comprehensive rehabilitation of a mine-to-metal production chain, with a major industrial operator and a global commodities partner. Technical due diligence"
+          },
+          {
+            "title": "Steel production program",
+            "body": "A cycle-based program that finances and supplies critical inputs to restart liquid steel production at an existing mill, with product offtake and capital released against verified milestones. Commercial proposal"
+          },
+          {
+            "title": "Gas-based derivatives",
+            "body": "New downstream capacity converting domestic feedstock into higher-value, export-ready chemical products. Feasibility work is under way with an international engineering firm. Feasibility study"
+          },
+          {
+            "title": "Basic industries and river logistics",
+            "body": "Rehabilitation or completion of existing plants and logistics infrastructure that serve Venezuela's basic industries, under operator-partner structures. Under evaluation"
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "How a project advances",
+        "title": "From first conversation to first production.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "It starts with origination — opportunities from our own operating network and from partners who know the assets — then diligence: site visits, technical audits and commercial models led by engineers and operators, with formal information requests to each entity. Once a partnership agreement sets roles, production sharing, pricing and governance with the asset owner and operator, agreements are made contingent on the US and Venezuelan authorizations each project requires. Capital is then released in tranches or cycles against verified milestones, and the relationship continues through joint governance, transparent reporting and continuous improvement for the life of the agreement."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Principals' track record",
+        "title": "What our principals have delivered.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "The following describes prior and ongoing work of VIOF's principals through their own companies. These are not investments of the fund."
+        ],
+        "cards": [
+          {
+            "title": "US$600MM+ in heavy steel projects",
+            "body": "Bridges, industrial structures, pressure vessels and offshore structures sold and managed in a heavy steel manufacturing business serving industrial and commercial clients, including the infrastructure of the basic industries. One of VIOF's partners oversaw the fabrication, transport, installation and commissioning of the first offshore platform built in Venezuela."
+          },
+          {
+            "title": "Steel distribution and river logistics",
+            "body": "A leading distributor of steel raw materials with a service center for pre-processed plate and shapes, a heavy transport line and ocean-going tug and barge operations based in Puerto Ordaz."
+          },
+          {
+            "title": "Industrial supply and procurement",
+            "body": "Close to twenty years serving industrial and energy operators through procurement, logistics and trading companies with operations in Caracas, Puerto Ordaz, Panama and the United States."
+          },
+          {
+            "title": "Hotel and retail development",
+            "body": "A 172-room Four Points by Sheraton hotel, event hall and retail center in Georgetown, with a construction loan from IDB Invest."
+          },
+          {
+            "title": "Government office complex",
+            "body": "Turnkey design-build of a central office complex designed for 6,000 public employees in Georgetown."
+          },
+          {
+            "title": "Cricket stadium",
+            "body": "Turnkey design-build of a 7,350-seat stadium in Berbice."
+          },
+          {
+            "title": "Heavy steel fabrication",
+            "body": "Senior roles at Owen Steel Company in Columbia, South Carolina, since 2004, including chief financial officer, chief operating officer, director and board advisor. Company projects in that period include the Bank of America Tower in Midtown Manhattan and the 9/11 Memorial and Museum."
+          },
+          {
+            "title": "Residential development",
+            "body": "A real estate investment company led by VIOF partners, with sales of high-end single-family homes in South Florida in excess of US$150 million."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Fund portfolio",
+        "title": "Case studies will appear here.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "As projects reach close and our partners authorize disclosure, each will be published with its scope, partners, structure and results."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      }
+    ],
+    "Team": [
+      {
+        "eyebrow": "Team",
+        "title": "Engineers, operators and investors.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF's partners combine US graduate training and governance with decades of hands-on industrial experience in Venezuela, the United States and the Caribbean."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": null,
+        "title": "Nikola Kedzo",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Nikola is an international business executive and entrepreneur with close to twenty years in industrial supply, procurement, logistics and cross-border trade across Venezuela, Panama and the United States. He has built his career negotiating with multinational corporations, industrial companies and state-owned enterprises, and managing cross-border commercial operations.",
+          "From Miami he manages operations and business development at an industrial supply company and leads his own international trade and procurement firm, serving clients in the industrial, energy, logistics and infrastructure sectors. From 2014 to 2023 he was chief executive of a procurement and logistics company operating in Venezuela, Panama and the United States, and from 2007 to 2013 he was vice president and director of an industrial supply company with operations in Caracas and Puerto Ordaz, the center of Venezuela's basic industries. He began his career as a financial and market analyst at a brokerage house in Caracas.",
+          "Isaac has held senior management roles in heavy steel manufacturing in Venezuela and the top finance and operating roles at a US steel fabricator, and has developed and invested in South Florida real estate for more than twenty years.",
+          "From 2008 to 2014 he was a key manager at one of the largest structural steel fabricators and erectors in South America, a Venezuelan business with annual revenues above US$150 million. He oversaw its most important project: the fabrication, transport, installation and commissioning of the first offshore platform built in Venezuela. Before that he joined Owen Steel Company in South Carolina as chief financial officer in 2004 and became chief operating officer in 2007, responsible for all financial and production operations. Projects during his tenure include the Bank of America Tower in Midtown Manhattan and the 9/11 Memorial and Museum.",
+          "In 2014 he founded a real estate investment company and has led its investment in the development of high-end single-family homes in the Miami area, with sales in excess of US$150 million. Earlier in his career he was chief financial officer of a Miami-based internet company and an investment banking associate in Venezuela, working on M&A, project finance and private equity across Latin America.",
+          "Tania combines engineering training with experience in industrial logistics, real estate development and family office management.",
+          "As a partner in a real estate investment company in Miami, she has co-led its investment in the development of high-end single-family homes, with sales in excess of US$150 million. She serves as treasurer of a Miami-based family office, where she manages liquidity, tax compliance, real estate holdings and international entities. Earlier she was logistics manager at Owen Steel Company in South Carolina, improving material flow, shipping costs and workplace safety.",
+          "Mauricio is a structural engineer and operator with more than twenty-five years across heavy steel fabrication, industrial logistics and large-scale construction in Venezuela, the United States and Guyana.",
+          "In Venezuela he managed operations in heavy steel manufacturing for industrial and commercial applications, including the infrastructure of the basic industries, where he led an operational overhaul and sold and managed more than US$600 million in bridges, industrial structures, pressure vessels and offshore structures. He also built a company into a leading distributor of steel raw materials in Venezuela, with its own processing and heavy transport lines, and manages ocean-going tug and barge operations out of Puerto Ordaz.",
+          "In Guyana he is the principal behind a 172-room Four Points by Sheraton hotel financed with IDB Invest, a government office complex for 6,000 employees and a 7,350-seat cricket stadium. In the United States he joined the turnaround team at Owen Steel Company in 2004 and has served as board advisor since 2005. He began his career as a project engineer at Leslie E. Robertson Associates in New York."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Heritage",
+        "title": "Six decades of building Venezuela's heavy industry.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "VIOF grows out of a family industrial group that has worked in Venezuela for more than sixty years. Its companies fabricated steel structures for the Guri, Caruachi and Tocoma hydroelectric dams, bridges over the Orinoco, offshore platforms and pressure vessels for the country's major refineries. That history is why we know the assets, the people who run them and what it takes to bring them back."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Governance",
+        "title": "How decisions get made.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "No project advances without sign-off from specialized sanctions counsel. FCPA, KYC and AML procedures apply to every counterparty and intermediary, and we report on an audit-ready basis, with full transparency to investors on fees and asset-level performance."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      }
+    ],
+    "Partner": [
+      {
+        "eyebrow": "Partner with us",
+        "title": "Three conversations we want to have.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF sits between capital, public institutions and operating companies. Tell us which conversation is yours."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": null,
+        "title": "Investors",
+        "titleAs": "h2",
+        "paragraphs": [
+          "For institutional investors, family offices and qualified individuals who want considered exposure to Venezuela's industrial recovery, with institutional governance and a compliance-first approach.",
+          "Investor materials are provided only to qualified investors, on request and subject to verification. [CONFIRM ELIGIBILITY LANGUAGE WITH SECURITIES COUNSEL]",
+          "For ministries, state corporations and public enterprises seeking a serious private counterpart to rehabilitate strategic assets.",
+          "For industrial operators, commodity traders, engineering firms, lenders and insurers evaluating Venezuela."
+        ],
+        "cards": [],
+        "ctas": [
+          {
+            "label": "Request investor materials",
+            "href": "partner"
+          },
+          {
+            "label": "Request our institutional presentation",
+            "href": "partner"
+          },
+          {
+            "label": "Discuss a project",
+            "href": "partner"
+          }
+        ],
+        "links": []
+      },
+      {
+        "eyebrow": "Contact",
+        "title": "Start the conversation.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "We reply in English or Spanish."
+        ],
+        "cards": [],
+        "ctas": [
+          {
+            "label": "Send message",
+            "href": "partner"
+          }
+        ],
+        "links": [
+          {
+            "label": "info@veniof.com",
+            "href": "partner"
+          }
+        ]
+      }
+    ],
+    "Inicio": [
+      {
+        "eyebrow": "Un fondo estadounidense con profundas raíces venezolanas",
+        "title": "Reconstruir la base industrial de Venezuela, de la extracción a la exportación.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF es un fondo de inversión administrado desde Estados Unidos. Nos asociamos con operadores de trayectoria comprobada e instituciones venezolanas para rehabilitar activos industriales y de infraestructura esenciales, y llevar sus productos a los mercados internacionales."
+        ],
+        "cards": [],
+        "ctas": [
+          {
+            "label": "Trabaje con nosotros",
+            "href": "partner"
+          }
+        ],
+        "links": [
+          {
+            "label": "Conozca nuestra estrategia",
+            "href": "strategy"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Quiénes somos",
+        "title": "Un fondo creado por quienes han operado los activos.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "El Venezuela Infrastructure Opportunity Fund (VIOF) fue fundado por un equipo que ha sido dueño y operador de empresas de industria pesada, logística y construcción en Venezuela, Estados Unidos y Guyana. Hemos construido y gestionado el tipo de activos en los que invertimos, no solo los hemos financiado.",
+          "Nuestros socios principales son personas estadounidenses y las entidades del fondo están constituidas en Estados Unidos. Nuestras raíces operativas están en Venezuela, donde las empresas del equipo han trabajado por más de sesenta años y hoy siguen moviendo acero y carga pesada por el Orinoco.",
+          "Eso se traduce en tres cosas concretas: transporte fluvial de carga a granel y equipos de izamiento pesado en servicio activo por el Orinoco, comercialización continua de minerales, materias primas y productos terminados, y un conocimiento de primera mano de las industrias y empresas que nos interesan, construido en años de trabajo directo con ellas."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Dos anclajes",
+        "title": "Un pie en Estados Unidos. Otro en Venezuela.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "La mayor parte del capital que mira hacia Venezuela no tiene relaciones operativas locales profundas. La mayoría de los operadores locales no tiene acceso a capital de escala institucional. VIOF se creó para reunir ambas cosas en una sola estructura."
+        ],
+        "cards": [
+          {
+            "title": "El anclaje en Estados Unidos",
+            "bullets": [
+              "Socios principales estadounidenses y entidades del fondo constituidas en Estados Unidos",
+              "El cumplimiento de sanciones como requisito previo, revisado por asesores especializados en OFAC",
+              "Estándares estadounidenses de banca, reportes y gobernanza desde el primer día",
+              "Más de dos décadas de participación a nivel de junta directiva en la fabricación de acero pesado en Estados Unidos"
+            ]
+          },
+          {
+            "title": "El anclaje en Venezuela",
+            "bullets": [
+              "Empresas activas de distribución y procesamiento de acero y de transporte pesado",
+              "Operación de remolcadores y gabarras oceánicas en el Orinoco, el corredor logístico en el centro de nuestra tesis",
+              "Relaciones de trabajo de larga data con las empresas básicas de Guayana, sus proveedores y firmas de ingeniería",
+              "Dominio propio del entorno legal, laboral y operativo"
+            ]
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Nuestra tesis",
+        "title": "Así pensamos la oportunidad.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Dos décadas de subinversión dejaron la base industrial de Venezuela operando muy por debajo de su capacidad de diseño. Creemos que el capital, bien ejecutado, puede cerrar la mayor parte de esa brecha más rápido y a menor costo que empezar de cero — en la página de Estrategia explicamos cómo."
+        ],
+        "cards": [
+          {
+            "title": "Eliminación de cuellos de botella",
+            "body": "Intervenciones puntuales que liberan capacidad detenida en plantas existentes con un capital proporcionalmente bajo."
+          },
+          {
+            "title": "Captura de valor aguas abajo",
+            "body": "Transformar productos primarios en productos terminados de mayor margen, listos para exportar a precios internacionales."
+          },
+          {
+            "title": "Infraestructura habilitante",
+            "body": "Energía, logística fluvial, terminales y capacidad de procesamiento de las que depende todo operador de un sector."
+          },
+          {
+            "title": "Plataformas integradas",
+            "body": "Conectar los activos rehabilitados en plataformas operativas que valen más juntas que por separado."
+          }
+        ],
+        "ctas": [],
+        "links": [
+          {
+            "label": "Explore la estrategia",
+            "href": "strategy"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Dónde nos enfocamos",
+        "title": "Sectores cuyos productos se cotizan y se venden en dólares.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Miramos hacia tres sectores cuyos productos se cotizan y se venden en dólares: cadenas de valor de la mina al metal, siderurgia y materiales de construcción en metales e industrias básicas; mejora de producción en campos maduros y monetización de gas en petróleo y gas, sin exploración de alto riesgo; y el transporte fluvial, las terminales de exportación y la rehabilitación hidroeléctrica de los que dependen los otros dos."
+        ],
+        "cards": [
+          {
+            "title": "Varios proyectos en desarrollo activo, junto a socios con los que ya hemos trabajado.",
+            "body": "Adelantamos procesos de debida diligencia y negociación en múltiples proyectos con operadores industriales, casas de materias primas y firmas de ingeniería de reconocimiento internacional. Los nombres de los proyectos y de los socios se mantienen confidenciales hasta que nuestros acuerdos permitan divulgarlos."
+          }
+        ],
+        "ctas": [
+          {
+            "label": "Ver proyectos y trayectoria",
+            "href": "projects"
+          }
+        ],
+        "links": []
+      },
+      {
+        "eyebrow": "Con quién trabajamos",
+        "title": "Tres tipos de aliados, un mismo estándar de conducta.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "Inversionistas",
+            "body": "Inversionistas institucionales, family offices y personas calificadas que buscan una exposición disciplinada a la recuperación industrial de Venezuela."
+          },
+          {
+            "title": "Gobierno y empresas del Estado",
+            "body": "Instituciones públicas que buscan una contraparte seria y bien capitalizada, que aporte operadores con experiencia comprobada y respete la propiedad nacional de los activos estratégicos."
+          },
+          {
+            "title": "Socios estratégicos y operadores",
+            "body": "Operadores, comercializadoras de materias primas, firmas de ingeniería y financistas que desean un socio local confiable con gobernanza de nivel institucional."
+          }
+        ],
+        "ctas": [],
+        "links": [
+          {
+            "label": "Información para inversionistas",
+            "href": "partner"
+          },
+          {
+            "label": "Trabajar con el sector público",
+            "href": "partner"
+          },
+          {
+            "label": "Alianzas en proyectos",
+            "href": "partner"
+          }
+        ]
+      },
+      {
+        "eyebrow": "Liderazgo",
+        "title": "Ingenieros, operadores e inversionistas.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [],
+        "ctas": [],
+        "links": [
+          {
+            "label": "Conozca al equipo",
+            "href": "team"
+          }
+        ]
+      }
+    ],
+    "Estrategia": [
+      {
+        "eyebrow": "Estrategia",
+        "title": "Primero reparar. Luego crecer.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "Nuestra estrategia consiste en restablecer la producción de activos esenciales que ya existen en Venezuela, en alianza con operadores que lo han hecho antes y bajo estructuras que protegen los intereses de todas las partes."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Por qué Venezuela, por qué ahora",
+        "title": "La restricción es el capital, no los recursos.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "Una base de recursos de clase mundial",
+            "body": "Venezuela posee las mayores reservas probadas de petróleo del mundo, importantes yacimientos de mineral de hierro y bauxita, gas natural abundante y una capacidad hidroeléctrica significativa. Buena parte de la infraestructura que los sirve lleva décadas sin la inversión que necesita, pero es recuperable."
+          },
+          {
+            "title": "Reparar, no construir",
+            "body": "Rehabilitar activos con historial operativo comprobado implica menos capital por unidad de producción, un camino más corto hasta producir y líneas base de desempeño conocidas frente a un desarrollo desde cero."
+          },
+          {
+            "title": "Un marco estadounidense en evolución",
+            "body": "La política de sanciones de Estados Unidos hacia Venezuela es dinámica, y licencias generales recientes autorizan actividades definidas en sectores específicos. Actuamos únicamente dentro de esas autorizaciones y estructuramos nuestros acuerdos en consecuencia."
+          },
+          {
+            "title": "Posicionamiento temprano y disciplinado",
+            "body": "Las alianzas serias toman tiempo. Estar presentes temprano, con operadores creíbles y un trabajo técnico completo, importa más que ser los primeros en anunciar."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "El método",
+        "title": "Cuatro formas repetibles de crear valor.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "Eliminación de cuellos de botella",
+            "body": "La base industrial instalada de Venezuela no está obsoleta: simplemente lleva dos décadas sin la inversión que necesita. Intervenciones puntuales como revestimientos, reparaciones, repuestos y capital de trabajo para insumos críticos liberan capacidad detenida y generan flujo de caja temprano."
+          },
+          {
+            "title": "Captura de valor aguas abajo",
+            "body": "Avanzar en la cadena de valor, de la materia prima al producto terminado listo para exportar: del mineral a productos de hierro y acero, de la bauxita al aluminio, del gas a derivados petroquímicos. El margen está entre el insumo y el precio internacional."
+          },
+          {
+            "title": "Infraestructura habilitante",
+            "body": "La energía, el transporte fluvial, las terminales y la capacidad de procesamiento compartida sirven a todos los operadores de un sector. Poseerlas o restaurarlas reduce los costos de nuestros proyectos y genera ingresos estables por servicios a terceros."
+          },
+          {
+            "title": "Plataformas integradas",
+            "body": "A medida que los activos se estabilizan, los conectamos: producción, logística y energía funcionando como una sola plataforma, atractiva para dueños industriales y de infraestructura de largo plazo. La secuencia importa: el flujo de caja temprano de la eliminación de cuellos de botella financia la paciencia que exigen las inversiones aguas abajo y de plataforma."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "El método por sector",
+        "title": "Un mismo método en tres sectores.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Qué buscamos",
+        "title": "Cinco pruebas que todo proyecto debe superar.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Todo proyecto debe superar las mismas cinco pruebas antes de que nos comprometamos: que sea un activo existente con historial operativo comprobado y un camino claro del capital a la producción; que esté asociado con un operador que ya ha manejado activos comparables en otros países, para que el capital no tenga que aprender una industria desde cero; que su producto final sea terminado, comercializable internacionalmente y se venda a compradores solventes; que sus ingresos se coticen y liquiden en dólares por diseño, de modo que los retornos no dependan de las condiciones monetarias locales; y que su capital se libere por etapas, contra hitos verificados de forma independiente, nunca en un solo desembolso."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Cómo estructuramos las alianzas",
+        "title": "Estructuras diseñadas para funcionar para el Estado, el operador y el inversionista.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Para los activos existentes del Estado, nuestro modelo preferido combina un operador internacional con un contrato de producción compartida, que aporta capital y conocimiento sin transferir la propiedad. En plantas e infraestructura nuevas, la empresa del proyecto puede ser propietaria del activo. Elegimos la estructura que mejor se ajusta a cada proyecto.",
+          "La propiedad sigue al activo: los activos estratégicos existentes siguen siendo del Estado, con nuestros socios operando e invirtiendo bajo acuerdos de largo plazo y la producción compartida según una fórmula acordada, mientras que las plantas e infraestructura nuevas pueden ser propiedad directa de la empresa del proyecto. Los precios son transparentes y están referidos a marcadores: el producto se valora contra referencias internacionales publicadas y con fórmulas explícitas, de modo que cada parte puede verificar lo que le corresponde.",
+          "En la ejecución, cada etapa cierra con una revisión formal de recuperación, calidad y preparación antes de liberar el capital siguiente, y los ingresos de exportación pasan por cuentas administradas de forma independiente y se distribuyen según una cascada contractual que incluye la participación del Estado. La gobernanza es conjunta y los reportes son continuos, y reconstruimos con ingenieros, proveedores y trabajadores venezolanos: la rehabilitación funciona cuando quienes conocen la planta son parte de ella."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Riesgo y cumplimiento",
+        "title": "La protección es estructural, no un añadido.",
+        "titleAs": "h2",
+        "paragraphs": [],
+        "cards": [
+          {
+            "title": "Ingresos y moneda",
+            "body": "Los ingresos son en dólares por diseño, provenientes de productos vendidos en mercados internacionales, recaudados mediante cuentas independientes y vehículos de proyecto separados, con control físico del producto mediante administración de colateral cuando corresponda."
+          },
+          {
+            "title": "Sanciones e integridad",
+            "body": "Ningún proyecto avanza sin la aprobación de asesores especializados en sanciones, cada acuerdo se condiciona a las autorizaciones estadounidenses que requiere, y aplicamos estándares FCPA, anticorrupción y KYC/AML a cada contraparte."
+          },
+          {
+            "title": "Ejecución y capital",
+            "body": "El capital se libera solo contra hitos verificados de forma independiente, la debida diligencia técnica la lideran ingenieros que conocen los activos, y nuestros casos base son conservadores, evaluados por debajo de los precios de mercado vigentes."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      }
+    ],
+    "Proyectos": [
+      {
+        "eyebrow": "Proyectos",
+        "title": "Hoy, proyectos en desarrollo. Un portafolio a medida que cierren.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF está en etapa de desarrollo. Nuestros primeros proyectos avanzan en debida diligencia y negociación con socios de esta escala, y esta página crecerá a medida que alcancen su cierre."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Proyectos activos",
+        "title": "En qué estamos trabajando.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Las descripciones son deliberadamente generales. Los nombres de los proyectos, las contrapartes y los socios son confidenciales."
+        ],
+        "cards": [
+          {
+            "title": "Cadena de valor integrada de metales",
+            "body": "Rehabilitación integral de una cadena productiva de la mina al metal, con un operador industrial de primer nivel y un socio global de materias primas. Debida diligencia técnica"
+          },
+          {
+            "title": "Programa de producción de acero",
+            "body": "Un programa por ciclos que financia y suministra los insumos críticos para reactivar la producción de acero líquido en una planta existente, con comercialización del producto y capital liberado contra hitos verificados. Propuesta comercial"
+          },
+          {
+            "title": "Derivados a partir de gas",
+            "body": "Nueva capacidad aguas abajo para convertir materia prima nacional en productos químicos de mayor valor listos para exportar. Estudio de factibilidad en curso con una firma internacional de ingeniería. Estudio de factibilidad"
+          },
+          {
+            "title": "Industrias básicas y logística fluvial",
+            "body": "Rehabilitación o culminación de plantas e infraestructura logística existentes que sirven a las industrias básicas de Venezuela, bajo esquemas con socio operador."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Cómo avanza un proyecto",
+        "title": "De la primera conversación a la primera producción.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Empieza con la originación: oportunidades que provienen de nuestra propia red operativa y de socios que conocen los activos. Sigue la debida diligencia: visitas a planta, auditorías técnicas y modelos comerciales liderados por ingenieros y operadores, con solicitudes formales de información a cada entidad. Una vez que el acuerdo de alianza fija roles, producción compartida, precios y gobernanza con el dueño del activo y el operador, los acuerdos se condicionan a las aprobaciones estadounidenses y venezolanas que cada proyecto requiere. El capital se libera entonces por tramos o ciclos contra hitos verificados, y la relación continúa con gobernanza conjunta, reportes transparentes y mejora continua durante toda la vida del acuerdo."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Trayectoria de los socios",
+        "title": "Lo que nuestros socios han ejecutado.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Lo siguiente describe el trabajo previo y actual de los socios de VIOF a través de sus propias empresas. No son inversiones del fondo."
+        ],
+        "cards": [
+          {
+            "title": "Más de US$600 MM en proyectos de acero pesado",
+            "body": "Puentes, estructuras industriales, recipientes a presión y estructuras costa afuera vendidos y gestionados en un negocio de manufactura pesada de acero para clientes industriales y comerciales, incluida la infraestructura de las industrias básicas. Uno de los socios de VIOF supervisó la fabricación, el transporte, la instalación y la puesta en marcha de la primera plataforma costa afuera construida en Venezuela."
+          },
+          {
+            "title": "Distribución de acero y logística fluvial",
+            "body": "Un distribuidor líder de materias primas de acero con centro de servicio para planchas y perfiles preprocesados, una línea de transporte pesado y operación de remolcador y gabarra oceánicos con base en Puerto Ordaz."
+          },
+          {
+            "title": "Suministro industrial y procura",
+            "body": "Cerca de veinte años atendiendo a operadores industriales y energéticos mediante empresas de procura, logística y comercio con operaciones en Caracas, Puerto Ordaz, Panamá y Estados Unidos."
+          },
+          {
+            "title": "Hotel y centro comercial",
+            "body": "Un hotel Four Points by Sheraton de 172 habitaciones, salón de eventos y centro comercial en Georgetown, con un préstamo de construcción de BID Invest."
+          },
+          {
+            "title": "Complejo de oficinas gubernamentales",
+            "body": "Diseño y construcción llave en mano de un complejo central de oficinas diseñado para 6.000 empleados públicos en Georgetown."
+          },
+          {
+            "title": "Estadio de críquet",
+            "body": "Diseño y construcción llave en mano de un estadio de 7.350 asientos en Berbice."
+          },
+          {
+            "title": "Fabricación de acero pesado",
+            "body": "Cargos de alta dirección en Owen Steel Company, en Columbia, Carolina del Sur, desde 2004, entre ellos director financiero, director de operaciones, director y asesor de la junta directiva. Entre los proyectos de la empresa en ese período figuran la Bank of America Tower, en Midtown Manhattan, y el Memorial y Museo del 11 de Septiembre."
+          },
+          {
+            "title": "Desarrollo residencial",
+            "body": "Una empresa de inversión inmobiliaria liderada por socios de VIOF, con ventas de viviendas unifamiliares de alta gama en el sur de Florida superiores a US$150 millones."
+          }
+        ],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Portafolio del fondo",
+        "title": "Aquí se publicarán los casos.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "A medida que los proyectos cierren y nuestros socios autoricen su divulgación, cada uno se publicará con su alcance, socios, estructura y resultados."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      }
+    ],
+    "Equipo": [
+      {
+        "eyebrow": "Equipo",
+        "title": "Ingenieros, operadores e inversionistas.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "Los socios de VIOF combinan formación de posgrado y gobernanza estadounidenses con décadas de experiencia industrial directa en Venezuela, Estados Unidos y el Caribe."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": null,
+        "title": "Nikola Kedzo",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Nikola es un ejecutivo de negocios internacionales y empresario con cerca de veinte años en suministro industrial, procura, logística y comercio transfronterizo entre Venezuela, Panamá y Estados Unidos. Ha desarrollado su carrera negociando con corporaciones multinacionales, empresas industriales y empresas del Estado, y gestionando operaciones comerciales internacionales.",
+          "Desde Miami dirige las operaciones y el desarrollo de negocios de una empresa de suministro industrial y lidera su propia firma de comercio internacional y procura, con clientes en los sectores industrial, energético, logístico y de infraestructura. Entre 2014 y 2023 fue director ejecutivo de una empresa de procura y logística con operaciones en Venezuela, Panamá y Estados Unidos, y entre 2007 y 2013 fue vicepresidente y director de una empresa de suministro industrial con operaciones en Caracas y Puerto Ordaz, centro de las industrias básicas de Venezuela. Inició su carrera como analista financiero y de mercados en una casa de bolsa de Caracas.",
+          "Isaac ha ocupado cargos de alta gerencia en manufactura pesada de acero en Venezuela y los principales cargos financieros y operativos de un fabricante de acero estadounidense, y desarrolla e invierte en bienes raíces en el sur de Florida desde hace más de veinte años.",
+          "Entre 2008 y 2014 fue un gerente clave de uno de los mayores fabricantes y montadores de estructuras de acero de Suramérica, una empresa venezolana con ingresos anuales superiores a US$150 millones. Supervisó su proyecto más importante: la fabricación, el transporte, la instalación y la puesta en marcha de la primera plataforma costa afuera construida en Venezuela. Antes se incorporó a Owen Steel Company, en Carolina del Sur, como director financiero en 2004 y pasó a ser director de operaciones en 2007, con responsabilidad sobre todas las operaciones financieras y de producción. Entre los proyectos de esa etapa figuran la Bank of America Tower, en Midtown Manhattan, y el Memorial y Museo del 11 de Septiembre.",
+          "En 2014 fundó una empresa de inversión inmobiliaria y ha dirigido su inversión en el desarrollo de viviendas unifamiliares de alta gama en el área de Miami, con ventas superiores a US$150 millones. Al inicio de su carrera fue director financiero de una empresa de internet con sede en Miami y asociado de banca de inversión en Venezuela, en operaciones de fusiones y adquisiciones, financiamiento de proyectos y capital privado en América Latina.",
+          "Tania combina formación en ingeniería con experiencia en logística industrial, desarrollo inmobiliario y gestión de family office.",
+          "Como socia de una empresa de inversión inmobiliaria en Miami, ha codirigido su inversión en el desarrollo de viviendas unifamiliares de alta gama, con ventas superiores a US$150 millones. Es tesorera de un family office con sede en Miami, donde gestiona la liquidez, el cumplimiento tributario, los activos inmobiliarios y las entidades internacionales. Antes fue gerente de logística de Owen Steel Company en Carolina del Sur, donde mejoró el flujo de materiales, los costos de despacho y la seguridad laboral.",
+          "Mauricio es ingeniero estructural y operador con más de veinticinco años en fabricación de acero pesado, logística industrial y construcción a gran escala en Venezuela, Estados Unidos y Guyana.",
+          "En Venezuela dirigió las operaciones de un negocio de manufactura pesada de acero para aplicaciones industriales y comerciales, incluida la infraestructura de las industrias básicas, donde lideró una reestructuración operativa y vendió y gestionó más de US$600 millones en puentes, estructuras industriales, recipientes a presión y estructuras costa afuera. También convirtió a una empresa en un distribuidor líder de materias primas de acero en Venezuela, con líneas propias de procesamiento y transporte pesado, y dirige operaciones de remolcador y gabarra oceánicos desde Puerto Ordaz.",
+          "En Guyana es el principal responsable de un hotel Four Points by Sheraton de 172 habitaciones financiado con BID Invest, de un complejo de oficinas gubernamentales para 6.000 empleados y de un estadio de críquet de 7.350 asientos. En Estados Unidos se incorporó en 2004 al equipo de recuperación de Owen Steel Company y es asesor de su junta directiva desde 2005. Inició su carrera como ingeniero de proyectos en Leslie E. Robertson Associates, en Nueva York."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Trayectoria",
+        "title": "Seis décadas construyendo la industria pesada de Venezuela.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "VIOF nace de un grupo industrial familiar que ha trabajado en Venezuela por más de sesenta años. Sus empresas fabricaron estructuras de acero para las centrales hidroeléctricas de Guri, Caruachi y Tocoma, puentes sobre el Orinoco, plataformas costa afuera y recipientes a presión para las principales refinerías del país. Por esa historia conocemos los activos, a la gente que los opera y lo que se requiere para recuperarlos."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": "Gobernanza",
+        "title": "Cómo se toman las decisiones.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Ningún proyecto avanza sin la aprobación de asesores especializados en sanciones. Los procedimientos FCPA, KYC y AML se aplican a cada contraparte e intermediario, y reportamos sobre una base auditable, con plena transparencia hacia los inversionistas sobre comisiones y desempeño de cada activo."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      }
+    ],
+    "Alianzas": [
+      {
+        "eyebrow": "Alianzas",
+        "title": "Tres conversaciones que queremos tener.",
+        "titleAs": "h1",
+        "paragraphs": [
+          "VIOF se ubica entre el capital, las instituciones públicas y las empresas operadoras. Cuéntenos cuál es su conversación."
+        ],
+        "cards": [],
+        "ctas": [],
+        "links": []
+      },
+      {
+        "eyebrow": null,
+        "title": "Inversionistas",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Para inversionistas institucionales, family offices y personas calificadas que desean una exposición meditada a la recuperación industrial de Venezuela, con gobernanza institucional y el cumplimiento como prioridad.",
+          "Los materiales para inversionistas se entregan únicamente a inversionistas calificados, previa solicitud y verificación. [CONFIRMAR LENGUAJE DE ELEGIBILIDAD CON ASESORES DE VALORES]",
+          "Para ministerios, corporaciones y empresas del Estado que buscan una contraparte privada seria para rehabilitar activos estratégicos.",
+          "Para operadores industriales, comercializadoras de materias primas, firmas de ingeniería, financistas y aseguradoras que evalúan Venezuela."
+        ],
+        "cards": [],
+        "ctas": [
+          {
+            "label": "Solicitar materiales para inversionistas",
+            "href": "partner"
+          },
+          {
+            "label": "Solicitar nuestra presentación institucional",
+            "href": "partner"
+          },
+          {
+            "label": "Conversar sobre un proyecto",
+            "href": "partner"
+          }
+        ],
+        "links": []
+      },
+      {
+        "eyebrow": "Contacto",
+        "title": "Inicie la conversación.",
+        "titleAs": "h2",
+        "paragraphs": [
+          "Respondemos en español o en inglés."
+        ],
+        "cards": [],
+        "ctas": [
+          {
+            "label": "Enviar mensaje",
+            "href": "partner"
+          }
+        ],
+        "links": [
+          {
+            "label": "info@veniof.com",
+            "href": "partner"
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "team_en": [
+      {
+        "name": "Nikola Kedzo",
+        "role": "Partner",
+        "bio": "Nikola is an international business executive and entrepreneur with close to twenty years in industrial supply, procurement, logistics and cross-border trade across Venezuela, Panama and the United States. He has built his career negotiating with multinational corporations, industrial companies and state-owned enterprises, and managing cross-border commercial operations."
+      },
+      {
+        "name": "Isaac Murciano",
+        "role": "Partner",
+        "bio": "Isaac has held senior management roles in heavy steel manufacturing in Venezuela and the top finance and operating roles at a US steel fabricator, and has developed and invested in South Florida real estate for more than twenty years."
+      },
+      {
+        "name": "Tania Murciano",
+        "role": "Partner",
+        "bio": "Tania combines engineering training with experience in industrial logistics, real estate development and family office management."
+      },
+      {
+        "name": "Mauricio Van Dam",
+        "role": "Partner",
+        "bio": "Mauricio is a structural engineer and operator with more than twenty-five years across heavy steel fabrication, industrial logistics and large-scale construction in Venezuela, the United States and Guyana."
+      }
+    ],
+    "team_es": [
+      {
+        "name": "Nikola Kedzo",
+        "role": "Socio",
+        "bio": "Nikola es un ejecutivo de negocios internacionales y empresario con cerca de veinte años en suministro industrial, procura, logística y comercio transfronterizo entre Venezuela, Panamá y Estados Unidos. Ha desarrollado su carrera negociando con corporaciones multinacionales, empresas industriales y empresas del Estado, y gestionando operaciones comerciales internacionales."
+      },
+      {
+        "name": "Isaac Murciano",
+        "role": "Socio",
+        "bio": "Isaac ha ocupado cargos de alta gerencia en manufactura pesada de acero en Venezuela y los principales cargos financieros y operativos de un fabricante de acero estadounidense, y desarrolla e invierte en bienes raíces en el sur de Florida desde hace más de veinte años."
+      },
+      {
+        "name": "Tania Murciano",
+        "role": "Socia",
+        "bio": "Tania combina formación en ingeniería con experiencia en logística industrial, desarrollo inmobiliario y gestión de family office."
+      },
+      {
+        "name": "Mauricio Van Dam",
+        "role": "Socio",
+        "bio": "Mauricio es ingeniero estructural y operador con más de veinticinco años en fabricación de acero pesado, logística industrial y construcción a gran escala en Venezuela, Estados Unidos y Guyana."
+      }
+    ]
+  }
+}

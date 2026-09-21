@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0a1a2f;
+  --navy-deep: #101b2b;
+  --navy-line: #2b3f5f;
+  --gold: #b08d57;
+  --gold-light: #cfb27a;
+  --gold-dark: #765a2b;
+  --cream: #f4f1e8;
+  --ink: #101b2b;
+  --muted: #b9c3d1;
+  --slate: #36435a;
+  --surface: #eef0f3;
+  --surface-2: #f8f9fb;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-line: var(--navy-line);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-slate: var(--slate);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --font-sans: var(--font-libre);
+  --font-serif: var(--font-gelasio);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--ink);
+  font-family: var(--font-libre), "Franklin Gothic Medium", "Helvetica Neue",
+    Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 35%, transparent);
+}

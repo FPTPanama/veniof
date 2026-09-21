@@ -1,0 +1,100 @@
+export type Locale = "en" | "es";
+
+export type PageKey =
+  | "home"
+  | "strategy"
+  | "projects"
+  | "team"
+  | "partner"
+  | "contact";
+
+
+export type ContentLink = {
+  label: string;
+  href: PageKey;
+};
+
+export type ContentCard = {
+  title: string;
+  body?: string;
+  bullets?: string[];
+};
+
+export type Section = {
+  eyebrow?: string;
+  title?: string;
+  titleAs?: "h1" | "h2";
+  paragraphs?: string[];
+  cards?: ContentCard[];
+  ctas?: ContentLink[];
+  links?: ContentLink[];
+  variant?: "dark" | "light" | "muted" | "navy";
+};
+
+export type PageContent = {
+  metaTitle: string;
+  metaDescription: string;
+  sections: Section[];
+};
+
+export type TeamMember = {
+  name: string;
+  slug: string;
+  role: string;
+  portraitLabel: string;
+  /** Optional image path under /public once portraits arrive, e.g. /team/nikola-kedzo.jpg */
+  imageSrc?: string;
+  paragraphs: string[];
+  credentials: string[];
+};
+
+export type SiteCopy = {
+  brand: string;
+  brandFull: string;
+  nav: { key: PageKey; label: string }[];
+  langSwitch: { en: string; es: string };
+  footer: {
+    blurb: string;
+    firmTitle: string;
+    firmLinks: { label: string; href: PageKey }[];
+    workTitle: string;
+    workLinks: { label: string; href: PageKey }[];
+    officesTitle: string;
+    offices: { country: string; address: string }[];
+    email: string;
+    legal: string;
+    legalNote: string;
+    rights: string;
+    terms: string;
+    privacy: string;
+  };
+  contact: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    fields: {
+      fullName: string;
+      organization: string;
+      email: string;
+      country: string;
+      role: string;
+      rolePlaceholder: string;
+      message: string;
+      ack: string;
+    };
+    roleOptions: string[];
+    submit: string;
+    sending: string;
+    success: string;
+    error: string;
+    officesTitle: string;
+    emailTitle: string;
+    investorEmailLabel: string;
+  };
+  ctaBanner: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    button: string;
+  };
+};
