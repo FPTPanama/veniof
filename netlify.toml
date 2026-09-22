@@ -1,9 +1,11 @@
-# Demo / portfolio deploy of the Next.js build in web/
-# (Production launch uses the official static package separately.)
+# Demo deploy of the Next.js app (subdirectory web/)
+# publish must differ from base or @netlify/plugin-nextjs fails;
+# the plugin rewrites publish during the build.
 
 [build]
   base = "web"
   command = "npm run build"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
