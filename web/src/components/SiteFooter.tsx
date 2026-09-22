@@ -96,7 +96,7 @@ export function SiteFooter({ locale }: Props) {
         <div className="mx-auto max-w-[1200px] px-6 py-8 md:px-14">
           <p className="max-w-[980px] text-[12.5px] leading-[1.65] text-muted">
             {footer.legal}{" "}
-            <span className="text-gold-light/90">{footer.legalNote}</span>
+            {/* <span className="text-gold-light/90">{footer.legalNote}</span> */}
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-between gap-4 text-[13px] text-muted">
             <span>{footer.rights}</span>

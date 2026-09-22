@@ -87,7 +87,7 @@ export const page: PageContent = {
     links: [
       { label: "Explore la estrategia", href: "strategy" as const },
     ],
-    variant: "light" as const,
+    variant: "navy" as const,
   },
   {
     eyebrow: "Dónde nos enfocamos",
@@ -105,7 +105,7 @@ export const page: PageContent = {
     ctas: [
       { label: "Ver proyectos y trayectoria", href: "projects" as const },
     ],
-    variant: "navy" as const,
+    variant: "light" as const,
   },
   {
     eyebrow: "Con quién trabajamos",
@@ -130,7 +130,7 @@ export const page: PageContent = {
       { label: "Trabajar con el sector público", href: "partner" as const },
       { label: "Alianzas en proyectos", href: "partner" as const },
     ],
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "Liderazgo",
@@ -139,7 +139,7 @@ export const page: PageContent = {
     links: [
       { label: "Conozca al equipo", href: "team" as const },
     ],
-    variant: "muted" as const,
+    variant: "light" as const,
   },
   ],
 };

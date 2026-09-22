@@ -40,7 +40,7 @@ export const site: SiteCopy = {
           "Torre Las Mercedes, Urbanización Chuao, Municipio Chacao, Miranda",
       },
     ],
-    email: "info@veniof.com",
+    email: "admin@veniof.com",
     legal:
       "This website is provided for general information only. It is not an offer to sell or a solicitation of an offer to buy any security or any interest in a fund. Any such offer will be made only to qualified investors through definitive offering documents. VIOF conducts its activities in compliance with applicable United States sanctions regulations and the laws of the jurisdictions where it operates.",
     legalNote: "Legal notice: final text to be approved by counsel.",
@@ -74,7 +74,7 @@ export const site: SiteCopy = {
     submit: "Send message",
     sending: "Sending…",
     success: "Thank you. We will reply shortly.",
-    error: "Something went wrong. Please email info@veniof.com directly.",
+    error: "Something went wrong. Please email admin@veniof.com directly.",
     officesTitle: "Offices",
     emailTitle: "Email",
     investorEmailLabel: "Investor relations",

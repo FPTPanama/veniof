@@ -47,7 +47,7 @@ export const page: PageContent = {
     paragraphs: [
       "Empieza con la originación: oportunidades que provienen de nuestra propia red operativa y de socios que conocen los activos. Sigue la debida diligencia: visitas a planta, auditorías técnicas y modelos comerciales liderados por ingenieros y operadores, con solicitudes formales de información a cada entidad. Una vez que el acuerdo de alianza fija roles, producción compartida, precios y gobernanza con el dueño del activo y el operador, los acuerdos se condicionan a las aprobaciones estadounidenses y venezolanas que cada proyecto requiere. El capital se libera entonces por tramos o ciclos contra hitos verificados, y la relación continúa con gobernanza conjunta, reportes transparentes y mejora continua durante toda la vida del acuerdo.",
     ],
-    variant: "muted" as const,
+    variant: "navy" as const,
   },
   {
     eyebrow: "Trayectoria de los socios",
@@ -90,7 +90,7 @@ export const page: PageContent = {
         body: "Una empresa de inversión inmobiliaria liderada por socios de VIOF, con ventas de viviendas unifamiliares de alta gama en el sur de Florida superiores a US$150 millones.",
       },
     ],
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "Portafolio del fondo",
@@ -99,7 +99,7 @@ export const page: PageContent = {
     paragraphs: [
       "A medida que los proyectos cierren y nuestros socios autoricen su divulgación, cada uno se publicará con su alcance, socios, estructura y resultados.",
     ],
-    variant: "muted" as const,
+    variant: "light" as const,
   },
   ],
 };

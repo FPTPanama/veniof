@@ -6,7 +6,10 @@ type Props = {
 
 export function TeamMemberCard({ member }: Props) {
   return (
-    <article className="grid gap-8 border-b border-[#D2D8E0] py-12 last:border-b-0 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:gap-12 md:py-14">
+    <article
+      id={member.slug}
+      className="grid scroll-mt-28 gap-8 border-b border-[#D2D8E0] py-12 last:border-b-0 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:gap-12 md:py-14"
+    >
       <div className="relative aspect-[4/5] w-full overflow-hidden border border-[#D2D8E0] bg-[repeating-linear-gradient(-45deg,#EEF0F3,#EEF0F3_8px,#F8F9FB_8px,#F8F9FB_16px)]">
         {member.imageSrc ? (
           // eslint-disable-next-line @next/next/no-img-element

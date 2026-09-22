@@ -47,7 +47,7 @@ export const page: PageContent = {
     paragraphs: [
       "It starts with origination — opportunities from our own operating network and from partners who know the assets — then diligence: site visits, technical audits and commercial models led by engineers and operators, with formal information requests to each entity. Once a partnership agreement sets roles, production sharing, pricing and governance with the asset owner and operator, agreements are made contingent on the US and Venezuelan authorizations each project requires. Capital is then released in tranches or cycles against verified milestones, and the relationship continues through joint governance, transparent reporting and continuous improvement for the life of the agreement.",
     ],
-    variant: "muted" as const,
+    variant: "navy" as const,
   },
   {
     eyebrow: "Principals' track record",
@@ -90,7 +90,7 @@ export const page: PageContent = {
         body: "A real estate investment company led by VIOF partners, with sales of high-end single-family homes in South Florida in excess of US$150 million.",
       },
     ],
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "Fund portfolio",
@@ -99,7 +99,7 @@ export const page: PageContent = {
     paragraphs: [
       "As projects reach close and our partners authorize disclosure, each will be published with its scope, partners, structure and results.",
     ],
-    variant: "muted" as const,
+    variant: "light" as const,
   },
   ],
 };

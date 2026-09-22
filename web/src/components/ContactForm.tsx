@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { getSite, type Locale } from "@/content";
 
 type Props = {
@@ -28,33 +27,28 @@ export function ContactForm({ locale }: Props) {
       return;
     }
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
     const payload = {
-      full_name: String(data.get("fullName") || ""),
+      fullName: String(data.get("fullName") || ""),
       organization: String(data.get("organization") || ""),
       email: String(data.get("email") || ""),
       country: String(data.get("country") || ""),
       role: String(data.get("role") || ""),
       message: String(data.get("message") || ""),
-      to_email: "info@veniof.com",
+      ack: true,
     };
-
-    if (!serviceId || !templateId || !publicKey) {
-      // Fallback until EmailJS keys are configured
-      window.location.href = `mailto:info@veniof.com?subject=${encodeURIComponent(
-        `VIOF contact — ${payload.full_name}`,
-      )}&body=${encodeURIComponent(
-        `Name: ${payload.full_name}\nOrganization: ${payload.organization}\nEmail: ${payload.email}\nCountry: ${payload.country}\nRole: ${payload.role}\n\n${payload.message}`,
-      )}`;
-      return;
-    }
 
     setStatus("sending");
     try {
-      await emailjs.send(serviceId, templateId, payload, { publicKey });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("send_failed");
+      }
+
       setStatus("success");
       form.reset();
     } catch {
@@ -122,7 +116,10 @@ export function ContactForm({ locale }: Props) {
             <label className="mt-5 block text-[13px] font-semibold text-ink">
               {contact.fields.role}
               <select
-                className={inputClass}
+                className={`${inputClass} appearance-none bg-[length:12px_12px] bg-[position:right_14px_center] bg-no-repeat pr-11`}
+                style={{
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%2336435A' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")`,
+                }}
                 name="role"
                 required
                 defaultValue=""

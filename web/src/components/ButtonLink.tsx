@@ -3,7 +3,7 @@ import Link from "next/link";
 type Props = {
   href: string;
   children: React.ReactNode;
-  variant?: "solid" | "ghost" | "text";
+  variant?: "solid" | "navy" | "ghost" | "text";
   className?: string;
 };
 
@@ -18,9 +18,10 @@ export function ButtonLink({
 
   const variants = {
     solid: "bg-gold text-navy-deep hover:brightness-110",
+    navy: "bg-navy text-cream border border-navy hover:brightness-110",
     ghost:
       "border border-navy-line text-cream hover:border-gold-light hover:text-gold-light",
-    text: "px-0 text-gold-light underline underline-offset-4 decoration-gold/70 hover:text-cream hover:decoration-cream",
+    text: "px-0 text-cream underline decoration-gold decoration-1 underline-offset-4 hover:decoration-gold-light",
   };
 
   return (

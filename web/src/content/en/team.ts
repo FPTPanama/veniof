@@ -20,7 +20,7 @@ export const page: PageContent = {
       paragraphs: [
         "VIOF grows out of a family industrial group that has worked in Venezuela for more than sixty years. Its companies fabricated steel structures for the Guri, Caruachi and Tocoma hydroelectric dams, bridges over the Orinoco, offshore platforms and pressure vessels for the country's major refineries. That history is why we know the assets, the people who run them and what it takes to bring them back.",
       ],
-      variant: "muted",
+      variant: "navy",
     },
     {
       eyebrow: "Governance",
@@ -29,7 +29,7 @@ export const page: PageContent = {
       paragraphs: [
         "No project advances without sign-off from specialized sanctions counsel. FCPA, KYC and AML procedures apply to every counterparty and intermediary, and we report on an audit-ready basis, with full transparency to investors on fees and asset-level performance.",
       ],
-      variant: "light",
+      variant: "muted",
     },
   ],
 };

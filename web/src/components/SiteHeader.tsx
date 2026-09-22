@@ -16,10 +16,12 @@ export function SiteHeader({ locale, active }: Props) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
   const pathname = usePathname();
+  const [prevPathname, setPrevPathname] = useState(pathname);
 
-  useEffect(() => {
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     if (!open) return;
@@ -32,7 +34,7 @@ export function SiteHeader({ locale, active }: Props) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy-line bg-navy/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-6 py-5 md:gap-8 md:px-14 md:py-[26px]">
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-6 py-5 md:gap-8 md:px-0 md:py-[26px]">
         <Link
           href={pagePath(locale, "home")}
           className="flex min-h-11 min-w-0 items-center gap-3 md:gap-4"
@@ -75,7 +77,7 @@ export function SiteHeader({ locale, active }: Props) {
               <Link
                 key={item.key}
                 href={pagePath(locale, item.key)}
-                className={`inline-flex min-h-11 items-center px-3 text-[15px] transition ${
+                className={`inline-flex min-h-11 items-center px-3 text-[12px] transition ${
                   isActive
                     ? "font-semibold text-cream shadow-[inset_0_-2px_0_#CFB27A]"
                     : "font-medium text-muted hover:text-cream"

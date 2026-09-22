@@ -59,13 +59,13 @@ export const page: PageContent = {
         body: "A medida que los activos se estabilizan, los conectamos: producción, logística y energía funcionando como una sola plataforma, atractiva para dueños industriales y de infraestructura de largo plazo. La secuencia importa: el flujo de caja temprano de la eliminación de cuellos de botella financia la paciencia que exigen las inversiones aguas abajo y de plataforma.",
       },
     ],
-    variant: "muted" as const,
+    variant: "navy" as const,
   },
   {
     eyebrow: "El método por sector",
     title: "Un mismo método en tres sectores.",
     titleAs: "h2",
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "Qué buscamos",
@@ -74,7 +74,7 @@ export const page: PageContent = {
     paragraphs: [
       "Todo proyecto debe superar las mismas cinco pruebas antes de que nos comprometamos: que sea un activo existente con historial operativo comprobado y un camino claro del capital a la producción; que esté asociado con un operador que ya ha manejado activos comparables en otros países, para que el capital no tenga que aprender una industria desde cero; que su producto final sea terminado, comercializable internacionalmente y se venda a compradores solventes; que sus ingresos se coticen y liquiden en dólares por diseño, de modo que los retornos no dependan de las condiciones monetarias locales; y que su capital se libere por etapas, contra hitos verificados de forma independiente, nunca en un solo desembolso.",
     ],
-    variant: "muted" as const,
+    variant: "light" as const,
   },
   {
     eyebrow: "Cómo estructuramos las alianzas",
@@ -85,7 +85,7 @@ export const page: PageContent = {
       "La propiedad sigue al activo: los activos estratégicos existentes siguen siendo del Estado, con nuestros socios operando e invirtiendo bajo acuerdos de largo plazo y la producción compartida según una fórmula acordada, mientras que las plantas e infraestructura nuevas pueden ser propiedad directa de la empresa del proyecto. Los precios son transparentes y están referidos a marcadores: el producto se valora contra referencias internacionales publicadas y con fórmulas explícitas, de modo que cada parte puede verificar lo que le corresponde.",
       "En la ejecución, cada etapa cierra con una revisión formal de recuperación, calidad y preparación antes de liberar el capital siguiente, y los ingresos de exportación pasan por cuentas administradas de forma independiente y se distribuyen según una cascada contractual que incluye la participación del Estado. La gobernanza es conjunta y los reportes son continuos, y reconstruimos con ingenieros, proveedores y trabajadores venezolanos: la rehabilitación funciona cuando quienes conocen la planta son parte de ella.",
     ],
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "Riesgo y cumplimiento",

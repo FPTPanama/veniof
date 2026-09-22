@@ -37,6 +37,32 @@ export type PageContent = {
   sections: Section[];
 };
 
+export type PartnerAudience = {
+  id: string;
+  title: string;
+  body: string;
+  expectLabel: string;
+  bullets: string[];
+  ctaLabel: string;
+  ctaHref: PageKey;
+  disclaimer?: string;
+  counselNote?: string;
+};
+
+export type PartnerCopy = {
+  hero: {
+    eyebrow: string;
+    title: string;
+    body: string;
+  };
+  audiences: PartnerAudience[];
+  start: {
+    title: string;
+    body: string;
+    email: string;
+  };
+};
+
 export type TeamMember = {
   name: string;
   slug: string;

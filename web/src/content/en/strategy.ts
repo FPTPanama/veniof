@@ -59,13 +59,13 @@ export const page: PageContent = {
         body: "As assets stabilize, we connect them: production, logistics and energy working as one platform, attractive to long-term industrial and infrastructure owners. The sequence matters: early cash flow from de-bottlenecking funds the patience that downstream and platform investments require.",
       },
     ],
-    variant: "muted" as const,
+    variant: "navy" as const,
   },
   {
     eyebrow: "The playbook by sector",
     title: "One playbook across three sectors.",
     titleAs: "h2",
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "What we look for",
@@ -74,7 +74,7 @@ export const page: PageContent = {
     paragraphs: [
       "Every project has to clear the same five tests before we commit: it's a brownfield asset with a proven operating history and a clear path from capital to production; it's paired with an operator that has run comparable assets elsewhere, so capital isn't learning an industry from scratch; its output is a finished, internationally tradeable product sold to creditworthy buyers; its revenue is priced and settled in US dollars by design, so returns don't depend on local monetary conditions; and its capital is released in stages, against independently verified milestones, never in one commitment.",
     ],
-    variant: "muted" as const,
+    variant: "light" as const,
   },
   {
     eyebrow: "How we structure partnerships",
@@ -85,7 +85,7 @@ export const page: PageContent = {
       "Ownership follows the asset: existing strategic assets remain the State's, with our partners operating and investing under long-term agreements and production shared under an agreed formula, while new plants and infrastructure can be owned directly by the project company. Pricing is transparent and benchmark-linked — product is valued against published international references with explicit formulas, so every party can verify what it's owed.",
       "On execution, each stage closes with a formal review of recovery, quality and readiness before the next release of capital, and export proceeds flow through independently administered accounts distributed under a contractual waterfall that includes the State's share. Governance is joint and reporting is continuous, and we rebuild with Venezuelan engineers, suppliers and workers — rehabilitation works when the people who know the plant are part of it.",
     ],
-    variant: "light" as const,
+    variant: "muted" as const,
   },
   {
     eyebrow: "Risk and compliance",
