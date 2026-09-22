@@ -1,0 +1,9 @@
+# Demo / portfolio deploy of the Next.js build in web/
+# (Production launch uses the official static package separately.)
+
+[build]
+  base = "web"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
