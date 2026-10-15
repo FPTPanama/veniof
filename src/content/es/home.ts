@@ -82,8 +82,10 @@ export const page: PageContent = {
     title: "Así pensamos la oportunidad.",
     titleAs: "h2",
     paragraphs: [
-      "Dos décadas de subinversión dejaron la base industrial de Venezuela operando muy por debajo de su capacidad de diseño. Creemos que el capital, bien ejecutado, puede cerrar la mayor parte de esa brecha más rápido y a menor costo que empezar de cero — en la página de Estrategia explicamos cómo.",
+      "Dos décadas de subinversión dejaron la base industrial de Venezuela operando muy por debajo de su capacidad de diseño.",
+      "El capital, bien ejecutado, puede cerrar la mayor parte de esa brecha más rápido y a menor costo que empezar de cero.",
     ],
+    callout: "Nikola Kedzo, Socio",
     cards: [
       {
         title: "Eliminación de cuellos de botella",
@@ -105,6 +107,15 @@ export const page: PageContent = {
     links: [
       { label: "Explore la estrategia", href: "strategy" as const },
     ],
+    variant: "navy" as const,
+  },
+  {
+    title: "De la capacidad detenida al producto que se exporta.",
+    paragraphs: [
+      "Rehabilitar lo que ya existe — plantas, corredores y terminales — para devolver producción a mercados internacionales.",
+    ],
+    // Placeholder: swap when a dedicated break image is ready.
+    image: "/mineral.webp",
     variant: "navy" as const,
   },
   {

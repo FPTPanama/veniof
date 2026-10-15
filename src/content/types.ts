@@ -48,6 +48,8 @@ export type Section = {
   subtitle?: string;
   /** Short overlay callout (e.g. hero image caption). */
   callout?: string;
+  /** Full-bleed band image (e.g. mid-page visual break). */
+  image?: string;
   paragraphs?: string[];
   cards?: ContentCard[];
   ctas?: ContentLink[];
