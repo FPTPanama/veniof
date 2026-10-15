@@ -44,6 +44,8 @@ export type Section = {
   titleAs?: "h1" | "h2";
   /** Secondary line under the title, above the body. */
   subtitle?: string;
+  /** Short overlay callout (e.g. hero image caption). */
+  callout?: string;
   paragraphs?: string[];
   cards?: ContentCard[];
   ctas?: ContentLink[];

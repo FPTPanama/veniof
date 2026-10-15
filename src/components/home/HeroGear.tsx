@@ -76,7 +76,7 @@ export function HeroGear() {
     <div
       ref={hostRef}
       aria-hidden
-      className="pointer-events-none absolute top-1/2 left-full aspect-square w-[min(980px,60vw)] -translate-x-1/2 -translate-y-1/2"
+      className="pointer-events-none absolute top-1/2 left-full z-0 aspect-square w-[min(980px,60vw)] -translate-x-1/2 -translate-y-1/2 opacity-70"
     />
   );
 }
