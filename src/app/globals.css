@@ -164,3 +164,66 @@ html.has-smooth-scroll [data-site-header] {
   right: 0;
   left: 0;
 }
+
+/* Bridge trucks: travel across the deck (parent is container-type: inline-size). */
+@keyframes bridge-truck-ltr {
+  from {
+    transform: translate3d(-120%, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(100cqi + 120%), 0, 0);
+  }
+}
+
+@keyframes bridge-truck-rtl {
+  from {
+    transform: translate3d(calc(100cqi + 120%), 0, 0);
+  }
+  to {
+    transform: translate3d(-120%, 0, 0);
+  }
+}
+
+.bridge-truck {
+  position: absolute;
+  /* Sit wheels into the deck band (deck top ≈ 218; viewBox height 300). */
+  top: calc(226 / 300 * 100%);
+  left: 0;
+  z-index: 2;
+  max-width: 7.5rem;
+  min-width: 3.25rem;
+  translate: 0 -100%;
+  will-change: transform;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bridge-truck img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bridge-truck-ltr {
+  animation-name: bridge-truck-ltr;
+}
+
+.bridge-truck-ltr img {
+  transform: scaleX(-1);
+}
+
+.bridge-truck-rtl {
+  animation-name: bridge-truck-rtl;
+}
+
+.bridge-cloud {
+  opacity: 0.88;
+  filter: drop-shadow(0 8px 18px color-mix(in srgb, var(--navy) 8%, transparent));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bridge-truck {
+    animation: none;
+    opacity: 0;
+  }
+}

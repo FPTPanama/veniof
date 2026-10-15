@@ -53,7 +53,7 @@ export const page: PageContent = {
     title: "Un pie en Estados Unidos. Otro en Venezuela.",
     titleAs: "h2",
     paragraphs: [
-      "La mayor parte del capital que mira hacia Venezuela no tiene relaciones operativas locales profundas. La mayoría de los operadores locales no tiene acceso a capital de escala institucional. VIOF se creó para reunir ambas cosas en una sola estructura.",
+      "La mayor parte del capital que mira hacia **Venezuela** no tiene relaciones operativas locales profundas. La mayoría de los operadores locales no tiene acceso a **capital de escala institucional**. **VIOF** se creó para reunir ambas cosas en una sola estructura.",
     ],
     cards: [
       {

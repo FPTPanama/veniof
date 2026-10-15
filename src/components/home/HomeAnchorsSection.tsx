@@ -1,5 +1,6 @@
 import type { Section as SectionData } from "@/content/types";
 import type { Locale } from "@/content";
+import { BridgeGraphic } from "../BridgeGraphic";
 import {
   SectionActions,
   SectionEyebrow,
@@ -8,10 +9,22 @@ import {
   titleSizeClass,
 } from "../section-ui";
 
+const centerTagline = {
+  en: ["One firm.", "Two anchors."],
+  es: ["Una firma.", "Dos anclajes."],
+} as const;
+
 type Props = {
   section: SectionData;
   locale: Locale;
 };
+
+function withEmphasis(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => {
+    if (!part.startsWith("**")) return part;
+    return <strong key={index}>{part.slice(2, -2)}</strong>;
+  });
+}
 
 /** Intro + two adjacent bullet panels (US / Venezuela). */
 export function HomeAnchorsSection({ section, locale }: Props) {
@@ -22,29 +35,69 @@ export function HomeAnchorsSection({ section, locale }: Props) {
 
   return (
     <SectionShell variant={variant}>
-      {section.eyebrow ? (
-        <SectionEyebrow colorClass={colors.eyebrow}>
-          {section.eyebrow}
-        </SectionEyebrow>
-      ) : null}
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-12 md:gap-y-10 lg:gap-x-16">
+        <div className="md:col-start-1 md:row-start-1">
+          {section.eyebrow ? (
+            <SectionEyebrow colorClass={colors.eyebrow}>
+              {section.eyebrow}
+            </SectionEyebrow>
+          ) : null}
+          <h2
+            className={`text-balance font-serif font-normal ${titleSizeClass("h2")} ${colors.title}`}
+          >
+            {section.title}
+          </h2>
+        </div>
 
-      <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-12 md:gap-8">
-        <h2
-          className={`text-balance font-serif font-normal ${titleSizeClass("h2")} ${colors.title} md:col-span-5`}
-        >
-          {section.title}
-        </h2>
-        <div className="space-y-5 md:col-span-7">
+        <div className="space-y-5 md:col-start-2 md:row-start-2">
           {paragraphs.map((p) => (
             <p
               key={p.slice(0, 40)}
-              className={`text-pretty font-serif text-[18px] leading-[1.6] md:text-[19px] ${colors.body}`}
+              className={`text-pretty font-serif text-[18px] leading-[1.6] md:text-[19px] [&_strong]:font-semibold ${colors.body}`}
             >
-              {p}
+              {withEmphasis(p)}
             </p>
           ))}
         </div>
       </div>
+
+      <BridgeGraphic locale={locale} />
+
+      {cards.length === 2 ? (
+        <div className="mt-10 grid grid-cols-1 items-start gap-10 md:mt-8 md:grid-cols-3 md:gap-8">
+          <article className="text-ink md:col-start-1">
+            {cards[0]?.bullets?.length ? (
+              <ul className="space-y-3.5 text-slate">
+                {cards[0].bullets.map((bullet) => (
+                  <li key={bullet} className="text-[15px] leading-[1.55]">
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </article>
+
+          <p className="text-center font-serif text-[28px] font-medium italic leading-[1.2] text-navy sm:text-[32px] md:col-start-2 md:text-[36px] lg:text-[40px]">
+            {centerTagline[locale].map((line) => (
+              <span key={line} className="block">
+                {line}
+              </span>
+            ))}
+          </p>
+
+          <article className="text-ink md:col-start-3 md:text-right">
+            {cards[1]?.bullets?.length ? (
+              <ul className="space-y-3.5 text-slate">
+                {cards[1].bullets.map((bullet) => (
+                  <li key={bullet} className="text-[15px] leading-[1.55]">
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </article>
+        </div>
+      ) : null}
 
       <SectionActions
         locale={locale}
@@ -52,37 +105,6 @@ export function HomeAnchorsSection({ section, locale }: Props) {
         ctas={section.ctas}
         links={section.links}
       />
-
-      {cards.length === 2 ? (
-        <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 border-t border-line pt-8">
-          {cards.map((card) => (
-            <article
-              key={card.title}
-              className="border-t border-line pt-8 text-ink"
-            >
-              <h3 className="font-serif text-[24px] text-ink md:text-[28px]">
-                {card.title}
-              </h3>
-              {card.bullets?.length ? (
-                <ul className="mt-6 space-y-3.5 text-slate">
-                  {card.bullets.map((bullet) => (
-                    <li
-                      key={bullet}
-                      className="flex gap-3 text-[15px] leading-[1.55]"
-                    >
-                      <span
-                        className="mt-[0.55em] h-px w-3 shrink-0 bg-navy"
-                        aria-hidden
-                      />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-            </article>
-          ))}
-        </div>
-      ) : null}
     </SectionShell>
   );
 }
