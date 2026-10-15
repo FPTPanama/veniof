@@ -5,11 +5,11 @@ type Props = {
   size?: number;
 };
 
-/** Official VIOF mark for dark navy backgrounds. */
+/** Official VIOF mark for the light page ground. */
 export function BrandMark({ className = "", size = 50 }: Props) {
   return (
     <Image
-      src="/logo/viof-mark-on-dark.svg"
+      src="/logo/viof-mark-on-light.svg"
       alt=""
       width={size}
       height={size}

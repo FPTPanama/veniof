@@ -34,8 +34,11 @@ export function SiteHeader({ locale, active }: Props) {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-navy-line bg-navy/95 backdrop-blur-md">
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-6 py-5 md:gap-8 md:px-0 md:py-[26px]">
+    <header
+      data-site-header
+      className="sticky top-0 z-50 bg-surface/95 backdrop-blur-md"
+    >
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 border-b-2 border-navy px-6 py-5 md:gap-8 md:px-0 md:py-[26px]">
         <Link
           href={pagePath(locale, "home")}
           className="flex min-h-11 min-w-0 items-center gap-3 md:gap-4"
@@ -47,7 +50,7 @@ export function SiteHeader({ locale, active }: Props) {
 
           {/* Mobile: VIOF + title stacked */}
           <span className="flex min-w-0 flex-col gap-1.5 md:hidden">
-            <span className="font-serif text-[22px] leading-none tracking-[0.16em] text-cream">
+            <span className="font-serif text-[22px] leading-none tracking-[0.16em] text-ink">
               {site.brand}
             </span>
             <span className="text-[10.5px] leading-[1.35] tracking-[0.03em] text-muted">
@@ -57,7 +60,7 @@ export function SiteHeader({ locale, active }: Props) {
 
           {/* Desktop: VIOF | title side by side */}
           <span className="hidden items-center gap-4 md:flex">
-            <span className="font-serif text-[28px] leading-none tracking-[0.16em] text-cream">
+            <span className="font-serif text-[28px] leading-none tracking-[0.16em] text-ink">
               {site.brand}
             </span>
             <span className="h-[30px] w-px bg-gold" aria-hidden />
@@ -81,8 +84,8 @@ export function SiteHeader({ locale, active }: Props) {
                 href={pagePath(locale, item.key)}
                 className={`inline-flex min-h-11 items-center px-3 text-[12px] transition ${
                   isActive
-                    ? "font-semibold text-cream shadow-[inset_0_-2px_0_#CFB27A]"
-                    : "font-medium text-muted hover:text-cream"
+                    ? "font-semibold text-ink shadow-[inset_0_-2px_0_#C19B61]"
+                    : "font-medium text-slate hover:text-ink"
                 }`}
               >
                 {item.label}
@@ -105,8 +108,8 @@ export function SiteHeader({ locale, active }: Props) {
                   href={href}
                   className={`px-2 py-1.5 text-[12px] font-semibold tracking-wide ${
                     selected
-                      ? "text-gold-light shadow-[inset_0_-2px_0_#CFB27A]"
-                      : "text-muted hover:text-cream"
+                      ? "text-ink shadow-[inset_0_-2px_0_#C19B61]"
+                      : "text-slate hover:text-ink"
                   }`}
                   hrefLang={lang}
                 >
@@ -118,7 +121,7 @@ export function SiteHeader({ locale, active }: Props) {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center text-cream md:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center text-ink md:hidden"
             aria-expanded={open}
             aria-controls={panelId}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
@@ -127,17 +130,17 @@ export function SiteHeader({ locale, active }: Props) {
             <span className="sr-only">{open ? "Cerrar" : "Menú"}</span>
             <span className="relative block h-3.5 w-5" aria-hidden>
               <span
-                className={`absolute left-0 block h-px w-full bg-cream transition ${
+                className={`absolute left-0 block h-px w-full bg-navy transition ${
                   open ? "top-1.5 rotate-45" : "top-0"
                 }`}
               />
               <span
-                className={`absolute left-0 top-1.5 block h-px w-full bg-cream transition ${
+                className={`absolute left-0 top-1.5 block h-px w-full bg-navy transition ${
                   open ? "opacity-0" : "opacity-100"
                 }`}
               />
               <span
-                className={`absolute left-0 block h-px w-full bg-cream transition ${
+                className={`absolute left-0 block h-px w-full bg-navy transition ${
                   open ? "top-1.5 -rotate-45" : "top-3"
                 }`}
               />
@@ -149,7 +152,7 @@ export function SiteHeader({ locale, active }: Props) {
       <nav
         id={panelId}
         aria-label="Mobile"
-        className={`border-t border-navy-line md:hidden ${
+        className={`md:hidden ${
           open ? "flex flex-col" : "hidden"
         }`}
       >
@@ -161,8 +164,8 @@ export function SiteHeader({ locale, active }: Props) {
               href={pagePath(locale, item.key)}
               className={`inline-flex min-h-12 items-center px-6 text-[15px] ${
                 isActive
-                  ? "font-semibold text-cream shadow-[inset_3px_0_0_#CFB27A] bg-white/5"
-                  : "font-medium text-muted hover:bg-white/5 hover:text-cream"
+                  ? "font-semibold text-ink shadow-[inset_3px_0_0_#C19B61]"
+                  : "font-medium text-slate hover:text-ink"
               }`}
               onClick={() => setOpen(false)}
             >

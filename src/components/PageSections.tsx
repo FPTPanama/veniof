@@ -33,7 +33,7 @@ export function PageSections({ locale, pageKey }: Props) {
         <div key={`${section.title}-${index}`}>
           <Section section={section} locale={locale} />
           {pageKey === "team" && index === 0 && team.length > 0 ? (
-            <section className="bg-surface-2 px-6 md:px-14">
+            <section className="bg-surface px-6 md:px-14">
               <div className="mx-auto max-w-[1200px]">
                 {team.map((member) => (
                   <TeamMemberCard key={member.slug} member={member} />

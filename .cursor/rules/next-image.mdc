@@ -1,0 +1,28 @@
+---
+description: Use next/image for every image in the UI
+globs: "**/*.{tsx,jsx}"
+alwaysApply: false
+---
+
+# Images
+
+Render every image with `Image` from `next/image`. Do not use a raw `<img>`.
+
+- Content image with a known size: set `width` and `height`.
+- Full-bleed or background image: parent is `relative` or `absolute`, then `fill`, `sizes`, and `className="object-cover"`.
+- Hero or other LCP image: add `preload`.
+- Decorative image: `alt=""`.
+- Meaningful image: a real `alt` in the page language.
+
+```tsx
+import Image from "next/image";
+
+<Image
+  src="/industria_tanques.webp"
+  alt=""
+  fill
+  preload
+  sizes="100vw"
+  className="object-cover"
+/>
+```

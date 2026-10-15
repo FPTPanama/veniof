@@ -46,7 +46,7 @@ export function HomePartnersSection({ section, locale }: Props) {
           {cards.map((card) => (
             <article
               key={card.title}
-              className={`border ${colors.cardBorder} ${colors.cardBg} border-t-[3px] border-t-gold p-8`}
+              className="border-t border-line pt-8"
             >
               <h3 className={`font-serif text-[20px] ${colors.cardTitle}`}>
                 {card.title}

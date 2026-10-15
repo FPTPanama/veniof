@@ -42,6 +42,8 @@ export type Section = {
   eyebrow?: string;
   title?: string;
   titleAs?: "h1" | "h2";
+  /** Secondary line under the title, above the body. */
+  subtitle?: string;
   paragraphs?: string[];
   cards?: ContentCard[];
   ctas?: ContentLink[];
@@ -86,7 +88,7 @@ export type TeamMember = {
   slug: string;
   role: string;
   portraitLabel: string;
-  /** Optional image path under /public once portraits arrive, e.g. /team/nikola-kedzo.jpg */
+  /** Public path to the portrait, e.g. /img/team/nikola-kedzo.webp */
   imageSrc?: string;
   paragraphs: string[];
   credentials: string[];

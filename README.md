@@ -11,20 +11,20 @@ Next.js (App Router) site for [veniof.com](https://veniof.com). English and Span
 ## Local
 
 ```bash
-npm install
+pnpm install
 cp .env.example .env.local   # fill SMTP_PASS
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) (redirects to `/en` or `/es`).
 
 ## Deploy (Netlify)
 
-- Build: `npm run build`
+- Build: `pnpm run build`
 - Plugin: `@netlify/plugin-nextjs`
 - Env vars: `SMTP_*`, `CONTACT_TO`, `CONTACT_FROM` (see `.env.example`)
 - Legacy static HTML paths redirect in `netlify.toml`
 
 ## Brand
 
-Navy `#0A1A2F`, gold `#CFB27A`, cream `#F4F1E8`. Fonts: Gelasio + Libre Franklin. Mark: `public/logo/`.
+60-30-10: `#EEF0F3` ground, `#0A1A2F` type and structure, `#C19B61` accent. Fonts: Gelasio + Libre Franklin. Mark: `public/logo/`.

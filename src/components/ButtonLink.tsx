@@ -17,11 +17,10 @@ export function ButtonLink({
     "inline-flex items-center justify-center min-h-11 px-6 text-[15px] font-semibold tracking-wide transition";
 
   const variants = {
-    solid: "bg-gold text-navy-deep hover:brightness-110",
-    navy: "bg-navy text-cream border border-navy hover:brightness-110",
-    ghost:
-      "border border-navy-line text-cream hover:border-gold-light hover:text-gold-light",
-    text: "px-0 text-cream underline decoration-gold decoration-1 underline-offset-4 hover:decoration-gold-light",
+    solid: "bg-gold text-navy hover:brightness-105",
+    navy: "border border-navy bg-transparent text-navy hover:bg-navy/5",
+    ghost: "border border-navy/25 text-navy hover:border-navy",
+    text: "px-0 text-ink underline decoration-gold decoration-1 underline-offset-4 hover:text-gold",
   };
 
   return (
