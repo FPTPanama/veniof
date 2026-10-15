@@ -12,12 +12,12 @@ export default function RootNotFound() {
             Return to the VIOF website.
           </p>
           <div style={{ marginTop: 32, display: "flex", gap: 16 }}>
-            <a href="/en" style={{ color: "#C19B61" }}>
+            <Link href="/en" style={{ color: "#C19B61" }}>
               Home (EN)
-            </a>
-            <a href="/es" style={{ color: "#C19B61" }}>
+            </Link>
+            <Link href="/es" style={{ color: "#C19B61" }}>
               Inicio (ES)
-            </a>
+            </Link>
           </div>
         </div>
       </body>

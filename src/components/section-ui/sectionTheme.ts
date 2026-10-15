@@ -9,24 +9,36 @@ export const variantClass: Record<SectionVariant, string> = {
   muted: "bg-surface text-ink",
 };
 
-export function isDarkVariant(_variant: SectionVariant): boolean {
-  return false;
+export function isDarkVariant(variant: SectionVariant): boolean {
+  switch (variant) {
+    case "navy":
+    case "dark":
+    case "light":
+    case "muted":
+      return false;
+  }
 }
 
-export function sectionColors(_variant: SectionVariant) {
-  return {
-    isDark: false,
-    eyebrow: "text-ink",
-    title: "text-ink",
-    body: "text-slate",
-    cardBorder: "border-line",
-    cardBg: "bg-transparent",
-    cardTitle: "text-ink",
-    cardBody: "text-slate",
-    itemTitle: "text-ink",
-    itemBody: "text-slate",
-    itemRule: "border-line",
-  };
+export function sectionColors(variant: SectionVariant) {
+  switch (variant) {
+    case "navy":
+    case "dark":
+    case "light":
+    case "muted":
+      return {
+        isDark: false,
+        eyebrow: "text-ink",
+        title: "text-ink",
+        body: "text-slate",
+        cardBorder: "border-line",
+        cardBg: "bg-transparent",
+        cardTitle: "text-ink",
+        cardBody: "text-slate",
+        itemTitle: "text-ink",
+        itemBody: "text-slate",
+        itemRule: "border-line",
+      };
+  }
 }
 
 export function titleSizeClass(titleAs: "h1" | "h2" = "h2"): string {
