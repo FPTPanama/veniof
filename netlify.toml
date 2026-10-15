@@ -1,11 +1,54 @@
-# Demo deploy of the Next.js app (subdirectory web/)
-# publish must differ from base or @netlify/plugin-nextjs fails;
-# the plugin rewrites publish during the build.
+# Next.js app at repo root → veniof.com
 
 [build]
-  base = "web"
   command = "npm run build"
   publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Legacy static HTML URLs → Next locale routes
+[[redirects]]
+  from = "/strategy.html"
+  to = "/en/strategy"
+  status = 301
+[[redirects]]
+  from = "/projects.html"
+  to = "/en/projects"
+  status = 301
+[[redirects]]
+  from = "/team.html"
+  to = "/en/team"
+  status = 301
+[[redirects]]
+  from = "/partner.html"
+  to = "/en/partner"
+  status = 301
+[[redirects]]
+  from = "/privacy.html"
+  to = "/en/privacy"
+  status = 301
+[[redirects]]
+  from = "/es/index.html"
+  to = "/es"
+  status = 301
+[[redirects]]
+  from = "/es/estrategia.html"
+  to = "/es/strategy"
+  status = 301
+[[redirects]]
+  from = "/es/proyectos.html"
+  to = "/es/projects"
+  status = 301
+[[redirects]]
+  from = "/es/equipo.html"
+  to = "/es/team"
+  status = 301
+[[redirects]]
+  from = "/es/alianzas.html"
+  to = "/es/partner"
+  status = 301
+[[redirects]]
+  from = "/es/privacidad.html"
+  to = "/es/privacy"
+  status = 301
