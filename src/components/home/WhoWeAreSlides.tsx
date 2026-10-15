@@ -172,10 +172,12 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
             aria-hidden
             className="absolute top-1/2 left-1/2 h-[220%] w-[220%] -translate-x-1/2 -translate-y-1/2 will-change-transform"
           >
-            <img
+            <Image
               src="/lineas_surface.svg"
               alt=""
-              className="h-full w-full object-cover object-center"
+              fill
+              sizes="40vw"
+              className="object-cover object-center"
             />
           </div>
         </div>
