@@ -51,14 +51,14 @@ export function HomeFocusSection({ section, locale }: Props) {
       </div>
 
       {card ? (
-        <div className="mt-14 bg-[#12284A] p-10 md:mt-[88px] md:p-14">
+        <div className="mt-14 border-t border-line pt-10 md:mt-[88px]">
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-12 md:gap-8">
             <div className="md:col-span-8">
-              <h3 className="text-balance font-serif text-[26px] font-normal leading-[1.25] text-cream md:text-[30px]">
+              <h3 className="text-balance font-serif text-[26px] font-normal leading-[1.25] text-ink md:text-[30px]">
                 {card.title}
               </h3>
               {card.body ? (
-                <p className="mt-[18px] max-w-[640px] text-pretty text-[16.5px] leading-[1.6] text-muted">
+                <p className="mt-[18px] max-w-[640px] text-pretty text-[16.5px] leading-[1.6] text-slate">
                   {card.body}
                 </p>
               ) : null}
@@ -68,8 +68,7 @@ export function HomeFocusSection({ section, locale }: Props) {
               <div className="md:col-span-4 md:flex md:justify-end">
                 <ButtonLink
                   href={pagePath(locale, cta.href)}
-                  variant="ghost"
-                  className="min-h-[52px] border-gold-light px-7 text-cream hover:border-gold hover:text-cream"
+                  className="min-h-[52px] px-7"
                 >
                   {cta.label}
                 </ButtonLink>

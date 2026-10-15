@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Gelasio, Libre_Franklin } from "next/font/google";
+import localFont from "next/font/local";
+import { Libre_Franklin } from "next/font/google";
 import "./globals.css";
 
-const gelasio = Gelasio({
-  variable: "--font-gelasio",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+const barlow = localFont({
+  src: [
+    { path: "../fonts/Barlow-Thin.ttf", weight: "100", style: "normal" },
+    { path: "../fonts/Barlow-Light.ttf", weight: "300", style: "normal" },
+    { path: "../fonts/Barlow-LightItalic.ttf", weight: "300", style: "italic" },
+    { path: "../fonts/Barlow-Black.ttf", weight: "900", style: "normal" },
+  ],
+  variable: "--font-barlow",
+  display: "swap",
 });
 
 const libre = Libre_Franklin({
@@ -36,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html className={`${gelasio.variable} ${libre.variable} h-full antialiased`}>
+    <html className={`${barlow.variable} ${libre.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );

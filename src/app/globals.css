@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #0a1a2f;
-  --navy-deep: #101b2b;
-  --navy-line: #2b3f5f;
-  --gold: #b08d57;
-  --gold-light: #cfb27a;
-  --gold-dark: #765a2b;
-  --cream: #f4f1e8;
-  --ink: #101b2b;
-  --muted: #b9c3d1;
-  --slate: #36435a;
+  /* 60-30-10: surface 60%, navy 30%, gold 10% */
   --surface: #eef0f3;
-  --surface-2: #f8f9fb;
-  --white: #ffffff;
+  --navy: #0a1a2f;
+  --gold: #c19b61;
+  --ink: var(--navy);
+  --line: color-mix(in srgb, var(--navy) 16%, transparent);
+  --slate: color-mix(in srgb, var(--navy) 72%, var(--surface));
+  --muted: color-mix(in srgb, var(--navy) 55%, var(--surface));
+  --navy-deep: var(--navy);
+  --navy-line: var(--line);
+  --gold-light: var(--gold);
+  --gold-dark: var(--gold);
+  --cream: var(--navy);
+  --surface-2: var(--surface);
+  --white: var(--surface);
 }
 
 @theme inline {
@@ -29,8 +31,9 @@
   --color-slate: var(--slate);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
   --font-sans: var(--font-libre);
-  --font-serif: var(--font-gelasio);
+  --font-serif: var(--font-barlow);
 }
 
 * {
@@ -38,7 +41,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* legacy Edge/IE */
 }
@@ -49,7 +52,7 @@ html::-webkit-scrollbar {
 
 body {
   margin: 0;
-  background: var(--navy);
+  background: var(--surface);
   color: var(--ink);
   font-family: var(--font-libre), "Franklin Gothic Medium", "Helvetica Neue",
     Helvetica, sans-serif;
@@ -70,6 +73,47 @@ body::-webkit-scrollbar {
   }
 }
 
+/* Trial: Barlow Light for reading text, Barlow Black for headings.
+   Unlayered so it wins over the font-normal utility on titles. */
+.font-serif {
+  font-weight: 300;
+}
+
+.font-serif strong {
+  font-weight: 900;
+  color: inherit;
+}
+
+h1.font-serif,
+h2.font-serif,
+h3.font-serif {
+  font-weight: 900;
+}
+
 ::selection {
   background: color-mix(in srgb, var(--gold) 35%, transparent);
+}
+
+/* ScrollSmoother pins #smooth-wrapper. The header stays put only if it is
+   outside the transformed content and taken out of flow. */
+#smooth-wrapper {
+  position: relative;
+}
+
+html.has-smooth-scroll {
+  overscroll-behavior: none;
+}
+
+/* flex-1 would lock the content box to the viewport, so ScrollSmoother
+   measures no distance to travel. Let the content grow with the page. */
+html.has-smooth-scroll #smooth-content {
+  flex: none;
+  height: auto;
+}
+
+html.has-smooth-scroll [data-site-header] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }

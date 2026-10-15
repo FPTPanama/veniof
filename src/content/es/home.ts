@@ -6,10 +6,11 @@ export const page: PageContent = {
   sections: [
   {
     eyebrow: "Un fondo estadounidense con profundas raíces venezolanas",
-    title: "Reconstruir la base industrial de Venezuela, de la extracción a la exportación.",
+    title: "Reconstruir la base industrial de Venezuela.",
+    subtitle: "De la extracción a la exportación.",
     titleAs: "h1",
     paragraphs: [
-      "VIOF es un fondo de inversión administrado desde Estados Unidos. Nos asociamos con operadores de trayectoria comprobada e instituciones venezolanas para rehabilitar activos industriales y de infraestructura esenciales, y llevar sus productos a los mercados internacionales.",
+      "VIOF es un fondo de inversión administrado desde **Estados Unidos**. Nos asociamos con operadores de **trayectoria comprobada** e **instituciones venezolanas** para rehabilitar activos industriales y de infraestructura esenciales, y llevar sus productos a los mercados internacionales.",
     ],
     ctas: [
       { label: "Trabaje con nosotros", href: "partner" as const },

@@ -8,9 +8,9 @@ export function TeamMemberCard({ member }: Props) {
   return (
     <article
       id={member.slug}
-      className="grid scroll-mt-28 gap-8 border-b border-[#D2D8E0] py-12 last:border-b-0 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:gap-12 md:py-14"
+      className="grid scroll-mt-28 gap-8 border-b border-line py-12 last:border-b-0 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:gap-12 md:py-14"
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden border border-[#D2D8E0] bg-[repeating-linear-gradient(-45deg,#EEF0F3,#EEF0F3_8px,#F8F9FB_8px,#F8F9FB_16px)]">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface">
         {member.imageSrc ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -31,7 +31,7 @@ export function TeamMemberCard({ member }: Props) {
         <h3 className="font-serif text-[34px] leading-tight text-ink md:text-[40px]">
           {member.name}
         </h3>
-        <div className="mt-2 text-[15px] font-semibold text-gold">{member.role}</div>
+        <div className="mt-2 text-[15px] font-semibold text-ink">{member.role}</div>
 
         <div className="mt-6 space-y-4">
           {member.paragraphs.map((paragraph) => (
@@ -46,7 +46,7 @@ export function TeamMemberCard({ member }: Props) {
 
         {member.credentials.length > 0 ? (
           <>
-            <div className="mt-8 h-px w-full bg-[#D2D8E0]" aria-hidden />
+            <div className="mt-8 h-px w-full bg-line" aria-hidden />
             <ul className="mt-6 space-y-3">
               {member.credentials.map((item) => (
                 <li
@@ -54,7 +54,7 @@ export function TeamMemberCard({ member }: Props) {
                   className="flex gap-3 font-serif text-[16px] leading-[1.5] text-slate"
                 >
                   <span
-                    className="mt-[0.45em] h-2 w-2 shrink-0 bg-gold"
+                    className="mt-[0.55em] h-px w-3 shrink-0 bg-navy"
                     aria-hidden
                   />
                   <span>{item}</span>

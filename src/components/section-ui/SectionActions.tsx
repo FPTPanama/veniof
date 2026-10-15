@@ -12,7 +12,6 @@ type Props = {
 
 export function SectionActions({
   locale,
-  isDark,
   ctas,
   links,
   className = "mt-10",
@@ -31,7 +30,6 @@ export function SectionActions({
           key={link.label}
           href={pagePath(locale, link.href)}
           variant="text"
-          className={isDark ? "" : "!text-gold-dark hover:!text-ink"}
         >
           {link.label}
         </ButtonLink>

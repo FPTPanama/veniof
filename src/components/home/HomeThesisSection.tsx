@@ -66,7 +66,7 @@ export function HomeThesisSection({ section, locale }: Props) {
                   index % 2 === 0 ? "sm:pr-8" : "sm:pl-8"
                 }`}
               >
-                <div className="font-serif text-[18px] text-gold-light">
+                <div className="font-serif text-[18px] text-ink">
                   {index + 1}
                 </div>
                 <h3

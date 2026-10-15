@@ -10,7 +10,7 @@ type Props = {
 type Status = "idle" | "sending" | "success" | "error";
 
 const inputClass =
-  "mt-2 w-full border border-[#D2D8E0] bg-white px-3 py-3 text-[15px] text-ink outline-none transition focus:border-gold";
+  "mt-2 w-full border border-line bg-surface px-3 py-3 text-[15px] text-ink outline-none transition focus:border-gold";
 
 export function ContactForm({ locale }: Props) {
   const site = getSite(locale);
@@ -57,12 +57,12 @@ export function ContactForm({ locale }: Props) {
   }
 
   return (
-    <section id="contact" className="bg-white px-6 py-20 md:px-14 md:py-24">
+    <section id="contact" className="bg-surface px-6 py-20 md:px-14 md:py-24">
       <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[minmax(0,1.6fr)_minmax(280px,0.85fr)] lg:gap-16">
         <div>
           <div className="mb-7 flex items-center gap-3.5">
             <span className="h-px w-9 bg-gold" aria-hidden />
-            <span className="text-[15px] font-semibold text-gold-dark">
+            <span className="text-[15px] font-semibold text-ink">
               {contact.eyebrow}
             </span>
           </div>
@@ -158,7 +158,7 @@ export function ContactForm({ locale }: Props) {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="mt-8 inline-flex min-h-11 items-center bg-navy px-7 text-[15px] font-semibold text-cream transition hover:brightness-110 disabled:opacity-60"
+              className="mt-8 inline-flex min-h-11 items-center bg-gold px-7 text-[15px] font-semibold text-navy transition hover:brightness-105 disabled:opacity-60"
             >
               {status === "sending" ? contact.sending : contact.submit}
             </button>
@@ -169,15 +169,15 @@ export function ContactForm({ locale }: Props) {
               </p>
             ) : null}
             {status === "error" ? (
-              <p className="mt-4 text-[14px] text-red-700" role="alert">
+              <p className="mt-4 text-[14px] font-semibold text-navy" role="alert">
                 {contact.error}
               </p>
             ) : null}
           </form>
         </div>
 
-        <aside className="h-fit border border-[#D2D8E0] border-t-[3px] border-t-gold bg-surface-2 p-7">
-          <div className="text-[13px] font-semibold text-gold-dark">
+        <aside className="h-fit border-t border-line pt-7">
+          <div className="text-[13px] font-semibold text-ink">
             {contact.officesTitle}
           </div>
           <div className="mt-5 space-y-6">
@@ -193,9 +193,9 @@ export function ContactForm({ locale }: Props) {
             ))}
           </div>
 
-          <div className="my-7 h-px bg-[#D2D8E0]" />
+          <div className="my-7 h-px bg-line" />
 
-          <div className="text-[13px] font-semibold text-gold-dark">
+          <div className="text-[13px] font-semibold text-ink">
             {contact.emailTitle}
           </div>
           <a

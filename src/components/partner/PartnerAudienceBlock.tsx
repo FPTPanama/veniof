@@ -17,7 +17,7 @@ export function PartnerAudienceBlock({
     <article
       id={audience.id}
       className={`scroll-mt-28 ${
-        bordered ? "border-t border-[#D2D8E0] py-16" : "pb-16"
+        bordered ? "border-t border-line py-16" : "pb-16"
       }`}
     >
       <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-12 md:gap-8">
@@ -31,7 +31,7 @@ export function PartnerAudienceBlock({
         </div>
 
         <div className="md:col-span-6 md:col-start-7">
-          <div className="text-[14.5px] font-semibold text-gold-dark">
+          <div className="text-[14.5px] font-semibold text-ink">
             {audience.expectLabel}
           </div>
           <ul className="mt-5 space-y-3.5">
@@ -41,7 +41,7 @@ export function PartnerAudienceBlock({
                 className="flex gap-3 text-[15.5px] leading-[1.55] text-slate"
               >
                 <span
-                  className="mt-[0.45em] h-2 w-2 shrink-0 bg-gold"
+                  className="mt-[0.55em] h-px w-3 shrink-0 bg-navy"
                   aria-hidden
                 />
                 <span>{bullet}</span>
@@ -52,7 +52,6 @@ export function PartnerAudienceBlock({
           <div className="mt-8">
             <ButtonLink
               href={pagePath(locale, audience.ctaHref)}
-              variant="navy"
               className="min-h-[52px] px-7 text-[16px]"
             >
               {audience.ctaLabel}
@@ -67,7 +66,7 @@ export function PartnerAudienceBlock({
                 </p>
               ) : null}
               {audience.counselNote ? (
-                <span className="inline-block border border-dashed border-gold px-2.5 py-1.5 text-[11px] font-semibold tracking-[0.02em] text-gold-dark">
+                <span className="inline-block text-[11px] font-semibold tracking-[0.02em] text-slate">
                   {audience.counselNote}
                 </span>
               ) : null}

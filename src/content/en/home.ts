@@ -6,10 +6,11 @@ export const page: PageContent = {
   sections: [
   {
     eyebrow: "A US fund with deep Venezuelan roots",
-    title: "Rebuilding Venezuela's industrial backbone, from extraction to export.",
+    title: "Rebuilding Venezuela's industrial backbone.",
+    subtitle: "From extraction to export.",
     titleAs: "h1",
     paragraphs: [
-      "VIOF is a US-managed investment fund. We partner with proven operators and Venezuelan institutions to rehabilitate essential industrial and infrastructure assets, and carry their products to international markets.",
+      "VIOF is a **US**-managed investment fund. We partner with **proven** operators and **Venezuelan institutions** to rehabilitate essential industrial and infrastructure assets, and carry their products to international markets.",
     ],
     ctas: [
       { label: "Partner with us", href: "partner" as const },

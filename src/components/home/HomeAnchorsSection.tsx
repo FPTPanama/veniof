@@ -54,48 +54,33 @@ export function HomeAnchorsSection({ section, locale }: Props) {
       />
 
       {cards.length === 2 ? (
-        <div className="mt-14 grid grid-cols-1 gap-0 overflow-hidden border border-[#D2D8E0] md:grid-cols-2">
-          {cards.map((card, index) => {
-            const isNavy = index === 0;
-            return (
-              <article
-                key={card.title}
-                className={`border-t-[3px] border-t-gold p-10 md:p-11 ${
-                  isNavy
-                    ? "bg-navy text-cream"
-                    : "border border-[#D2D8E0] border-t-[3px] border-t-gold bg-white text-ink md:border-l-0"
-                }`}
-              >
-                <h3
-                  className={`font-serif text-[24px] md:text-[28px] ${
-                    isNavy ? "text-cream" : "text-ink"
-                  }`}
-                >
-                  {card.title}
-                </h3>
-                {card.bullets?.length ? (
-                  <ul
-                    className={`mt-6 space-y-3.5 ${
-                      isNavy ? "text-muted" : "text-slate"
-                    }`}
-                  >
-                    {card.bullets.map((bullet) => (
-                      <li
-                        key={bullet}
-                        className="flex gap-3 text-[15px] leading-[1.55]"
-                      >
-                        <span
-                          className="mt-[0.45em] h-2 w-2 shrink-0 bg-gold"
-                          aria-hidden
-                        />
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
-              </article>
-            );
-          })}
+        <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16">
+          {cards.map((card) => (
+            <article
+              key={card.title}
+              className="border-t border-line pt-8 text-ink"
+            >
+              <h3 className="font-serif text-[24px] text-ink md:text-[28px]">
+                {card.title}
+              </h3>
+              {card.bullets?.length ? (
+                <ul className="mt-6 space-y-3.5 text-slate">
+                  {card.bullets.map((bullet) => (
+                    <li
+                      key={bullet}
+                      className="flex gap-3 text-[15px] leading-[1.55]"
+                    >
+                      <span
+                        className="mt-[0.55em] h-px w-3 shrink-0 bg-navy"
+                        aria-hidden
+                      />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </article>
+          ))}
         </div>
       ) : null}
     </SectionShell>

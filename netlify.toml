@@ -1,7 +1,7 @@
 # Next.js app at repo root → veniof.com
 
 [build]
-  command = "npm run build"
+  command = "pnpm run build"
   publish = ".next"
 
 [[plugins]]

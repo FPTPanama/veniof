@@ -11,7 +11,7 @@ export function SiteFooter({ locale }: Props) {
   const { footer } = site;
 
   return (
-    <footer className="border-t border-navy-line bg-navy">
+    <footer className="border-t border-line bg-surface">
       <div className="mx-auto grid max-w-[1200px] gap-10 px-6 py-14 sm:grid-cols-2 lg:grid-cols-4 md:px-14">
         <div className="sm:col-span-2 lg:col-span-1">
           <Link
@@ -20,7 +20,7 @@ export function SiteFooter({ locale }: Props) {
             aria-label={site.brandFull}
           >
             <BrandMark size={44} className="shrink-0" />
-            <span className="font-serif text-[28px] leading-none tracking-[0.16em] text-cream">
+            <span className="font-serif text-[28px] leading-none tracking-[0.16em] text-ink">
               {site.brand}
             </span>
             <span className="hidden h-[30px] w-px bg-gold sm:block" aria-hidden />
@@ -36,7 +36,7 @@ export function SiteFooter({ locale }: Props) {
         </div>
 
         <div>
-          <div className="text-[14px] font-semibold text-gold-light">
+          <div className="text-[14px] font-semibold text-ink">
             {footer.firmTitle}
           </div>
           <ul className="mt-4 space-y-2.5">
@@ -44,7 +44,7 @@ export function SiteFooter({ locale }: Props) {
               <li key={item.label}>
                 <Link
                   href={pagePath(locale, item.href)}
-                  className="text-[14px] text-cream/90 hover:text-gold-light"
+                  className="text-[14px] text-slate hover:text-ink"
                 >
                   {item.label}
                 </Link>
@@ -54,7 +54,7 @@ export function SiteFooter({ locale }: Props) {
         </div>
 
         <div>
-          <div className="text-[14px] font-semibold text-gold-light">
+          <div className="text-[14px] font-semibold text-ink">
             {footer.workTitle}
           </div>
           <ul className="mt-4 space-y-2.5">
@@ -62,7 +62,7 @@ export function SiteFooter({ locale }: Props) {
               <li key={item.label}>
                 <Link
                   href={pagePath(locale, item.href)}
-                  className="text-[14px] text-cream/90 hover:text-gold-light"
+                  className="text-[14px] text-slate hover:text-ink"
                 >
                   {item.label}
                 </Link>
@@ -72,13 +72,13 @@ export function SiteFooter({ locale }: Props) {
         </div>
 
         <div>
-          <div className="text-[14px] font-semibold text-gold-light">
+          <div className="text-[14px] font-semibold text-ink">
             {footer.officesTitle}
           </div>
           <div className="mt-4 space-y-5">
             {footer.offices.map((office) => (
               <div key={office.country}>
-                <div className="text-[14px] text-cream">{office.country}</div>
+                <div className="text-[14px] text-ink">{office.country}</div>
                 <div className="mt-1 text-[13.5px] leading-[1.5] text-muted">
                   {office.address}
                 </div>
@@ -86,7 +86,7 @@ export function SiteFooter({ locale }: Props) {
             ))}
             <a
               href={`mailto:${footer.email}`}
-              className="inline-block text-[14px] text-cream underline decoration-gold underline-offset-4 hover:text-gold-light"
+              className="inline-block text-[14px] text-ink underline decoration-gold underline-offset-4 hover:text-gold"
             >
               {footer.email}
             </a>
@@ -94,7 +94,7 @@ export function SiteFooter({ locale }: Props) {
         </div>
       </div>
 
-      <div className="border-t border-navy-line">
+      <div className="border-t border-line">
         <div className="mx-auto max-w-[1200px] px-6 py-8 md:px-14">
           <p className="max-w-[980px] text-[12.5px] leading-[1.65] text-muted">
             {footer.legal}{" "}
@@ -105,13 +105,13 @@ export function SiteFooter({ locale }: Props) {
             <div className="flex gap-6">
               <Link
                 href={`${pagePath(locale, "privacy")}#privacy`}
-                className="hover:text-cream"
+                className="hover:text-ink"
               >
                 {footer.privacy}
               </Link>
               <Link
                 href={`${pagePath(locale, "privacy")}#terms`}
-                className="hover:text-cream"
+                className="hover:text-ink"
               >
                 {footer.terms}
               </Link>
