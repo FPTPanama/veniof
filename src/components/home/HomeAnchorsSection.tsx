@@ -67,9 +67,12 @@ export function HomeAnchorsSection({ section, locale }: Props) {
         <div className="mt-10 grid grid-cols-1 items-start gap-10 md:mt-8 md:grid-cols-3 md:gap-8">
           <article className="text-ink md:col-start-1">
             {cards[0]?.bullets?.length ? (
-              <ul className="space-y-3.5 text-slate">
+              <ul className="space-y-4 text-slate">
                 {cards[0].bullets.map((bullet) => (
-                  <li key={bullet} className="text-[15px] leading-[1.55]">
+                  <li
+                    key={bullet}
+                    className="text-[17px] leading-[1.55] md:text-[18px]"
+                  >
                     {bullet}
                   </li>
                 ))}
@@ -87,9 +90,12 @@ export function HomeAnchorsSection({ section, locale }: Props) {
 
           <article className="text-ink md:col-start-3 md:text-right">
             {cards[1]?.bullets?.length ? (
-              <ul className="space-y-3.5 text-slate">
+              <ul className="space-y-4 text-slate">
                 {cards[1].bullets.map((bullet) => (
-                  <li key={bullet} className="text-[15px] leading-[1.55]">
+                  <li
+                    key={bullet}
+                    className="text-[17px] leading-[1.55] md:text-[18px]"
+                  >
                     {bullet}
                   </li>
                 ))}
