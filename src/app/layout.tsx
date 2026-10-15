@@ -8,6 +8,7 @@ const barlow = localFont({
     { path: "../fonts/Barlow-Thin.ttf", weight: "100", style: "normal" },
     { path: "../fonts/Barlow-Light.ttf", weight: "300", style: "normal" },
     { path: "../fonts/Barlow-LightItalic.ttf", weight: "300", style: "italic" },
+    { path: "../fonts/Barlow-Medium.ttf", weight: "500", style: "normal" },
     { path: "../fonts/Barlow-Black.ttf", weight: "900", style: "normal" },
   ],
   variable: "--font-barlow",
