@@ -26,9 +26,25 @@ export const page: PageContent = {
     title: "A fund built by people who have run the assets.",
     titleAs: "h2",
     paragraphs: [
-      "The Venezuela Infrastructure Opportunity Fund (VIOF) was founded by a team that has owned and operated heavy industrial, logistics and construction businesses across Venezuela, the United States and Guyana. We have built and managed the kinds of assets we invest in, not only financed them.",
-      "Our principals are US persons and our fund entities are organized in the United States. Our operating roots are in Venezuela, where the team's companies have worked for more than sixty years and continue to move steel and heavy cargo along the Orinoco today.",
-      "That shows up in three ways day to day: river bulk transport and heavy lifting equipment in active service on the Orinoco, ongoing trading in minerals, raw materials and finished products, and a working knowledge of the industries and companies we target, built over years of doing business with them — not from the outside.",
+      "The **Venezuela Infrastructure Opportunity Fund** (VIOF) was built by a team that has owned and operated heavy industrial, logistics and construction businesses across **Venezuela**, the United States and **Guyana**. We do not only finance assets — we have built them, run them and put them back into production.",
+      "Our principals are US persons and our fund entities are organized in the United States. Our operating roots are in **Venezuela**, where the team's companies have worked on the ground for more than sixty years and still move steel and heavy cargo along the **Orinoco** today.",
+    ],
+    cards: [
+      {
+        title: "River logistics",
+        body: "River bulk transport and heavy lifting equipment in active service on the **Orinoco**.",
+        image: "/mineral.webp",
+      },
+      {
+        title: "Trading",
+        body: "Ongoing trading in minerals, raw materials and finished products into regional and international markets.",
+        image: "/mineral.webp",
+      },
+      {
+        title: "Local knowledge",
+        body: "First-hand knowledge of the industries we target, built over years of direct work in **Venezuela** and the region.",
+        image: "/aluminio.webp",
+      },
     ],
     variant: "light" as const,
   },

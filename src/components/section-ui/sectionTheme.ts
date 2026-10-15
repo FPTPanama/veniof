@@ -29,13 +29,13 @@ export function sectionColors(variant: SectionVariant) {
         isDark: false,
         eyebrow: "text-ink",
         title: "text-ink",
-        body: "text-slate",
+        body: "text-ink",
         cardBorder: "border-line",
         cardBg: "bg-transparent",
         cardTitle: "text-ink",
-        cardBody: "text-slate",
+        cardBody: "text-ink",
         itemTitle: "text-ink",
-        itemBody: "text-slate",
+        itemBody: "text-ink",
         itemRule: "border-line",
       };
   }

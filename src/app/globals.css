@@ -34,6 +34,7 @@
   --color-line: var(--line);
   --font-sans: var(--font-libre);
   --font-serif: var(--font-barlow);
+  --font-dm: var(--font-dm-family);
 }
 
 * {

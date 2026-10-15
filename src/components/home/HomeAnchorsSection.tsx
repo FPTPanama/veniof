@@ -54,7 +54,7 @@ export function HomeAnchorsSection({ section, locale }: Props) {
       />
 
       {cards.length === 2 ? (
-        <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16">
+        <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 border-t border-line pt-8">
           {cards.map((card) => (
             <article
               key={card.title}
