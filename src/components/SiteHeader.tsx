@@ -36,7 +36,7 @@ export function SiteHeader({ locale, active }: Props) {
   return (
     <header
       data-site-header
-      className="sticky top-0 z-50 bg-surface/95 backdrop-blur-md"
+      className="sticky top-0 z-50 bg-surface"
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 border-b-2 border-navy px-6 py-5 md:gap-8 md:px-0 md:py-[26px]">
         <Link
@@ -45,26 +45,25 @@ export function SiteHeader({ locale, active }: Props) {
           aria-label={site.brandFull}
           onClick={() => setOpen(false)}
         >
-          <BrandMark size={44} className="shrink-0 md:hidden" />
-          <BrandMark size={50} className="hidden shrink-0 md:block" />
+          <BrandMark size={50} className="hidden shrink-0" />
 
           {/* Mobile: VIOF + title stacked */}
           <span className="flex min-w-0 flex-col gap-1.5 md:hidden">
-            <span className="font-serif text-[22px] leading-none tracking-[0.16em] text-ink">
+            <span className="font-serif font-medium text-[24px] leading-none tracking-[0.16em] text-ink">
               {site.brand}
             </span>
-            <span className="text-[10.5px] leading-[1.35] tracking-[0.03em] text-muted">
+            <span className="text-[12.5px] font-medium leading-[1.35] tracking-[0.03em] text-ink">
               Venezuela Infrastructure Opportunity Fund
             </span>
           </span>
 
           {/* Desktop: VIOF | title side by side */}
           <span className="hidden items-center gap-4 md:flex">
-            <span className="font-serif text-[28px] leading-none tracking-[0.16em] text-ink">
+            <span className="font-serif font-medium text-[30px] leading-none tracking-[0.16em] text-ink">
               {site.brand}
             </span>
-            <span className="h-[30px] w-px bg-gold" aria-hidden />
-            <span className="max-w-[200px] text-[11.5px] leading-[1.35] tracking-[0.03em] text-muted">
+            <span className="h-[30px] w-0.5 bg-gold" aria-hidden />
+            <span className="max-w-[230px] text-[14px] font-medium leading-[1.35] tracking-[0.03em] text-ink">
               Venezuela Infrastructure
               <br />
               Opportunity Fund
@@ -73,7 +72,7 @@ export function SiteHeader({ locale, active }: Props) {
         </Link>
 
         <nav
-          className="hidden items-center gap-1 md:flex"
+          className="nav-primary hidden items-center gap-2 md:flex"
           aria-label="Primary"
         >
           {site.nav.map((item) => {
@@ -82,10 +81,8 @@ export function SiteHeader({ locale, active }: Props) {
               <Link
                 key={item.key}
                 href={pagePath(locale, item.key)}
-                className={`inline-flex min-h-11 items-center px-3 text-[12px] transition ${
-                  isActive
-                    ? "font-semibold text-ink shadow-[inset_0_-2px_0_#C19B61]"
-                    : "font-medium text-slate hover:text-ink"
+                className={`nav-link relative inline-flex min-h-11 items-center px-2.5 text-[12px] font-bold uppercase tracking-[0.08em] text-ink ${
+                  isActive ? "nav-link-active" : ""
                 }`}
               >
                 {item.label}
