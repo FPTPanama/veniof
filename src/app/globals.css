@@ -114,6 +114,17 @@ body::-webkit-scrollbar {
   background: var(--gold);
 }
 
+.hero-cta {
+  gap: 1.25rem;
+  transition:
+    gap 100ms ease-out,
+    filter 100ms ease-out;
+}
+
+.hero-cta:hover {
+  gap: 2.25rem;
+}
+
 .font-serif strong {
   font-weight: 900;
   color: inherit;
