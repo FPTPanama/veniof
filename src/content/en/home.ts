@@ -82,8 +82,10 @@ export const page: PageContent = {
     title: "How we think about the opportunity.",
     titleAs: "h2",
     paragraphs: [
-      "Two decades of underinvestment left Venezuela's industrial base running far below its design capacity. We think capital and hands-on execution can close most of that gap faster, and more cheaply, than starting over — the Strategy page goes into how.",
+      "Two decades of underinvestment left Venezuela's industrial base running far below its design capacity.",
+      "Capital, well executed, can close most of that gap faster, and more cheaply, than starting over.",
     ],
+    callout: "Nikola Kedzo, Partner",
     cards: [
       {
         title: "De-bottlenecking",
@@ -105,6 +107,15 @@ export const page: PageContent = {
     links: [
       { label: "Explore the strategy", href: "strategy" as const },
     ],
+    variant: "navy" as const,
+  },
+  {
+    title: "From stranded capacity to product that ships.",
+    paragraphs: [
+      "Rehabilitate what already exists — plants, corridors and terminals — to return production to international markets.",
+    ],
+    // Placeholder: swap when a dedicated break image is ready.
+    image: "/mineral.webp",
     variant: "navy" as const,
   },
   {
