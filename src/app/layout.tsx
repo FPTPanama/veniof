@@ -15,6 +15,15 @@ const barlow = localFont({
   display: "swap",
 });
 
+const dm = localFont({
+  src: [
+    { path: "../fonts/dm-regular.ttf", weight: "400", style: "normal" },
+    { path: "../fonts/dm-italic.ttf", weight: "400", style: "italic" },
+  ],
+  variable: "--font-dm-family",
+  display: "swap",
+});
+
 const libre = Libre_Franklin({
   variable: "--font-libre",
   subsets: ["latin"],
@@ -42,7 +51,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html className={`${barlow.variable} ${libre.variable} h-full antialiased`}>
+    <html
+      className={`${barlow.variable} ${dm.variable} ${libre.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );

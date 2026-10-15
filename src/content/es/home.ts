@@ -26,9 +26,25 @@ export const page: PageContent = {
     title: "Un fondo creado por quienes han operado los activos.",
     titleAs: "h2",
     paragraphs: [
-      "El Venezuela Infrastructure Opportunity Fund (VIOF) fue fundado por un equipo que ha sido dueño y operador de empresas de industria pesada, logística y construcción en Venezuela, Estados Unidos y Guyana. Hemos construido y gestionado el tipo de activos en los que invertimos, no solo los hemos financiado.",
-      "Nuestros socios principales son personas estadounidenses y las entidades del fondo están constituidas en Estados Unidos. Nuestras raíces operativas están en Venezuela, donde las empresas del equipo han trabajado por más de sesenta años y hoy siguen moviendo acero y carga pesada por el Orinoco.",
-      "Eso se traduce en tres cosas concretas: transporte fluvial de carga a granel y equipos de izamiento pesado en servicio activo por el Orinoco, comercialización continua de minerales, materias primas y productos terminados, y un conocimiento de primera mano de las industrias y empresas que nos interesan, construido en años de trabajo directo con ellas.",
+      "El **Venezuela Infrastructure Opportunity Fund** (VIOF) nació de un equipo que ha sido dueño y operador de empresas de industria pesada, logística y construcción en **Venezuela**, Estados Unidos y **Guyana**. No financiamos activos ajenos: los hemos construido, operado y puesto a producir con criterio propio.",
+      "Nuestros socios principales son personas estadounidenses y las entidades del fondo están constituidas en Estados Unidos. Nuestras raíces operativas están en **Venezuela**, donde las empresas del equipo llevan más de sesenta años en el terreno y hoy siguen moviendo acero y carga pesada por el **Orinoco**.",
+    ],
+    cards: [
+      {
+        title: "Logística fluvial",
+        body: "Transporte fluvial de carga a granel y equipos de izamiento pesado en servicio activo por el **Orinoco**.",
+        image: "/gabarra_02.webp",
+      },
+      {
+        title: "Comercialización",
+        body: "Comercialización continua de minerales, materias primas y productos terminados hacia mercados regionales e internacionales.",
+        image: "/mineral.webp",
+      },
+      {
+        title: "Conocimiento local",
+        body: "Conocimiento de primera mano de las industrias que nos interesan, forjado en años de trabajo directo en **Venezuela** y la región.",
+        image: "/aluminio.webp",
+      },
     ],
     variant: "light" as const,
   },

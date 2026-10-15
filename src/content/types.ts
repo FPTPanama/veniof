@@ -36,6 +36,8 @@ export type ContentCard = {
   title: string;
   body?: string;
   bullets?: string[];
+  /** Optional full-bleed slide image (e.g. who-we-are scroll panels). */
+  image?: string;
 };
 
 export type Section = {
