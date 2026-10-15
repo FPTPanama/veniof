@@ -9,6 +9,11 @@ import {
   titleSizeClass,
 } from "../section-ui";
 import { HeroGear } from "./HeroGear";
+import { HeroGirlBackdrop, HeroMobileCallout } from "./HeroGirlBackdrop";
+import { HeroTextIntro } from "./HeroTextIntro";
+
+/** Toggle to show the scroll-linked gear (kept behind the hero image). */
+const SHOW_HERO_GEAR = true;
 
 type Props = {
   section: SectionData;
@@ -30,8 +35,13 @@ export function HomeHeroSection({ section, locale }: Props) {
   return (
     <SectionShell
       variant={variant}
-      className="overflow-hidden min-h-[calc(100dvh-var(--site-header-height,6.5rem))]"
-      backdrop={<HeroGear />}
+      className="min-h-[calc(100dvh-var(--site-header-height,6.5rem))]"
+      backdrop={
+        <>
+          {SHOW_HERO_GEAR ? <HeroGear /> : null}
+          <HeroGirlBackdrop callout={section.callout} />
+        </>
+      }
     >
       {section.eyebrow ? (
         <SectionEyebrow colorClass={colors.eyebrow}>
@@ -39,34 +49,50 @@ export function HomeHeroSection({ section, locale }: Props) {
         </SectionEyebrow>
       ) : null}
 
-      {section.title ? (
-        <TitleTag
-          className={`max-w-255 text-balance font-serif font-normal ${titleSizeClass(section.titleAs)} ${colors.title}`}
-        >
-          {section.title}
-        </TitleTag>
-      ) : null}
+      <HeroTextIntro>
+        {section.title ? (
+          <TitleTag
+            data-hero-intro
+            className={`w-full max-w-none font-serif font-normal opacity-0 will-change-transform sm:max-w-[50vw] ${titleSizeClass(section.titleAs)} !leading-[0.98] ${colors.title}`}
+          >
+            {section.title.split("\n").map((line, index, lines) => (
+              <span key={line}>
+                {line}
+                {index < lines.length - 1 ? <br /> : null}
+              </span>
+            ))}
+          </TitleTag>
+        ) : null}
 
-      {section.subtitle ? (
-        <p
-          className={`mt-2 max-w-205 text-balance font-serif text-[26px] leading-[1.35] sm:text-[32px] md:text-[40px] ${colors.title}`}
-        >
-          {section.subtitle}
-        </p>
-      ) : null}
+        {section.subtitle ? (
+          <p
+            data-hero-intro
+            className={`mt-2 max-w-205 text-balance font-serif text-[26px] leading-[1.35] opacity-0 will-change-transform sm:text-[32px] md:text-[40px] ${colors.title}`}
+          >
+            {section.subtitle}
+          </p>
+        ) : null}
 
-      {section.paragraphs?.length ? (
-        <div className="mt-7 max-w-180 space-y-5">
-          {section.paragraphs.map((p) => (
-            <p
-              key={p.slice(0, 40)}
-              className={`text-pretty font-serif text-[18px] leading-[1.6] md:text-[19px] ${colors.title}`}
-            >
-              {withEmphasis(p)}
-            </p>
-          ))}
-        </div>
-      ) : null}
+        {section.callout ? (
+          <HeroMobileCallout callout={section.callout} />
+        ) : null}
+
+        {section.paragraphs?.length ? (
+          <div
+            data-hero-intro
+            className="mt-7 max-w-180 space-y-5 opacity-0 will-change-transform"
+          >
+            {section.paragraphs.map((p) => (
+              <p
+                key={p.slice(0, 40)}
+                className={`text-pretty font-serif text-[18px] leading-[1.6] md:text-[19px] ${colors.title}`}
+              >
+                {withEmphasis(p)}
+              </p>
+            ))}
+          </div>
+        ) : null}
+      </HeroTextIntro>
 
       <SectionActions
         locale={locale}
