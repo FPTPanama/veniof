@@ -1,5 +1,4 @@
 import { getPage, type Locale } from "@/content";
-import { BridgeGraphic } from "../BridgeGraphic";
 import { CtaBanner } from "../CtaBanner";
 import { HomeHeroSection } from "./HomeHeroSection";
 import { HomeWhoWeAreSection } from "./HomeWhoWeAreSection";
@@ -24,11 +23,6 @@ export function HomePage({ locale }: Props) {
     <>
       <HomeHeroSection section={sections[0]} locale={locale} />
       <HomeWhoWeAreSection section={sections[1]} locale={locale} />
-      <div className="px-5 sm:px-6 md:px-14">
-        <div className="mx-auto max-w-[1200px]">
-          <BridgeGraphic locale={locale} />
-        </div>
-      </div>
       <HomeAnchorsSection section={sections[2]} locale={locale} />
       <HomeThesisSection section={sections[3]} locale={locale} />
       <HomeFocusSection section={sections[4]} locale={locale} />

@@ -53,7 +53,7 @@ export const page: PageContent = {
     title: "One foot in the United States. One in Venezuela.",
     titleAs: "h2",
     paragraphs: [
-      "Most capital that looks at Venezuela doesn't have deep local operating relationships. Most local operators don't have access to institutional-scale capital. VIOF was built to bring both together in one structure.",
+      "Most capital that looks at **Venezuela** doesn't have deep local operating relationships. Most local operators don't have access to **institutional-scale capital**. **VIOF** was built to bring both together in one structure.",
     ],
     cards: [
       {
