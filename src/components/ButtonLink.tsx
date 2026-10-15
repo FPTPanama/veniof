@@ -14,12 +14,12 @@ export function ButtonLink({
   className = "",
 }: Props) {
   const base =
-    "inline-flex items-center justify-center min-h-11 px-6 text-[15px] font-semibold tracking-wide transition";
+    "inline-flex items-center justify-center gap-2.5 min-h-11 text-[15px] font-semibold tracking-wide transition";
 
   const variants = {
-    solid: "bg-gold text-navy hover:brightness-105",
-    navy: "border border-navy bg-transparent text-navy hover:bg-navy/5",
-    ghost: "border border-navy/25 text-navy hover:border-navy",
+    solid: "bg-gold px-6 text-navy hover:brightness-105",
+    navy: "border border-navy bg-transparent px-6 text-navy hover:bg-navy/5",
+    ghost: "border border-navy/25 px-6 text-navy hover:border-navy",
     text: "px-0 text-ink underline decoration-gold decoration-1 underline-offset-4 hover:text-gold",
   };
 
