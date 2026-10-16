@@ -5,6 +5,7 @@ import { HomeWhoWeAreSection } from "./HomeWhoWeAreSection";
 import { HomeAnchorsSection } from "./HomeAnchorsSection";
 import { HomeThesisSection } from "./HomeThesisSection";
 import { HomeImageBreak } from "./HomeImageBreak";
+import { HomeProjectsTeaser } from "./HomeProjectsTeaser";
 import { HomeFocusSection } from "./HomeFocusSection";
 import { HomePartnersSection } from "./HomePartnersSection";
 import { HomeLeadershipSection } from "./HomeLeadershipSection";
@@ -27,6 +28,7 @@ export function HomePage({ locale }: Props) {
       <HomeAnchorsSection section={sections[2]} locale={locale} />
       <HomeThesisSection section={sections[3]} locale={locale} />
       <HomeImageBreak section={sections[4]} />
+      <HomeProjectsTeaser section={sections[5]} locale={locale} />
       <HomeFocusSection section={sections[5]} locale={locale} />
       <HomePartnersSection section={sections[6]} locale={locale} />
       <HomeLeadershipSection section={sections[7]} locale={locale} />

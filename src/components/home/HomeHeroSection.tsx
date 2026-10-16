@@ -99,11 +99,9 @@ export function HomeHeroSection({ section, locale }: Props) {
         isDark={colors.isDark}
         ctas={section.ctas}
         links={section.links}
-        ctaClassName="hero-cta !justify-between !px-8"
         ctaStartIcon={<CirclePlus aria-hidden className="h-4 w-4 shrink-0" />}
         ctaEndIcon={<ArrowRight aria-hidden className="h-4 w-4 shrink-0" />}
         linkVariant="navy"
-        linkClassName="hero-cta !justify-between !border-2 !px-8"
         linkEndIcon={<ArrowRight aria-hidden className="h-4 w-4 shrink-0" />}
       />
     </SectionShell>

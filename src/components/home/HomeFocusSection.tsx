@@ -25,8 +25,6 @@ export function HomeFocusSection({ section, locale }: Props) {
   const linesRef = useRef<HTMLDivElement>(null);
   const cards = section.cards ?? [];
   const sectors = cards.slice(0, 3);
-  const project = cards[3];
-  const cta = section.ctas?.[0];
   const sectorsLead = section.paragraphs?.[0];
   const projectsHref = pagePath(locale, "projects");
 
@@ -185,7 +183,8 @@ export function HomeFocusSection({ section, locale }: Props) {
                     ) : null}
                     <ButtonLink
                       href={projectsHref}
-                      className="hero-cta mt-7 !inline-flex min-h-11 w-full cursor-pointer !justify-between !border-2 !border-surface !bg-navy !px-6 !text-surface hover:!bg-navy/90 hover:!brightness-100"
+                      variant="navy"
+                      className="mt-7 w-full !border-surface !bg-navy !text-surface hover:!bg-navy/90 hover:!brightness-100"
                     >
                       <span>{sectorCtaLabel[locale]}</span>
                       <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />
@@ -197,38 +196,6 @@ export function HomeFocusSection({ section, locale }: Props) {
           ) : null}
         </div>
       </div>
-
-      {project ? (
-        <div className="mx-auto mt-10 w-full max-w-[1200px] border-t border-line px-5 pt-10 sm:mt-12 sm:px-8 md:mt-14 md:px-12">
-          <div
-            data-focus-reveal
-            className="grid grid-cols-1 items-end gap-6 opacity-0 will-change-transform md:grid-cols-12 md:gap-8"
-          >
-            <div className="md:col-span-8">
-              <h3 className="text-balance font-serif text-[22px] font-normal leading-[1.25] text-ink md:text-[26px]">
-                {project.title}
-              </h3>
-              {project.body ? (
-                <p className="mt-3 max-w-[640px] text-pretty text-[15.5px] leading-[1.6] text-slate">
-                  {project.body}
-                </p>
-              ) : null}
-            </div>
-
-            {cta ? (
-              <div className="md:col-span-4 md:flex md:justify-end">
-                <ButtonLink
-                  href={pagePath(locale, cta.href)}
-                  className="hero-cta min-h-[52px] cursor-pointer !justify-between !border-2 !border-navy !bg-transparent !px-8 !text-navy"
-                >
-                  <span>{cta.label}</span>
-                  <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />
-                </ButtonLink>
-              </div>
-            ) : null}
-          </div>
-        </div>
-      ) : null}
     </section>
   );
 }

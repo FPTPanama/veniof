@@ -139,7 +139,9 @@ export const page: PageContent = {
         body: "River transport, export terminals and hydroelectric rehabilitation that the other two depend on.",
       },
       {
-        title: "Several projects in active development, alongside partners we've worked with before.",
+        eyebrow: "Active pipeline",
+        title: "Several projects in active development.",
+        subtitle: "Alongside partners with long-standing alliances.",
         body: "We are in diligence and negotiation on multiple projects with internationally recognized industrial operators, commodity houses and engineering firms. Project and partner names remain confidential until our agreements allow disclosure.",
       },
     ],
@@ -167,7 +169,7 @@ export const page: PageContent = {
       },
     ],
     links: [
-      { label: "Information for investors", href: "partner" as const },
+      { label: "Investors", href: "partner" as const },
       { label: "Working with the public sector", href: "partner" as const },
       { label: "Partnering on projects", href: "partner" as const },
     ],

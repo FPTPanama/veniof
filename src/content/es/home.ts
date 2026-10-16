@@ -139,7 +139,9 @@ export const page: PageContent = {
         body: "Transporte fluvial, terminales de exportación y rehabilitación hidroeléctrica de las que dependen los otros dos.",
       },
       {
-        title: "Varios proyectos en desarrollo activo, junto a socios con los que ya hemos trabajado.",
+        eyebrow: "Proyectos activos",
+        title: "Varios proyectos en desarrollo activo.",
+        subtitle: "De la mano de socios con alianzas históricas.",
         body: "Adelantamos procesos de debida diligencia y negociación en múltiples proyectos con operadores industriales, casas de materias primas y firmas de ingeniería de reconocimiento internacional. Los nombres de los proyectos y de los socios se mantienen confidenciales hasta que nuestros acuerdos permitan divulgarlos.",
       },
     ],
@@ -167,7 +169,7 @@ export const page: PageContent = {
       },
     ],
     links: [
-      { label: "Información para inversionistas", href: "partner" as const },
+      { label: "Inversionistas", href: "partner" as const },
       { label: "Trabajar con el sector público", href: "partner" as const },
       { label: "Alianzas en proyectos", href: "partner" as const },
     ],
