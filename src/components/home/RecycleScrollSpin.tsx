@@ -49,10 +49,10 @@ export function RecycleScrollSpin() {
         className="w-[min(22rem,58vw)] opacity-85 will-change-transform sm:w-[min(26rem,42vw)] md:w-[30rem]"
       >
         <Image
-          src="/recycle.svg"
+          src="/sinergia_01.svg"
           alt=""
-          width={642}
-          height={558}
+          width={1897}
+          height={1897}
           className="block h-auto w-full select-none"
           sizes="480px"
         />

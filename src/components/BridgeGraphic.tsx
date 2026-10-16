@@ -230,7 +230,7 @@ export function BridgeGraphic({ locale = "en" }: Props) {
           height={420}
           className="h-auto w-full select-none"
           sizes="(max-width: 768px) 70vw, 560px"
-          priority={false}
+          loading="eager"
         />
       </div>
       </div>
