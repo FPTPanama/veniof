@@ -123,9 +123,21 @@ export const page: PageContent = {
     title: "Sectors whose products are priced and sold in US dollars.",
     titleAs: "h2",
     paragraphs: [
-      "We look across three sectors whose output is priced and sold in US dollars: mine-to-metal value chains, steelmaking and building materials in metals and basic industries; brownfield production enhancement and gas monetization in oil and gas, with no high-risk exploration; and the river transport, export terminals and hydroelectric rehabilitation that the other two depend on.",
+      "We look across three sectors whose products are priced and sold in US dollars.",
     ],
     cards: [
+      {
+        title: "Metals and basic industries",
+        body: "Mine-to-metal value chains, steelmaking and building materials.",
+      },
+      {
+        title: "Oil and gas",
+        body: "Brownfield production enhancement and gas monetization, with no high-risk exploration.",
+      },
+      {
+        title: "Logistics and infrastructure",
+        body: "River transport, export terminals and hydroelectric rehabilitation that the other two depend on.",
+      },
       {
         title: "Several projects in active development, alongside partners we've worked with before.",
         body: "We are in diligence and negotiation on multiple projects with internationally recognized industrial operators, commodity houses and engineering firms. Project and partner names remain confidential until our agreements allow disclosure.",

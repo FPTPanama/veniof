@@ -123,9 +123,21 @@ export const page: PageContent = {
     title: "Sectores cuyos productos se cotizan y se venden en dólares.",
     titleAs: "h2",
     paragraphs: [
-      "Miramos hacia tres sectores cuyos productos se cotizan y se venden en dólares: cadenas de valor de la mina al metal, siderurgia y materiales de construcción en metales e industrias básicas; mejora de producción en campos maduros y monetización de gas en petróleo y gas, sin exploración de alto riesgo; y el transporte fluvial, las terminales de exportación y la rehabilitación hidroeléctrica de los que dependen los otros dos.",
+      "Miramos hacia tres sectores cuyos productos se cotizan y se venden en dólares.",
     ],
     cards: [
+      {
+        title: "Metales e industrias básicas",
+        body: "Cadenas de valor de la mina al metal, siderurgia y materiales de construcción.",
+      },
+      {
+        title: "Petróleo y gas",
+        body: "Mejora de producción en campos maduros y monetización de gas, sin exploración de alto riesgo.",
+      },
+      {
+        title: "Logística e infraestructura",
+        body: "Transporte fluvial, terminales de exportación y rehabilitación hidroeléctrica de las que dependen los otros dos.",
+      },
       {
         title: "Varios proyectos en desarrollo activo, junto a socios con los que ya hemos trabajado.",
         body: "Adelantamos procesos de debida diligencia y negociación en múltiples proyectos con operadores industriales, casas de materias primas y firmas de ingeniería de reconocimiento internacional. Los nombres de los proyectos y de los socios se mantienen confidenciales hasta que nuestros acuerdos permitan divulgarlos.",
