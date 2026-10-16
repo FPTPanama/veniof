@@ -33,7 +33,10 @@ export type ContentLink = {
 };
 
 export type ContentCard = {
+  eyebrow?: string;
   title: string;
+  /** Secondary line under the title. */
+  subtitle?: string;
   body?: string;
   bullets?: string[];
   /** Optional full-bleed slide image (e.g. who-we-are scroll panels). */

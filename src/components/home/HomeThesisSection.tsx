@@ -140,7 +140,6 @@ export function HomeThesisSection({ section, locale }: Props) {
               ctas={section.ctas}
               links={section.links}
               linkVariant="navy"
-              linkClassName="hero-cta !justify-between !border-2 !px-8"
               linkEndIcon={
                 <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />
               }
