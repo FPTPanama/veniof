@@ -35,6 +35,8 @@
   --font-sans: var(--font-libre);
   --font-serif: var(--font-barlow);
   --font-dm: var(--font-dm-family);
+  /* Wordmark only (VIOF) — matches original static brand lockup */
+  --font-logo: var(--font-gelasio);
 }
 
 * {

@@ -1,8 +1,10 @@
 # Next.js app at repo root → veniof.com
-# publish is owned by @netlify/plugin-nextjs; do not set it to ".next".
+# publish must differ from base (repo root) or @netlify/plugin-nextjs fails;
+# the plugin rewrites publish during the build.
 
 [build]
   command = "pnpm run build"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "22"
