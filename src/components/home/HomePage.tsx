@@ -47,17 +47,14 @@ export function HomePage({ locale }: Props) {
       {/* 7 — Foco / sectores */}
       <HomeFocusSection section={sections[5]} locale={locale} />
 
-      {/* 8 — Aliados
+      {/* 8 — Aliados */}
       <HomePartnersSection section={sections[6]} locale={locale} />
-      */}
 
-      {/* 9 — Liderazgo / team
+      {/* 9 — Liderazgo / team */}
       <HomeLeadershipSection section={sections[7]} locale={locale} />
-      */}
 
-      {/* 10 — CTA banner
+      {/* 10 — CTA banner */}
       <CtaBanner locale={locale} />
-      */}
     </>
   );
 }
