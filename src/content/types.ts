@@ -99,6 +99,10 @@ export type TeamMember = {
   portraitLabel: string;
   /** Public path to the portrait, e.g. /img/team/nikola-kedzo.webp */
   imageSrc?: string;
+  /** Default home-grid portrait (shown at rest). */
+  imagePerfilSrc?: string;
+  /** Home-grid portrait revealed on hover. */
+  imageFrontSrc?: string;
   paragraphs: string[];
   credentials: string[];
 };
