@@ -29,9 +29,8 @@ export function HomePage({ locale }: Props) {
       {/* 1 — Hero */}
       <HomeHeroSection section={sections[0]} locale={locale} />
 
-      {/* 2 — Quiénes somos
+      {/* 2 — Quiénes somos */}
       <HomeWhoWeAreSection section={sections[1]} locale={locale} />
-      */}
 
       {/* 3 — Dos anclajes
       <HomeAnchorsSection section={sections[2]} locale={locale} />
