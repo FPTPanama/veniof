@@ -6,10 +6,10 @@ export function PrivacyPage({ locale }: Props) {
   const copy = getPrivacy(locale);
 
   return (
-    <div className="bg-navy">
+    <div className="bg-surface">
       <section className="px-6 pb-16 pt-10 md:px-14 md:pb-24 md:pt-14">
         <div className="mx-auto max-w-[800px]">
-          <h1 className="font-serif text-[clamp(2rem,5vw,3.25rem)] leading-[1.15] tracking-[-0.01em] text-cream">
+          <h1 className="font-serif text-[clamp(2rem,5vw,3.25rem)] leading-[1.15] tracking-[-0.01em] text-ink">
             {copy.heroTitle}
           </h1>
           <p className="mt-5 max-w-[54ch] text-[16px] leading-[1.65] text-muted md:text-[17px]">
@@ -18,11 +18,11 @@ export function PrivacyPage({ locale }: Props) {
         </div>
       </section>
 
-      <section className="bg-surface-2 px-6 py-16 md:px-14 md:py-24">
+      <section className="bg-surface px-6 py-16 md:px-14 md:py-24">
         <div className="mx-auto flex max-w-[800px] flex-col gap-16 md:gap-20">
           {[copy.privacy, copy.terms].map((block) => (
             <article key={block.id} id={block.id} className="scroll-mt-28">
-              <div className="mb-8 border-b border-navy-line/20 pb-6">
+              <div className="mb-8 border-b border-line pb-6">
                 <h2 className="font-serif text-[clamp(1.6rem,3vw,2.25rem)] text-ink">
                   {block.title}
                 </h2>

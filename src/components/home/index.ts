@@ -3,6 +3,7 @@ export { HomeHeroSection } from "./HomeHeroSection";
 export { HomeWhoWeAreSection } from "./HomeWhoWeAreSection";
 export { HomeAnchorsSection } from "./HomeAnchorsSection";
 export { HomeThesisSection } from "./HomeThesisSection";
+export { HomeProjectsTeaser } from "./HomeProjectsTeaser";
 export { HomeFocusSection } from "./HomeFocusSection";
 export { HomePartnersSection } from "./HomePartnersSection";
 export { HomeLeadershipSection } from "./HomeLeadershipSection";

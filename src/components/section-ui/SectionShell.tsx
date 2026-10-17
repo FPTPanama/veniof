@@ -5,18 +5,29 @@ type Props = {
   variant?: SectionVariant;
   children: React.ReactNode;
   className?: string;
+  /** Extra classes for the inner max-width content column. */
+  contentClassName?: string;
+  /** Full-bleed layer behind the content column. Blends with the section background. */
+  backdrop?: React.ReactNode;
 };
 
 export function SectionShell({
   variant = "light",
   children,
   className = "",
+  contentClassName = "",
+  backdrop,
 }: Props) {
   return (
     <section
-      className={`${variantClass[variant]} px-5 py-14 sm:px-6 sm:py-20 md:px-14 md:py-24 ${className}`}
+      className={`${backdrop ? "relative isolate" : ""} ${variantClass[variant]} px-5 py-14 sm:px-6 sm:py-20 md:px-14 md:py-24 ${className}`}
     >
-      <div className="mx-auto max-w-[1200px]">{children}</div>
+      {backdrop}
+      <div
+        className={`${backdrop ? "relative z-10" : ""} mx-auto max-w-[1200px] ${contentClassName}`}
+      >
+        {children}
+      </div>
     </section>
   );
 }

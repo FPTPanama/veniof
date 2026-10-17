@@ -6,10 +6,12 @@ export const page: PageContent = {
   sections: [
   {
     eyebrow: "Un fondo estadounidense con profundas raíces venezolanas",
-    title: "Reconstruir la base industrial de Venezuela, de la extracción a la exportación.",
+    title: "Reconstruir la base industrial de\nVenezuela.",
+    subtitle: "De la extracción a la exportación.",
     titleAs: "h1",
+    callout: "Un puente vital para operaciones seguras",
     paragraphs: [
-      "VIOF es un fondo de inversión administrado desde Estados Unidos. Nos asociamos con operadores de trayectoria comprobada e instituciones venezolanas para rehabilitar activos industriales y de infraestructura esenciales, y llevar sus productos a los mercados internacionales.",
+      "Nos asociamos con operadores de **trayectoria comprobada** e **instituciones venezolanas** para rehabilitar activos esenciales y llevarlos a mercados internacionales.",
     ],
     ctas: [
       { label: "Trabaje con nosotros", href: "partner" as const },
@@ -24,9 +26,25 @@ export const page: PageContent = {
     title: "Un fondo creado por quienes han operado los activos.",
     titleAs: "h2",
     paragraphs: [
-      "El Venezuela Infrastructure Opportunity Fund (VIOF) fue fundado por un equipo que ha sido dueño y operador de empresas de industria pesada, logística y construcción en Venezuela, Estados Unidos y Guyana. Hemos construido y gestionado el tipo de activos en los que invertimos, no solo los hemos financiado.",
-      "Nuestros socios principales son personas estadounidenses y las entidades del fondo están constituidas en Estados Unidos. Nuestras raíces operativas están en Venezuela, donde las empresas del equipo han trabajado por más de sesenta años y hoy siguen moviendo acero y carga pesada por el Orinoco.",
-      "Eso se traduce en tres cosas concretas: transporte fluvial de carga a granel y equipos de izamiento pesado en servicio activo por el Orinoco, comercialización continua de minerales, materias primas y productos terminados, y un conocimiento de primera mano de las industrias y empresas que nos interesan, construido en años de trabajo directo con ellas.",
+      "El **Venezuela Infrastructure Opportunity Fund** (VIOF) nació de un equipo que ha sido dueño y operador de empresas de industria pesada, logística y construcción en **Venezuela**, Estados Unidos y **Guyana**. No financiamos activos ajenos: los hemos construido, operado y puesto a producir con criterio propio.",
+      "Nuestros socios principales son personas estadounidenses y las entidades del fondo están constituidas en Estados Unidos. Nuestras raíces operativas están en **Venezuela**, donde las empresas del equipo llevan más de sesenta años en el terreno y hoy siguen moviendo acero y carga pesada por el **Orinoco**.",
+    ],
+    cards: [
+      {
+        title: "Logística fluvial",
+        body: "Transporte fluvial de carga a granel y equipos de izamiento pesado en servicio activo por el **Orinoco**.",
+        image: "/gabarra_02.webp",
+      },
+      {
+        title: "Comercialización",
+        body: "Comercialización continua de minerales, materias primas y productos terminados hacia mercados regionales e internacionales.",
+        image: "/mineral.webp",
+      },
+      {
+        title: "Conocimiento local",
+        body: "Conocimiento de primera mano de las industrias que nos interesan, forjado en años de trabajo directo en **Venezuela** y la región.",
+        image: "/aluminio.webp",
+      },
     ],
     variant: "light" as const,
   },
@@ -35,7 +53,7 @@ export const page: PageContent = {
     title: "Un pie en Estados Unidos. Otro en Venezuela.",
     titleAs: "h2",
     paragraphs: [
-      "La mayor parte del capital que mira hacia Venezuela no tiene relaciones operativas locales profundas. La mayoría de los operadores locales no tiene acceso a capital de escala institucional. VIOF se creó para reunir ambas cosas en una sola estructura.",
+      "La mayor parte del capital que mira hacia **Venezuela** no tiene relaciones operativas locales profundas. La mayoría de los operadores locales no tiene acceso a **capital de escala institucional**. **VIOF** se creó para reunir ambas cosas en una sola estructura.",
     ],
     cards: [
       {
@@ -64,8 +82,10 @@ export const page: PageContent = {
     title: "Así pensamos la oportunidad.",
     titleAs: "h2",
     paragraphs: [
-      "Dos décadas de subinversión dejaron la base industrial de Venezuela operando muy por debajo de su capacidad de diseño. Creemos que el capital, bien ejecutado, puede cerrar la mayor parte de esa brecha más rápido y a menor costo que empezar de cero — en la página de Estrategia explicamos cómo.",
+      "Dos décadas de subinversión dejaron la base industrial de Venezuela operando muy por debajo de su capacidad de diseño.",
+      "El capital, bien ejecutado, puede cerrar la mayor parte de esa brecha más rápido y a menor costo que empezar de cero.",
     ],
+    callout: "Nikola Kedzo, Socio",
     cards: [
       {
         title: "Eliminación de cuellos de botella",
@@ -90,15 +110,38 @@ export const page: PageContent = {
     variant: "navy" as const,
   },
   {
+    title: "De la capacidad detenida al producto que se exporta.",
+    paragraphs: [
+      "Rehabilitar lo que ya existe — plantas, corredores y terminales — para devolver producción a mercados internacionales.",
+    ],
+    // Placeholder: swap when a dedicated break image is ready.
+    image: "/mineral.webp",
+    variant: "navy" as const,
+  },
+  {
     eyebrow: "Dónde nos enfocamos",
     title: "Sectores cuyos productos se cotizan y se venden en dólares.",
     titleAs: "h2",
     paragraphs: [
-      "Miramos hacia tres sectores cuyos productos se cotizan y se venden en dólares: cadenas de valor de la mina al metal, siderurgia y materiales de construcción en metales e industrias básicas; mejora de producción en campos maduros y monetización de gas en petróleo y gas, sin exploración de alto riesgo; y el transporte fluvial, las terminales de exportación y la rehabilitación hidroeléctrica de los que dependen los otros dos.",
+      "Miramos hacia tres sectores cuyos productos se cotizan y se venden en dólares.",
     ],
     cards: [
       {
-        title: "Varios proyectos en desarrollo activo, junto a socios con los que ya hemos trabajado.",
+        title: "Metales e industrias básicas",
+        body: "Cadenas de valor de la mina al metal, siderurgia y materiales de construcción.",
+      },
+      {
+        title: "Petróleo y gas",
+        body: "Mejora de producción en campos maduros y monetización de gas, sin exploración de alto riesgo.",
+      },
+      {
+        title: "Logística e infraestructura",
+        body: "Transporte fluvial, terminales de exportación y rehabilitación hidroeléctrica de las que dependen los otros dos.",
+      },
+      {
+        eyebrow: "Proyectos activos",
+        title: "Varios proyectos en desarrollo activo.",
+        subtitle: "De la mano de socios con alianzas históricas.",
         body: "Adelantamos procesos de debida diligencia y negociación en múltiples proyectos con operadores industriales, casas de materias primas y firmas de ingeniería de reconocimiento internacional. Los nombres de los proyectos y de los socios se mantienen confidenciales hasta que nuestros acuerdos permitan divulgarlos.",
       },
     ],
@@ -126,7 +169,7 @@ export const page: PageContent = {
       },
     ],
     links: [
-      { label: "Información para inversionistas", href: "partner" as const },
+      { label: "Inversionistas", href: "partner" as const },
       { label: "Trabajar con el sector público", href: "partner" as const },
       { label: "Alianzas en proyectos", href: "partner" as const },
     ],

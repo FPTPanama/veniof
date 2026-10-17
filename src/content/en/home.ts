@@ -6,10 +6,12 @@ export const page: PageContent = {
   sections: [
   {
     eyebrow: "A US fund with deep Venezuelan roots",
-    title: "Rebuilding Venezuela's industrial backbone, from extraction to export.",
+    title: "Rebuilding\nVenezuela's industrial backbone.",
+    subtitle: "From extraction to export.",
     titleAs: "h1",
+    callout: "A vital bridge for safe operations",
     paragraphs: [
-      "VIOF is a US-managed investment fund. We partner with proven operators and Venezuelan institutions to rehabilitate essential industrial and infrastructure assets, and carry their products to international markets.",
+      "We partner with **proven** operators and **Venezuelan institutions** to rehabilitate essential assets and bring them to international markets.",
     ],
     ctas: [
       { label: "Partner with us", href: "partner" as const },
@@ -24,9 +26,25 @@ export const page: PageContent = {
     title: "A fund built by people who have run the assets.",
     titleAs: "h2",
     paragraphs: [
-      "The Venezuela Infrastructure Opportunity Fund (VIOF) was founded by a team that has owned and operated heavy industrial, logistics and construction businesses across Venezuela, the United States and Guyana. We have built and managed the kinds of assets we invest in, not only financed them.",
-      "Our principals are US persons and our fund entities are organized in the United States. Our operating roots are in Venezuela, where the team's companies have worked for more than sixty years and continue to move steel and heavy cargo along the Orinoco today.",
-      "That shows up in three ways day to day: river bulk transport and heavy lifting equipment in active service on the Orinoco, ongoing trading in minerals, raw materials and finished products, and a working knowledge of the industries and companies we target, built over years of doing business with them — not from the outside.",
+      "The **Venezuela Infrastructure Opportunity Fund** (VIOF) was built by a team that has owned and operated heavy industrial, logistics and construction businesses across **Venezuela**, the United States and **Guyana**. We do not only finance assets — we have built them, run them and put them back into production.",
+      "Our principals are US persons and our fund entities are organized in the United States. Our operating roots are in **Venezuela**, where the team's companies have worked on the ground for more than sixty years and still move steel and heavy cargo along the **Orinoco** today.",
+    ],
+    cards: [
+      {
+        title: "River logistics",
+        body: "River bulk transport and heavy lifting equipment in active service on the **Orinoco**.",
+        image: "/mineral.webp",
+      },
+      {
+        title: "Trading",
+        body: "Ongoing trading in minerals, raw materials and finished products into regional and international markets.",
+        image: "/mineral.webp",
+      },
+      {
+        title: "Local knowledge",
+        body: "First-hand knowledge of the industries we target, built over years of direct work in **Venezuela** and the region.",
+        image: "/aluminio.webp",
+      },
     ],
     variant: "light" as const,
   },
@@ -35,7 +53,7 @@ export const page: PageContent = {
     title: "One foot in the United States. One in Venezuela.",
     titleAs: "h2",
     paragraphs: [
-      "Most capital that looks at Venezuela doesn't have deep local operating relationships. Most local operators don't have access to institutional-scale capital. VIOF was built to bring both together in one structure.",
+      "Most capital that looks at **Venezuela** doesn't have deep local operating relationships. Most local operators don't have access to **institutional-scale capital**. **VIOF** was built to bring both together in one structure.",
     ],
     cards: [
       {
@@ -64,8 +82,10 @@ export const page: PageContent = {
     title: "How we think about the opportunity.",
     titleAs: "h2",
     paragraphs: [
-      "Two decades of underinvestment left Venezuela's industrial base running far below its design capacity. We think capital and hands-on execution can close most of that gap faster, and more cheaply, than starting over — the Strategy page goes into how.",
+      "Two decades of underinvestment left Venezuela's industrial base running far below its design capacity.",
+      "Capital, well executed, can close most of that gap faster, and more cheaply, than starting over.",
     ],
+    callout: "Nikola Kedzo, Partner",
     cards: [
       {
         title: "De-bottlenecking",
@@ -90,15 +110,38 @@ export const page: PageContent = {
     variant: "navy" as const,
   },
   {
+    title: "From stranded capacity to product that ships.",
+    paragraphs: [
+      "Rehabilitate what already exists — plants, corridors and terminals — to return production to international markets.",
+    ],
+    // Placeholder: swap when a dedicated break image is ready.
+    image: "/mineral.webp",
+    variant: "navy" as const,
+  },
+  {
     eyebrow: "Where we focus",
     title: "Sectors whose products are priced and sold in US dollars.",
     titleAs: "h2",
     paragraphs: [
-      "We look across three sectors whose output is priced and sold in US dollars: mine-to-metal value chains, steelmaking and building materials in metals and basic industries; brownfield production enhancement and gas monetization in oil and gas, with no high-risk exploration; and the river transport, export terminals and hydroelectric rehabilitation that the other two depend on.",
+      "We look across three sectors whose products are priced and sold in US dollars.",
     ],
     cards: [
       {
-        title: "Several projects in active development, alongside partners we've worked with before.",
+        title: "Metals and basic industries",
+        body: "Mine-to-metal value chains, steelmaking and building materials.",
+      },
+      {
+        title: "Oil and gas",
+        body: "Brownfield production enhancement and gas monetization, with no high-risk exploration.",
+      },
+      {
+        title: "Logistics and infrastructure",
+        body: "River transport, export terminals and hydroelectric rehabilitation that the other two depend on.",
+      },
+      {
+        eyebrow: "Active pipeline",
+        title: "Several projects in active development.",
+        subtitle: "Alongside partners with long-standing alliances.",
         body: "We are in diligence and negotiation on multiple projects with internationally recognized industrial operators, commodity houses and engineering firms. Project and partner names remain confidential until our agreements allow disclosure.",
       },
     ],
@@ -126,7 +169,7 @@ export const page: PageContent = {
       },
     ],
     links: [
-      { label: "Information for investors", href: "partner" as const },
+      { label: "Investors", href: "partner" as const },
       { label: "Working with the public sector", href: "partner" as const },
       { label: "Partnering on projects", href: "partner" as const },
     ],
