@@ -41,13 +41,11 @@ export function HomePage({ locale }: Props) {
       {/* 5 — Image break */}
       <HomeImageBreak section={sections[4]} />
 
-      {/* 6 — Proyectos teaser
+      {/* 6 — Proyectos teaser */}
       <HomeProjectsTeaser section={sections[5]} locale={locale} />
-      */}
 
-      {/* 7 — Foco / sectores
+      {/* 7 — Foco / sectores */}
       <HomeFocusSection section={sections[5]} locale={locale} />
-      */}
 
       {/* 8 — Aliados
       <HomePartnersSection section={sections[6]} locale={locale} />

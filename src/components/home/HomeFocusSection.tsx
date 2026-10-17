@@ -106,7 +106,7 @@ export function HomeFocusSection({ section, locale }: Props) {
   return (
     <section
       ref={rootRef}
-      className="relative mt-10 w-full overflow-hidden sm:mt-14 md:mt-16"
+      className="relative mt-10 w-full overflow-hidden px-5 sm:mt-14 sm:px-6 md:mt-16 md:px-14"
     >
       <div className="relative mx-auto w-full max-w-[1200px] overflow-hidden bg-navy">
         <div
