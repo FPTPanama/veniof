@@ -32,9 +32,8 @@ export function HomePage({ locale }: Props) {
       {/* 2 — Quiénes somos */}
       <HomeWhoWeAreSection section={sections[1]} locale={locale} />
 
-      {/* 3 — Dos anclajes
+      {/* 3 — Dos anclajes */}
       <HomeAnchorsSection section={sections[2]} locale={locale} />
-      */}
 
       {/* 4 — Tesis
       <HomeThesisSection section={sections[3]} locale={locale} />
