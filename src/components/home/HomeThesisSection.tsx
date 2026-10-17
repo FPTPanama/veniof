@@ -9,7 +9,6 @@ import {
   SectionEyebrow,
   SectionShell,
   sectionColors,
-  titleSizeClass,
 } from "../section-ui";
 
 type Props = {
@@ -97,7 +96,7 @@ export function HomeThesisSection({ section, locale }: Props) {
           {section.title ? (
             <h2
               data-thesis-reveal
-              className={`text-balance font-serif font-normal opacity-0 will-change-transform ${titleSizeClass("h2")} ${colors.title}`}
+              className={`text-balance font-serif font-normal opacity-0 will-change-transform text-[34px] leading-[1.08] tracking-[-0.02em] sm:text-[32px] sm:leading-[1.15] sm:tracking-[-0.01em] md:text-[42px] ${colors.title}`}
             >
               {section.title}
             </h2>
@@ -139,6 +138,9 @@ export function HomeThesisSection({ section, locale }: Props) {
               isDark={colors.isDark}
               ctas={section.ctas}
               links={section.links}
+              className="mt-10 w-full flex-col items-stretch sm:w-auto sm:flex-row sm:items-center"
+              linkClassName="w-full sm:w-auto"
+              ctaClassName="w-full sm:w-auto"
               linkVariant="navy"
               linkEndIcon={
                 <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />

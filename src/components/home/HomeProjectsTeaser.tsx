@@ -115,7 +115,11 @@ export function HomeProjectsTeaser({ section, locale }: Props) {
               </p>
             ) : null}
             {cta ? (
-              <ButtonLink href={pagePath(locale, cta.href)} variant="navy">
+              <ButtonLink
+                href={pagePath(locale, cta.href)}
+                variant="navy"
+                className="w-full sm:w-auto"
+              >
                 <span>{cta.label}</span>
                 <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />
               </ButtonLink>

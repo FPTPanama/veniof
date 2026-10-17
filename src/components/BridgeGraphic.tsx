@@ -9,18 +9,10 @@ const copy = {
   en: {
     ariaLabel:
       "Line drawing of a suspension bridge joining the United States and Venezuela",
-    leftTitle: "United States",
-    leftSub: "Capital, governance and compliance",
-    rightTitle: "Venezuela",
-    rightSub: "Operations, relationships and execution",
   },
   es: {
     ariaLabel:
       "Dibujo lineal de un puente colgante que une a Estados Unidos y Venezuela",
-    leftTitle: "Estados Unidos",
-    leftSub: "Capital, gobernanza y cumplimiento",
-    rightTitle: "Venezuela",
-    rightSub: "Operaciones, relaciones y ejecución",
   },
 } as const;
 
@@ -233,55 +225,6 @@ export function BridgeGraphic({ locale = "en" }: Props) {
           loading="eager"
         />
       </div>
-      </div>
-
-      <div className="relative z-[2] mt-5 grid grid-cols-1 items-start gap-8 md:grid-cols-3">
-        <div className="text-left">
-          <h3 className="font-serif text-2xl text-ink md:text-4xl">
-            <span className="bg-surface box-decoration-clone px-[0.12em] [box-decoration-break:clone]">
-              {t.leftTitle}
-            </span>
-          </h3>
-          <p className="mt-1.5 text-[15px] leading-snug text-muted">
-            <span className="bg-surface box-decoration-clone px-[0.15em] [box-decoration-break:clone]">
-              {t.leftSub}
-            </span>
-          </p>
-        </div>
-
-        <div className="flex items-center gap-2 pt-2.5" aria-hidden>
-          <span className="h-[11px] w-px shrink-0 bg-navy" />
-          {/* US — red / white / blue */}
-          <span
-            className="h-[2px] min-w-0 flex-1"
-            style={{
-              background:
-                "linear-gradient(to right, #b22234 0% 33.33%, #eef0f3 33.33% 66.66%, #0a1a2f 66.66% 100%)",
-            }}
-          />
-          {/* Venezuela — yellow / blue / red */}
-          <span
-            className="h-[2px] min-w-0 flex-1"
-            style={{
-              background:
-                "linear-gradient(to right, #f7d117 0% 33.33%, #0037a2 33.33% 66.66%, #cf142b 66.66% 100%)",
-            }}
-          />
-          <span className="h-[11px] w-px shrink-0 bg-navy" />
-        </div>
-
-        <div className="text-left md:text-right">
-          <h3 className="font-serif text-2xl text-ink md:text-4xl">
-            <span className="bg-surface box-decoration-clone px-[0.12em] [box-decoration-break:clone]">
-              {t.rightTitle}
-            </span>
-          </h3>
-          <p className="mt-1.5 text-[15px] leading-snug text-muted">
-            <span className="bg-surface box-decoration-clone px-[0.15em] [box-decoration-break:clone]">
-              {t.rightSub}
-            </span>
-          </p>
-        </div>
       </div>
     </div>
   );

@@ -120,7 +120,7 @@ export function HeroGirlBackdrop({ callout }: Props) {
   return (
     <div
       ref={rootRef}
-      className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[min(980px,88%)] sm:w-[min(1120px,68vw)] md:w-[min(1240px,62vw)]"
+      className="pointer-events-none absolute inset-y-0 right-0 z-[1] hidden w-[min(1120px,68vw)] sm:block md:w-[min(1240px,62vw)]"
     >
       <div
         ref={imageParallaxRef}
@@ -137,8 +137,8 @@ export function HeroGirlBackdrop({ callout }: Props) {
             alt="chica con casco de seguridad"
             fill
             priority
-            sizes="(max-width: 640px) 88vw, (max-width: 768px) 68vw, 62vw"
-            className="origin-bottom-right object-contain object-bottom-right scale-[1.08] sm:scale-[1.12]"
+            sizes="(max-width: 768px) 68vw, 62vw"
+            className="origin-bottom-right object-contain object-bottom-right scale-[1.12]"
             aria-hidden
           />
         </div>

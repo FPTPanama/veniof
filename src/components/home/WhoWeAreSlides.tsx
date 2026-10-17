@@ -143,7 +143,7 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
     >
       <div
         ref={panelRef}
-        className="relative h-[calc(100dvh-2.75*var(--site-header-height,6.5rem))] min-h-[280px] w-full overflow-hidden"
+        className="relative flex h-[calc(100dvh-2.75*var(--site-header-height,6.5rem))] min-h-[280px] w-full flex-col overflow-hidden sm:block"
       >
         {cards.map((card, index) => {
           const imageSrc =
@@ -166,13 +166,43 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
               />
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-r from-navy via-navy/55 to-transparent"
+                className="absolute inset-0 bg-gradient-to-b from-navy via-navy/60 to-navy/30 sm:bg-gradient-to-r sm:from-navy sm:via-navy/55 sm:to-transparent"
               />
             </div>
           );
         })}
 
-        <div className="pointer-events-none absolute inset-y-0 right-0 z-[5] w-1/3 overflow-hidden">
+        <div className="relative z-10 min-h-0 w-full flex-1 sm:absolute sm:inset-0 sm:flex-none">
+          {cards.map((card, index) => (
+            <div
+              key={`copy-${card.title}`}
+              data-capability-copy
+              className="absolute inset-0 z-10 flex flex-col justify-center sm:flex-row sm:items-center sm:justify-start"
+            >
+              <div className="relative z-10 w-full px-5 py-8 sm:px-8 sm:py-14 md:px-12 md:py-16">
+                <article className="max-w-md">
+                  <h3 className="font-serif text-[32px] leading-[1.08] tracking-[-0.02em] text-surface sm:text-[30px] md:text-[34px]">
+                    {card.title}
+                  </h3>
+                  {card.body ? (
+                    <p className="mt-3 max-w-md font-serif text-[19px] leading-[1.5] text-surface/90 sm:max-w-lg sm:text-[17px] sm:leading-[1.55] md:text-[18px] [&_strong]:text-surface">
+                      {withEmphasis(card.body)}
+                    </p>
+                  ) : null}
+                </article>
+              </div>
+
+              <span
+                aria-hidden
+                className="pointer-events-none absolute bottom-0 left-5 z-20 translate-y-[42%] select-none font-dm text-[clamp(7.5rem,44vw,13rem)] leading-none font-normal italic tracking-[-0.06em] text-surface sm:top-1/2 sm:right-20 sm:bottom-auto sm:left-auto sm:translate-x-[8%] sm:-translate-y-1/2 sm:text-[clamp(7rem,42vh,22rem)]"
+              >
+                {index + 1}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <div className="pointer-events-none relative z-[5] h-[min(48vw,260px)] w-full shrink-0 overflow-hidden sm:absolute sm:inset-y-0 sm:right-0 sm:h-auto sm:w-1/3">
           <div
             ref={linesRef}
             aria-hidden
@@ -182,39 +212,11 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
               src="/lineas_surface.svg"
               alt=""
               fill
-              sizes="40vw"
+              sizes="(max-width: 639px) 100vw, 40vw"
               className="object-cover object-center"
             />
           </div>
         </div>
-
-        {cards.map((card, index) => (
-          <div
-            key={`copy-${card.title}`}
-            data-capability-copy
-            className="absolute inset-0 z-10 flex items-center"
-          >
-            <div className="relative z-10 w-full px-5 py-12 sm:px-8 sm:py-14 md:px-12 md:py-16">
-              <article className="max-w-md">
-                <h3 className="font-serif text-[26px] leading-[1.1] tracking-[-0.02em] text-surface sm:text-[30px] md:text-[34px]">
-                  {card.title}
-                </h3>
-                {card.body ? (
-                  <p className="mt-3 max-w-md font-serif text-[17px] leading-[1.55] text-surface/90 sm:max-w-lg md:text-[18px] [&_strong]:text-surface">
-                    {withEmphasis(card.body)}
-                  </p>
-                ) : null}
-              </article>
-            </div>
-
-            <span
-              aria-hidden
-              className="pointer-events-none absolute top-1/2 right-20 z-20 -translate-y-1/2 translate-x-[10%] select-none font-dm text-[clamp(7rem,42vh,22rem)] leading-none font-normal italic tracking-[-0.06em] text-surface shadow-none drop-shadow-none [text-shadow:none] sm:translate-x-[8%]"
-            >
-              {index + 1}
-            </span>
-          </div>
-        ))}
 
         <div
           className="pointer-events-none absolute inset-x-0 bottom-0 z-30 px-5 pb-5 sm:px-8 sm:pb-6 md:px-12 md:pb-7"

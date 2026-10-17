@@ -12,7 +12,12 @@ const SPINS = [
   { id: "gear-gold-inner", perPixel: 0.25, direction: 1 },
 ] as const;
 
-export function HeroGear() {
+type Props = {
+  /** Desktop stays in the absolute backdrop; mobile sits in-flow under the copy. */
+  placement?: "desktop" | "mobile";
+};
+
+export function HeroGear({ placement = "desktop" }: Props) {
   const hostRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -72,11 +77,10 @@ export function HeroGear() {
     };
   }, []);
 
-  return (
-    <div
-      ref={hostRef}
-      aria-hidden
-      className="pointer-events-none absolute top-1/2 left-full z-0 aspect-square w-[min(980px,60vw)] -translate-x-1/2 -translate-y-1/2 opacity-70"
-    />
-  );
+  const className =
+    placement === "mobile"
+      ? "pointer-events-none absolute bottom-[-8%] left-1/2 z-0 aspect-square w-[min(420px,88%)] -translate-x-1/2 opacity-50 sm:hidden"
+      : "pointer-events-none absolute top-1/2 left-full z-0 hidden aspect-square w-[min(980px,60vw)] -translate-x-1/2 -translate-y-1/2 opacity-70 sm:block";
+
+  return <div ref={hostRef} aria-hidden className={className} />;
 }

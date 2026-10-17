@@ -25,7 +25,10 @@ export function CtaBanner({ locale }: Props) {
           {ctaBanner.body}
         </p>
         <div className="mt-10">
-          <ButtonLink href={pagePath(locale, "contact")}>
+          <ButtonLink
+            href={pagePath(locale, "contact")}
+            className="w-full sm:w-auto"
+          >
             <span className="inline-flex items-center gap-2.5">
               <CirclePlus aria-hidden className="h-4 w-4 shrink-0" />
               {ctaBanner.button}

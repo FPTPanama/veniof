@@ -5,6 +5,8 @@ type Props = {
   variant?: SectionVariant;
   children: React.ReactNode;
   className?: string;
+  /** Extra classes for the inner max-width content column. */
+  contentClassName?: string;
   /** Full-bleed layer behind the content column. Blends with the section background. */
   backdrop?: React.ReactNode;
 };
@@ -13,6 +15,7 @@ export function SectionShell({
   variant = "light",
   children,
   className = "",
+  contentClassName = "",
   backdrop,
 }: Props) {
   return (
@@ -21,7 +24,7 @@ export function SectionShell({
     >
       {backdrop}
       <div
-        className={`${backdrop ? "relative z-10" : ""} mx-auto max-w-[1200px]`}
+        className={`${backdrop ? "relative z-10" : ""} mx-auto max-w-[1200px] ${contentClassName}`}
       >
         {children}
       </div>
