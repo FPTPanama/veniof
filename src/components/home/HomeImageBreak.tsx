@@ -108,7 +108,10 @@ export function HomeImageBreak({ section }: Props) {
   if (!section.title && !body) return null;
 
   return (
-    <section ref={rootRef} className="relative w-full overflow-hidden">
+    <section
+      ref={rootRef}
+      className="relative w-full overflow-hidden px-5 sm:px-6 md:px-14"
+    >
       <div className="relative mx-auto h-[min(72vh,560px)] min-h-[320px] w-full max-w-[1200px] overflow-hidden sm:h-[min(68vh,600px)]">
         <div
           ref={parallaxRef}

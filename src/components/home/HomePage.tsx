@@ -35,13 +35,11 @@ export function HomePage({ locale }: Props) {
       {/* 3 — Dos anclajes */}
       <HomeAnchorsSection section={sections[2]} locale={locale} />
 
-      {/* 4 — Tesis
+      {/* 4 — Tesis */}
       <HomeThesisSection section={sections[3]} locale={locale} />
-      */}
 
-      {/* 5 — Image break
+      {/* 5 — Image break */}
       <HomeImageBreak section={sections[4]} />
-      */}
 
       {/* 6 — Proyectos teaser
       <HomeProjectsTeaser section={sections[5]} locale={locale} />
