@@ -1,3 +1,4 @@
+import { ArrowRight, CirclePlus } from "lucide-react";
 import { getSite, pagePath, type Locale } from "@/content";
 import { ButtonLink } from "./ButtonLink";
 
@@ -9,7 +10,7 @@ export function CtaBanner({ locale }: Props) {
   const { ctaBanner } = getSite(locale);
 
   return (
-    <section className="border-t border-line bg-surface px-6 py-24 md:px-14">
+    <section className="bg-surface px-6 py-24 md:px-14">
       <div className="mx-auto max-w-[1200px]">
         <div className="mb-7 flex items-center gap-3.5">
           <span className="h-px w-9 bg-gold" aria-hidden />
@@ -25,7 +26,11 @@ export function CtaBanner({ locale }: Props) {
         </p>
         <div className="mt-10">
           <ButtonLink href={pagePath(locale, "contact")}>
-            {ctaBanner.button}
+            <span className="inline-flex items-center gap-2.5">
+              <CirclePlus aria-hidden className="h-4 w-4 shrink-0" />
+              {ctaBanner.button}
+            </span>
+            <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />
           </ButtonLink>
         </div>
       </div>

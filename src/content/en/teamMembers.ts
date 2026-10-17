@@ -4,9 +4,11 @@ export const team: TeamMember[] = [
   {
     name: "Nikola Kedzo",
     slug: "nikola-kedzo",
-    role: "Partner",
+    role: "Business Executive",
     portraitLabel: "[PORTRAIT: NIKOLA KEDZO]",
     imageSrc: "/img/team/nikola-kedzo.webp",
+    imagePerfilSrc: "/img/team/nikola_kedzo_perfil.webp",
+    imageFrontSrc: "/img/team/nikola_kedzo_front.webp",
     paragraphs: [
       "Nikola is an international business executive and entrepreneur with close to twenty years in industrial supply, procurement, logistics and cross-border trade across Venezuela, Panama and the United States. He has built his career negotiating with multinational corporations, industrial companies and state-owned enterprises, and managing cross-border commercial operations.",
       "From Miami he manages operations and business development at an industrial supply company and leads his own international trade and procurement firm, serving clients in the industrial, energy, logistics and infrastructure sectors. From 2014 to 2023 he was chief executive of a procurement and logistics company operating in Venezuela, Panama and the United States, and from 2007 to 2013 he was vice president and director of an industrial supply company with operations in Caracas and Puerto Ordaz, the center of Venezuela's basic industries. He began his career as a financial and market analyst at a brokerage house in Caracas.",

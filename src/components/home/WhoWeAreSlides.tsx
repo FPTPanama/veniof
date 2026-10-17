@@ -61,9 +61,14 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
       gsap.registerPlugin(ScrollTrigger);
 
       ctx = gsap.context(() => {
-        gsap.set([mediaSlides[0], copySlides[0]], { autoAlpha: 1, y: 0 });
-        gsap.set(mediaSlides.slice(1), { autoAlpha: 0 });
-        gsap.set(copySlides.slice(1), { autoAlpha: 0, y: 56 });
+        gsap.set([mediaSlides[0], copySlides[0]], {
+          xPercent: 0,
+          autoAlpha: 1,
+        });
+        gsap.set([...mediaSlides.slice(1), ...copySlides.slice(1)], {
+          xPercent: 100,
+          autoAlpha: 1,
+        });
         gsap.set(progressFill, { scaleX: 0, transformOrigin: "left center" });
 
         const scrollLength = () =>
@@ -77,7 +82,7 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
         } as const;
 
         const tl = gsap.timeline({
-          defaults: { ease: "power1.inOut" },
+          defaults: { ease: "power2.inOut" },
           scrollTrigger: {
             ...stConfig,
             pin: true,
@@ -112,10 +117,11 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
         });
 
         for (let i = 0; i < cards.length - 1; i += 1) {
-          tl.to(mediaSlides[i], { autoAlpha: 0, duration: 1 }, i);
-          tl.to(mediaSlides[i + 1], { autoAlpha: 1, duration: 1 }, i);
-          tl.to(copySlides[i], { autoAlpha: 0, y: -40, duration: 1 }, i);
-          tl.to(copySlides[i + 1], { autoAlpha: 1, y: 0, duration: 1 }, i);
+          // Outgoing exits left; incoming enters from the right.
+          tl.to(mediaSlides[i], { xPercent: -100, duration: 1 }, i);
+          tl.to(mediaSlides[i + 1], { xPercent: 0, duration: 1 }, i);
+          tl.to(copySlides[i], { xPercent: -100, duration: 1 }, i);
+          tl.to(copySlides[i + 1], { xPercent: 0, duration: 1 }, i);
         }
       }, root);
 
@@ -233,5 +239,6 @@ function showOnlyFirst(nodes: HTMLElement[], mediaCount: number) {
     const show = isFirstMedia || isFirstCopy;
     node.style.opacity = show ? "1" : "0";
     node.style.visibility = show ? "visible" : "hidden";
+    node.style.transform = show ? "translateX(0%)" : "translateX(100%)";
   });
 }

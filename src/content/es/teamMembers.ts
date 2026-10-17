@@ -4,9 +4,11 @@ export const team: TeamMember[] = [
   {
     name: "Nikola Kedzo",
     slug: "nikola-kedzo",
-    role: "Socio",
+    role: "Ejecutivo de negocios",
     portraitLabel: "[RETRATO: NIKOLA KEDZO]",
     imageSrc: "/img/team/nikola-kedzo.webp",
+    imagePerfilSrc: "/img/team/nikola_kedzo_perfil.webp",
+    imageFrontSrc: "/img/team/nikola_kedzo_front.webp",
     paragraphs: [
       "Nikola es un ejecutivo de negocios internacionales y empresario con cerca de veinte años en suministro industrial, procura, logística y comercio transfronterizo entre Venezuela, Panamá y Estados Unidos. Ha desarrollado su carrera negociando con corporaciones multinacionales, empresas industriales y empresas del Estado, y gestionando operaciones comerciales internacionales.",
       "Desde Miami dirige las operaciones y el desarrollo de negocios de una empresa de suministro industrial y lidera su propia firma de comercio internacional y procura, con clientes en los sectores industrial, energético, logístico y de infraestructura. Entre 2014 y 2023 fue director ejecutivo de una empresa de procura y logística con operaciones en Venezuela, Panamá y Estados Unidos, y entre 2007 y 2013 fue vicepresidente y director de una empresa de suministro industrial con operaciones en Caracas y Puerto Ordaz, centro de las industrias básicas de Venezuela. Inició su carrera como analista financiero y de mercados en una casa de bolsa de Caracas.",
