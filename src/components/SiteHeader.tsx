@@ -58,7 +58,7 @@ export function SiteHeader({ locale, active }: Props) {
             <BrandMark size={50} className="hidden shrink-0" />
 
             <span className="flex min-w-0 items-center gap-2.5 md:gap-4">
-              <span className="shrink-0 font-serif font-medium text-[24px] leading-none tracking-[0.16em] text-ink md:text-[30px]">
+              <span className="shrink-0 font-logo font-medium text-[24px] leading-none tracking-[0.16em] text-ink md:text-[30px]">
                 {site.brand}
               </span>
               <span

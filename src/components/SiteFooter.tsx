@@ -20,7 +20,7 @@ export function SiteFooter({ locale }: Props) {
             aria-label={site.brandFull}
           >
             <BrandMark size={44} className="shrink-0" />
-            <span className="font-serif text-[28px] leading-none tracking-[0.16em] text-ink">
+            <span className="font-logo font-medium text-[28px] leading-none tracking-[0.16em] text-ink">
               {site.brand}
             </span>
             <span className="hidden h-[30px] w-px bg-gold sm:block" aria-hidden />
