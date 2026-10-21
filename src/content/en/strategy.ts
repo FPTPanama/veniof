@@ -6,11 +6,15 @@ export const page: PageContent = {
   sections: [
   {
     eyebrow: "Strategy",
-    title: "Repair first. Then grow.",
+    title: "Repair first.\nThen grow.",
     titleAs: "h1",
     paragraphs: [
       "Our strategy is to restore production at essential Venezuelan assets that already exist, in partnership with operators that have done it before, under structures that protect every party's interests.",
     ],
+    ctas: [
+      { label: "Partner with us", href: "partner" as const },
+    ],
+    image: "/industria.webp",
     variant: "navy" as const,
   },
   {
