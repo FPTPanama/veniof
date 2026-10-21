@@ -1,3 +1,4 @@
+import { ArrowRight, CirclePlus } from "lucide-react";
 import type { Section as SectionData } from "@/content/types";
 import { type Locale } from "@/content";
 import { BridgeGraphic } from "./BridgeGraphic";
@@ -15,12 +16,36 @@ type Props = {
   showBridge?: boolean;
 };
 
+function titleWithBreaks(title: string) {
+  return title.split("\n").map((line, index, lines) => (
+    <span key={`${line}-${index}`}>
+      {line}
+      {index < lines.length - 1 ? <br /> : null}
+    </span>
+  ));
+}
+
 export function Section({ section, locale, showBridge = false }: Props) {
   const variant = section.variant ?? "light";
   const colors = sectionColors(variant);
 
   const TitleTag = section.titleAs === "h1" ? "h1" : "h2";
   const titleSize = titleSizeClass(section.titleAs ?? "h2");
+  const isHero = section.titleAs === "h1";
+  const heroCtaIcons = isHero
+    ? {
+        ctaStartIcon: (
+          <CirclePlus aria-hidden className="h-4 w-4 shrink-0" />
+        ),
+        ctaEndIcon: <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />,
+        linkVariant: "navy" as const,
+        linkEndIcon: <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />,
+        className:
+          "mt-10 w-full flex-col items-stretch sm:w-auto sm:flex-row sm:items-center",
+        ctaClassName: "w-full sm:w-auto",
+        linkClassName: "w-full sm:w-auto",
+      }
+    : {};
 
   const paragraphs = section.paragraphs ?? [];
   const cards = section.cards ?? [];
@@ -60,7 +85,7 @@ export function Section({ section, locale, showBridge = false }: Props) {
               <TitleTag
                 className={`text-balance font-serif font-normal ${titleSize} ${colors.title}`}
               >
-                {section.title}
+                {titleWithBreaks(section.title)}
               </TitleTag>
             ) : null}
             {paragraphs.length ? (
@@ -80,6 +105,7 @@ export function Section({ section, locale, showBridge = false }: Props) {
               isDark={colors.isDark}
               ctas={section.ctas}
               links={section.links}
+              {...heroCtaIcons}
             />
           </div>
 
@@ -122,7 +148,7 @@ export function Section({ section, locale, showBridge = false }: Props) {
               <TitleTag
                 className={`text-balance font-serif font-normal ${titleSize} ${colors.title} md:col-span-5`}
               >
-                {section.title}
+                {section.title ? titleWithBreaks(section.title) : null}
               </TitleTag>
               <div className="space-y-5 md:col-span-7">
                 {sideParagraphs.map((p) => (
@@ -139,8 +165,16 @@ export function Section({ section, locale, showBridge = false }: Props) {
             <TitleTag
               className={`max-w-[1020px] text-balance font-serif font-normal ${titleSize} ${colors.title}`}
             >
-              {section.title}
+              {titleWithBreaks(section.title)}
             </TitleTag>
+          ) : null}
+
+          {section.subtitle ? (
+            <p
+              className={`mt-4 max-w-[720px] text-balance font-serif text-[22px] leading-[1.35] sm:text-[26px] md:text-[28px] ${colors.title}`}
+            >
+              {section.subtitle}
+            </p>
           ) : null}
 
           {fullParagraphs.length ? (
@@ -165,6 +199,7 @@ export function Section({ section, locale, showBridge = false }: Props) {
             isDark={colors.isDark}
             ctas={section.ctas}
             links={section.links}
+            {...heroCtaIcons}
           />
         </>
       )}

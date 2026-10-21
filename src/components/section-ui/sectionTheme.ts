@@ -43,6 +43,6 @@ export function sectionColors(variant: SectionVariant) {
 
 export function titleSizeClass(titleAs: "h1" | "h2" = "h2"): string {
   return titleAs === "h1"
-    ? "text-[32px] sm:text-[40px] md:text-[70px] leading-[1.08] tracking-[-0.015em]"
+    ? "text-[32px] sm:text-[40px] md:text-[70px] leading-[0.98] tracking-[-0.015em]"
     : "text-[26px] sm:text-[32px] md:text-[42px] leading-[1.15] tracking-[-0.01em]";
 }
