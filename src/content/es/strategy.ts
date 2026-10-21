@@ -6,11 +6,15 @@ export const page: PageContent = {
   sections: [
   {
     eyebrow: "Estrategia",
-    title: "Primero reparar. Luego crecer.",
+    title: "Primero reparar.\nLuego crecer.",
     titleAs: "h1",
     paragraphs: [
       "Nuestra estrategia consiste en restablecer la producción de activos esenciales que ya existen en Venezuela, en alianza con operadores que lo han hecho antes y bajo estructuras que protegen los intereses de todas las partes.",
     ],
+    ctas: [
+      { label: "Trabaje con nosotros", href: "partner" as const },
+    ],
+    image: "/industria.webp",
     variant: "navy" as const,
   },
   {

@@ -86,6 +86,10 @@ body::-webkit-scrollbar {
   font-weight: 500;
 }
 
+.font-serif.font-light {
+  font-weight: 300;
+}
+
 .nav-primary {
   transition: gap 150ms ease-out;
 }
