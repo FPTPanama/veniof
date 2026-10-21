@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "VIOF",
-    images: [{ url: "/img/share.png", width: 1200, height: 630 }],
+    images: [{ url: "/share.png", width: 1200, height: 630 }],
   },
   icons: {
     icon: "/favicon.svg",

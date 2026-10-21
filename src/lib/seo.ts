@@ -31,7 +31,7 @@ export function pageMetadata(
       description,
       url: `${SITE}${pagePath(locale, key)}`,
       locale: locale === "es" ? "es_ES" : "en_US",
-      images: [{ url: "/img/share.png" }],
+      images: [{ url: "/share.png", width: 1200, height: 630 }],
     },
   };
 }
