@@ -13,7 +13,7 @@ type Props = {
   locale: Locale;
 };
 
-const WORKER_IMAGE = "/obrero_3.webp";
+const WORKER_IMAGE = "/obrero_dorado.webp";
 
 /**
  * Strategy page hero — fills the first screen; HeroGear is clipped
@@ -29,7 +29,9 @@ export function StrategyHeroSection({ section, locale }: Props) {
     const parallax = parallaxRef.current;
     if (!root || !parallax) return;
 
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (reduce) return;
 
     let alive = true;
@@ -80,15 +82,15 @@ export function StrategyHeroSection({ section, locale }: Props) {
   return (
     <section
       ref={rootRef}
-      className="relative h-[calc(100dvh-var(--site-header-height,6.5rem))] min-h-[420px] w-full overflow-hidden px-5 md:px-0"
+      className="relative h-[calc(100dvh-var(--site-header-height,6.5rem))] min-h-105 w-full overflow-hidden px-5 md:px-0"
     >
-      <div className="relative mx-auto h-full w-full max-w-[1200px] overflow-hidden">
+      <div className="relative mx-auto h-full w-full max-w-300 overflow-hidden ">
         <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center">
-          <div className="relative h-[96%] w-[min(88%,640px)] sm:w-[min(72%,700px)] md:w-[min(62%,760px)]">
+          <div className="relative h-[80%] w-[min(88%,640px)] sm:w-[min(72%,700px)] md:w-[min(62%,760px)]">
             <div
               ref={parallaxRef}
               data-speed="0.7"
-              className="absolute inset-0 will-change-transform"
+              className="absolute inset-0 will-change-transform border-b-2 border-gold"
             >
               <Image
                 src={WORKER_IMAGE}
@@ -102,9 +104,9 @@ export function StrategyHeroSection({ section, locale }: Props) {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute inset-0 z-[2] flex flex-col items-stretch justify-center overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 z-2 flex flex-col items-stretch justify-center overflow-hidden">
           {section.title ? (
-            <h1 className="relative z-[1] self-center text-center text-[40px] leading-[0.98] tracking-[-0.015em] font-serif font-light text-navy sm:text-[80px] md:text-[140px]">
+            <h1 className="relative z-1 self-center text-center text-[40px] leading-[0.98] tracking-[-0.015em] font-serif font-light text-navy sm:text-[80px] md:text-[140px]">
               {section.title.split("\n").map((line, index, lines) => (
                 <span key={`${line}-${index}`}>
                   {line}
@@ -115,14 +117,14 @@ export function StrategyHeroSection({ section, locale }: Props) {
           ) : null}
 
           {body ? (
-            <div className="relative z-[1] mt-5 w-full max-w-[34rem] self-start sm:mt-6">
+            <div className="relative z-1 mt-5 w-full max-w-136 self-start sm:mt-6 bg-surface p-4 border-b-2 border-gold">
               <p className="text-left font-serif text-[17px] leading-[1.55] text-navy sm:text-[18px] md:text-[19px]">
                 {body}
               </p>
             </div>
           ) : null}
 
-          <div className="pointer-events-auto relative z-[1] mt-8 w-full max-w-[34rem] self-start sm:mt-10">
+          <div className="pointer-events-auto relative z-1 mt-8 w-full max-w-136 self-start sm:mt-10">
             <SectionActions
               locale={locale}
               isDark={false}
