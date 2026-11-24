@@ -59,7 +59,9 @@ export function StrategyHeroSection({ section, locale }: Props) {
     if (!root || !parallax) return;
 
     const words = title?.querySelectorAll<HTMLElement>("[data-hero-word]");
-    const copyTexts = copy?.querySelectorAll<HTMLElement>("[data-hero-copy-text]");
+    const copyTexts = copy?.querySelectorAll<HTMLElement>(
+      "[data-hero-copy-text]",
+    );
     const reduce = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;

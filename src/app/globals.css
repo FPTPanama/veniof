@@ -57,8 +57,9 @@ body {
   margin: 0;
   background: var(--surface);
   color: var(--ink);
-  font-family: var(--font-libre), "Franklin Gothic Medium", "Helvetica Neue",
-    Helvetica, sans-serif;
+  font-family:
+    var(--font-libre), "Franklin Gothic Medium", "Helvetica Neue", Helvetica,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-y: auto;
   scrollbar-width: none;
@@ -68,7 +69,6 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
 
 @layer base {
   a {
@@ -228,7 +228,9 @@ html.has-smooth-scroll [data-site-header] {
 
 .bridge-cloud {
   opacity: 0.88;
-  filter: drop-shadow(0 8px 18px color-mix(in srgb, var(--navy) 8%, transparent));
+  filter: drop-shadow(
+    0 8px 18px color-mix(in srgb, var(--navy) 8%, transparent)
+  );
 }
 
 @media (prefers-reduced-motion: reduce) {
