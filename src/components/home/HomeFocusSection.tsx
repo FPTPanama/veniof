@@ -133,7 +133,7 @@ export function HomeFocusSection({ section, locale }: Props) {
             className="mx-auto mt-6 flex w-full max-w-[560px] flex-col items-center text-center opacity-0 will-change-transform sm:mt-8 sm:max-w-[640px] md:mt-10 md:max-w-[720px]"
           >
             {section.eyebrow ? (
-              <div className="mb-1.5 flex items-center justify-center gap-3.5">
+              <div className="mb-3 flex items-center justify-center gap-3.5">
                 <span className="h-px w-9 shrink-0 bg-surface" aria-hidden />
                 <span className="bg-navy px-[0.2em] text-[15px] font-semibold text-surface">
                   {section.eyebrow}

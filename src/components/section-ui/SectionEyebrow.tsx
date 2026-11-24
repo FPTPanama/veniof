@@ -10,7 +10,7 @@ export function SectionEyebrow({
   className = "",
 }: Props) {
   return (
-    <div className={`mb-7 flex items-center gap-3.5 ${className}`}>
+    <div className={`mb-3 flex items-center gap-3.5 ${className}`}>
       <span className="h-px w-9 bg-gold" aria-hidden />
       <span className={`text-[15px] font-semibold ${colorClass}`}>
         {children}

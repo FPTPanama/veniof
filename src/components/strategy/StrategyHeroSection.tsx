@@ -15,6 +15,29 @@ type Props = {
 
 const WORKER_IMAGE = "/obrero_dorado.webp";
 
+function TitleWords({ title }: { title: string }) {
+  return (
+    <>
+      {title.split("\n").map((line, lineIndex, lines) => (
+        <span key={`${line}-${lineIndex}`} className="block">
+          {line.split(/\s+/).map((word, wordIndex, words) => (
+            <span key={`${word}-${wordIndex}`} className="inline-block">
+              <span
+                data-hero-word
+                className="inline-block opacity-0 will-change-[transform,opacity,filter]"
+              >
+                {word}
+              </span>
+              {wordIndex < words.length - 1 ? "\u00A0" : null}
+            </span>
+          ))}
+          {lineIndex < lines.length - 1 ? <br /> : null}
+        </span>
+      ))}
+    </>
+  );
+}
+
 /**
  * Strategy page hero — fills the first screen; HeroGear is clipped
  * inside this viewport so it never bleeds into the next section.
@@ -22,17 +45,43 @@ const WORKER_IMAGE = "/obrero_dorado.webp";
 export function StrategyHeroSection({ section, locale }: Props) {
   const rootRef = useRef<HTMLElement>(null);
   const parallaxRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const copyRef = useRef<HTMLDivElement>(null);
   const body = section.paragraphs?.[0];
+  const quote = section.paragraphs?.[1];
+  const quoteBy = section.callout;
 
   useEffect(() => {
     const root = rootRef.current;
     const parallax = parallaxRef.current;
+    const title = titleRef.current;
+    const copy = copyRef.current;
     if (!root || !parallax) return;
 
+    const words = title?.querySelectorAll<HTMLElement>("[data-hero-word]");
+    const copyTexts = copy?.querySelectorAll<HTMLElement>(
+      "[data-hero-copy-text]",
+    );
     const reduce = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    if (reduce) return;
+
+    if (reduce) {
+      words?.forEach((el) => {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+        el.style.filter = "none";
+      });
+      if (copy) {
+        copy.style.opacity = "1";
+        copy.style.clipPath = "none";
+      }
+      copyTexts?.forEach((el) => {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+      });
+      return;
+    }
 
     let alive = true;
     let ctx: { revert: () => void } | undefined;
@@ -67,6 +116,64 @@ export function StrategyHeroSection({ section, locale }: Props) {
               },
             },
           );
+        }
+
+        if (words?.length && title) {
+          gsap.fromTo(
+            words,
+            { y: 64, opacity: 0, filter: "blur(14px)" },
+            {
+              y: 0,
+              opacity: 1,
+              filter: "blur(0px)",
+              duration: 0.75,
+              ease: "power3.out",
+              stagger: 0.07,
+              scrollTrigger: {
+                trigger: title,
+                start: "top 85%",
+                end: "bottom top",
+                toggleActions: "play reverse play reverse",
+              },
+            },
+          );
+        }
+
+        if (copy) {
+          const copyTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: copy,
+              start: "top 90%",
+              end: "bottom top",
+              toggleActions: "play reverse play reverse",
+            },
+          });
+
+          copyTl.fromTo(
+            copy,
+            { clipPath: "inset(0 100% 0 0)", opacity: 0 },
+            {
+              clipPath: "inset(0 0% 0 0)",
+              opacity: 1,
+              duration: 0.7,
+              ease: "power2.out",
+            },
+          );
+
+          if (copyTexts?.length) {
+            copyTl.fromTo(
+              copyTexts,
+              { x: -28, opacity: 0 },
+              {
+                x: 0,
+                opacity: 1,
+                duration: 0.65,
+                ease: "power2.out",
+                stagger: 0.14,
+              },
+              "-=0.28",
+            );
+          }
         }
       }, root);
 
@@ -106,21 +213,45 @@ export function StrategyHeroSection({ section, locale }: Props) {
 
         <div className="pointer-events-none absolute inset-0 z-2 flex flex-col items-stretch justify-center overflow-hidden">
           {section.title ? (
-            <h1 className="relative z-1 self-center text-center text-[40px] leading-[0.98] tracking-[-0.015em] font-serif font-light text-navy sm:text-[80px] md:text-[140px]">
-              {section.title.split("\n").map((line, index, lines) => (
-                <span key={`${line}-${index}`}>
-                  {line}
-                  {index < lines.length - 1 ? <br /> : null}
-                </span>
-              ))}
+            <h1
+              ref={titleRef}
+              className="relative z-1 self-center text-center text-[40px] leading-[0.98] tracking-[-0.015em] font-serif font-light text-navy sm:text-[80px] md:text-[140px]"
+            >
+              <TitleWords title={section.title} />
             </h1>
           ) : null}
 
-          {body ? (
-            <div className="relative z-1 mt-5 w-full max-w-136 self-start sm:mt-6 bg-surface p-4 border-b-2 border-gold">
-              <p className="text-left font-serif text-[17px] leading-[1.55] text-navy sm:text-[18px] md:text-[19px]">
-                {body}
-              </p>
+          {body || quote ? (
+            <div
+              ref={copyRef}
+              className="relative z-1 mt-5 w-full max-w-136 self-start bg-surface p-4 opacity-0 border-b-2 border-gold will-change-[clip-path,opacity] sm:mt-6"
+            >
+              {body ? (
+                <p
+                  data-hero-copy-text
+                  className="text-left font-serif text-[19px] leading-[1.5] text-navy opacity-0 will-change-[transform,opacity] sm:text-[21px] md:text-[23px]"
+                >
+                  {body}
+                </p>
+              ) : null}
+              {quote ? (
+                <blockquote className={body ? "mt-4" : undefined}>
+                  <p
+                    data-hero-copy-text
+                    className="font-serif text-[15px] leading-[1.5] text-navy/85 italic opacity-0 will-change-[transform,opacity] sm:text-[16px] md:text-[17px]"
+                  >
+                    “{quote}”
+                  </p>
+                  {quoteBy ? (
+                    <footer
+                      data-hero-copy-text
+                      className="mt-2.5 text-[12px] font-semibold tracking-[0.04em] text-navy uppercase opacity-0 will-change-[transform,opacity] sm:text-[13px]"
+                    >
+                      — {quoteBy}
+                    </footer>
+                  ) : null}
+                </blockquote>
+              ) : null}
             </div>
           ) : null}
 

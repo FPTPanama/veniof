@@ -8,6 +8,8 @@ type Props = {
   cards: ContentCard[];
   /** Optional shared background override for every slide. */
   backgroundSrc?: string;
+  /** `ink` = no photo backgrounds, ink type + lines (strategy). Default keeps home navy. */
+  tone?: "navy" | "ink";
 };
 
 function withEmphasis(text: string) {
@@ -22,11 +24,16 @@ const DEFAULT_BACKGROUND = "/mineral.webp";
 /**
  * Pinned capability slides: scrub through cards with snap (rubber-band settle).
  */
-export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
+export function WhoWeAreSlides({
+  cards,
+  backgroundSrc,
+  tone = "navy",
+}: Props) {
   const rootRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const linesRef = useRef<HTMLDivElement>(null);
   const progressFillRef = useRef<HTMLDivElement>(null);
+  const isInk = tone === "ink";
 
   useEffect(() => {
     const root = rootRef.current;
@@ -41,11 +48,15 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
     const copySlides = Array.from(
       panel.querySelectorAll<HTMLElement>("[data-capability-copy]"),
     );
-    if (mediaSlides.length < 2 || copySlides.length < 2) return;
+    const hasMedia = mediaSlides.length >= 2;
+    if (copySlides.length < 2) return;
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
-      showOnlyFirst([...mediaSlides, ...copySlides], mediaSlides.length);
+      showOnlyFirst(
+        hasMedia ? [...mediaSlides, ...copySlides] : copySlides,
+        hasMedia ? mediaSlides.length : 0,
+      );
       progressFill.style.transform = "scaleX(1)";
       return;
     }
@@ -61,11 +72,18 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
       gsap.registerPlugin(ScrollTrigger);
 
       ctx = gsap.context(() => {
-        gsap.set([mediaSlides[0], copySlides[0]], {
+        const firstLayer = hasMedia
+          ? [mediaSlides[0], copySlides[0]]
+          : [copySlides[0]];
+        const restLayers = hasMedia
+          ? [...mediaSlides.slice(1), ...copySlides.slice(1)]
+          : copySlides.slice(1);
+
+        gsap.set(firstLayer, {
           xPercent: 0,
           autoAlpha: 1,
         });
-        gsap.set([...mediaSlides.slice(1), ...copySlides.slice(1)], {
+        gsap.set(restLayers, {
           xPercent: 100,
           autoAlpha: 1,
         });
@@ -118,8 +136,10 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
 
         for (let i = 0; i < cards.length - 1; i += 1) {
           // Outgoing exits left; incoming enters from the right.
-          tl.to(mediaSlides[i], { xPercent: -100, duration: 1 }, i);
-          tl.to(mediaSlides[i + 1], { xPercent: 0, duration: 1 }, i);
+          if (hasMedia) {
+            tl.to(mediaSlides[i], { xPercent: -100, duration: 1 }, i);
+            tl.to(mediaSlides[i + 1], { xPercent: 0, duration: 1 }, i);
+          }
           tl.to(copySlides[i], { xPercent: -100, duration: 1 }, i);
           tl.to(copySlides[i + 1], { xPercent: 0, duration: 1 }, i);
         }
@@ -132,9 +152,22 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
       alive = false;
       ctx?.revert();
     };
-  }, [cards.length]);
+  }, [cards.length, isInk]);
 
   if (!cards.length) return null;
+
+  const titleClass = isInk
+    ? "font-serif text-[32px] leading-[1.08] tracking-[-0.02em] text-ink sm:text-[30px] md:text-[34px]"
+    : "font-serif text-[32px] leading-[1.08] tracking-[-0.02em] text-surface sm:text-[30px] md:text-[34px]";
+  const bodyClass = isInk
+    ? "mt-3 max-w-md font-serif text-[19px] leading-[1.5] text-ink/85 sm:max-w-lg sm:text-[17px] sm:leading-[1.55] md:text-[18px] [&_strong]:text-ink"
+    : "mt-3 max-w-md font-serif text-[19px] leading-[1.5] text-surface/90 sm:max-w-lg sm:text-[17px] sm:leading-[1.55] md:text-[18px] [&_strong]:text-surface";
+  const listClass = isInk
+    ? "mt-4 list-decimal space-y-2.5 pl-5 font-serif text-[16px] leading-[1.45] text-ink/85 sm:text-[15px] sm:leading-[1.5] md:text-[16px]"
+    : "mt-4 list-decimal space-y-2.5 pl-5 font-serif text-[16px] leading-[1.45] text-surface/90 sm:text-[15px] sm:leading-[1.5] md:text-[16px]";
+  const numberClass = isInk
+    ? "pointer-events-none absolute bottom-0 left-5 z-20 translate-y-[42%] select-none font-dm text-[clamp(7.5rem,44vw,13rem)] leading-none font-normal italic tracking-[-0.06em] text-ink sm:top-1/2 sm:right-20 sm:bottom-auto sm:left-auto sm:translate-x-[8%] sm:-translate-y-1/2 sm:text-[clamp(7rem,42vh,22rem)]"
+    : "pointer-events-none absolute bottom-0 left-5 z-20 translate-y-[42%] select-none font-dm text-[clamp(7.5rem,44vw,13rem)] leading-none font-normal italic tracking-[-0.06em] text-surface sm:top-1/2 sm:right-20 sm:bottom-auto sm:left-auto sm:translate-x-[8%] sm:-translate-y-1/2 sm:text-[clamp(7rem,42vh,22rem)]";
 
   return (
     <div
@@ -145,32 +178,34 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
         ref={panelRef}
         className="relative flex h-[calc(100dvh-2.75*var(--site-header-height,6.5rem))] min-h-[280px] w-full flex-col overflow-hidden sm:block"
       >
-        {cards.map((card, index) => {
-          const imageSrc =
-            backgroundSrc ?? card.image ?? DEFAULT_BACKGROUND;
+        {!isInk
+          ? cards.map((card, index) => {
+              const imageSrc =
+                backgroundSrc ?? card.image ?? DEFAULT_BACKGROUND;
 
-          return (
-            <div
-              key={`media-${card.title}`}
-              data-capability-media
-              className="absolute inset-0"
-              style={{ zIndex: index + 1 }}
-            >
-              <Image
-                src={imageSrc}
-                alt=""
-                fill
-                priority={index === 0}
-                sizes="(max-width: 1200px) 100vw, 1200px"
-                className="object-cover object-center"
-              />
-              <div
-                aria-hidden
-                className="absolute inset-0 bg-gradient-to-b from-navy via-navy/60 to-navy/30 sm:bg-gradient-to-r sm:from-navy sm:via-navy/55 sm:to-transparent"
-              />
-            </div>
-          );
-        })}
+              return (
+                <div
+                  key={`media-${card.title}`}
+                  data-capability-media
+                  className="absolute inset-0"
+                  style={{ zIndex: index + 1 }}
+                >
+                  <Image
+                    src={imageSrc}
+                    alt=""
+                    fill
+                    priority={index === 0}
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    className="object-cover object-center"
+                  />
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 bg-gradient-to-b from-navy via-navy/60 to-navy/30 sm:bg-gradient-to-r sm:from-navy sm:via-navy/55 sm:to-transparent"
+                  />
+                </div>
+              );
+            })
+          : null}
 
         <div className="relative z-10 min-h-0 w-full flex-1 sm:absolute sm:inset-0 sm:flex-none">
           {cards.map((card, index) => (
@@ -180,22 +215,30 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
               className="absolute inset-0 z-10 flex flex-col justify-center sm:flex-row sm:items-center sm:justify-start"
             >
               <div className="relative z-10 w-full px-5 py-8 sm:px-8 sm:py-14 md:px-12 md:py-16">
-                <article className="max-w-md">
-                  <h3 className="font-serif text-[32px] leading-[1.08] tracking-[-0.02em] text-surface sm:text-[30px] md:text-[34px]">
-                    {card.title}
-                  </h3>
+                <article
+                  className={
+                    card.bullets?.length
+                      ? "max-w-xl sm:max-w-lg md:max-w-xl"
+                      : "max-w-md"
+                  }
+                >
+                  <h3 className={titleClass}>{card.title}</h3>
                   {card.body ? (
-                    <p className="mt-3 max-w-md font-serif text-[19px] leading-[1.5] text-surface/90 sm:max-w-lg sm:text-[17px] sm:leading-[1.55] md:text-[18px] [&_strong]:text-surface">
-                      {withEmphasis(card.body)}
-                    </p>
+                    <p className={bodyClass}>{withEmphasis(card.body)}</p>
+                  ) : null}
+                  {card.bullets?.length ? (
+                    <ol className={listClass}>
+                      {card.bullets.map((bullet) => (
+                        <li key={bullet} className="pl-1">
+                          {withEmphasis(bullet)}
+                        </li>
+                      ))}
+                    </ol>
                   ) : null}
                 </article>
               </div>
 
-              <span
-                aria-hidden
-                className="pointer-events-none absolute bottom-0 left-5 z-20 translate-y-[42%] select-none font-dm text-[clamp(7.5rem,44vw,13rem)] leading-none font-normal italic tracking-[-0.06em] text-surface sm:top-1/2 sm:right-20 sm:bottom-auto sm:left-auto sm:translate-x-[8%] sm:-translate-y-1/2 sm:text-[clamp(7rem,42vh,22rem)]"
-              >
+              <span aria-hidden className={numberClass}>
                 {index + 1}
               </span>
             </div>
@@ -213,7 +256,7 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
               alt=""
               fill
               sizes="(max-width: 639px) 100vw, 40vw"
-              className="object-cover object-center"
+              className={`object-cover object-center ${isInk ? "brightness-0" : ""}`}
             />
           </div>
         </div>
@@ -222,10 +265,12 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
           className="pointer-events-none absolute inset-x-0 bottom-0 z-30 px-5 pb-5 sm:px-8 sm:pb-6 md:px-12 md:pb-7"
           aria-hidden
         >
-          <div className="relative h-[2px] w-full bg-surface/25">
+          <div
+            className={`relative h-[2px] w-full ${isInk ? "bg-ink/20" : "bg-surface/25"}`}
+          >
             <div
               ref={progressFillRef}
-              className="absolute inset-y-0 left-0 w-full origin-left scale-x-0 bg-surface will-change-transform"
+              className={`absolute inset-y-0 left-0 w-full origin-left scale-x-0 will-change-transform ${isInk ? "bg-ink" : "bg-surface"}`}
             />
           </div>
         </div>
@@ -236,7 +281,7 @@ export function WhoWeAreSlides({ cards, backgroundSrc }: Props) {
 
 function showOnlyFirst(nodes: HTMLElement[], mediaCount: number) {
   nodes.forEach((node, index) => {
-    const isFirstMedia = index === 0;
+    const isFirstMedia = mediaCount > 0 && index === 0;
     const isFirstCopy = index === mediaCount;
     const show = isFirstMedia || isFirstCopy;
     node.style.opacity = show ? "1" : "0";

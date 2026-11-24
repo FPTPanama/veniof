@@ -60,7 +60,7 @@ export function ContactForm({ locale }: Props) {
     <section id="contact" className="bg-surface px-6 py-20 md:px-14 md:py-24">
       <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[minmax(0,1.6fr)_minmax(280px,0.85fr)] lg:gap-16">
         <div>
-          <div className="mb-7 flex items-center gap-3.5">
+          <div className="mb-3 flex items-center gap-3.5">
             <span className="h-px w-9 bg-gold" aria-hidden />
             <span className="text-[15px] font-semibold text-ink">
               {contact.eyebrow}
