@@ -12,7 +12,7 @@ export function CtaBanner({ locale }: Props) {
   return (
     <section className="bg-surface px-6 py-24 md:px-14">
       <div className="mx-auto max-w-[1200px]">
-        <div className="mb-7 flex items-center gap-3.5">
+        <div className="mb-3 flex items-center gap-3.5">
           <span className="h-px w-9 bg-gold" aria-hidden />
           <span className="text-[15px] font-semibold text-ink">
             {ctaBanner.eyebrow}

@@ -40,7 +40,7 @@ export function HomeWhoWeAreSection({ section, locale }: Props) {
 
         <div className="relative z-10 mx-auto mt-[4%] flex w-full max-w-[640px] flex-col items-center text-center sm:mt-[2%] sm:max-w-[720px]">
           {section.eyebrow ? (
-            <div className="mb-2 flex items-center justify-center gap-3.5">
+            <div className="mb-3 flex items-center justify-center gap-3.5">
               <span className="h-px w-9 shrink-0 bg-gold" aria-hidden />
               <span
                 className={`bg-surface px-[0.2em] text-[15px] font-semibold box-decoration-clone [box-decoration-break:clone] ${colors.eyebrow}`}

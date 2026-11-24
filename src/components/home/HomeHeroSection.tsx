@@ -49,7 +49,7 @@ export function HomeHeroSection({ section, locale }: Props) {
         {section.eyebrow ? (
           <SectionEyebrow
             colorClass={colors.eyebrow}
-            className="!mb-2 w-full max-w-none sm:!mb-7"
+            className="w-full max-w-none"
           >
             {section.eyebrow}
           </SectionEyebrow>

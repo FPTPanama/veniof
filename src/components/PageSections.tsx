@@ -10,6 +10,8 @@ import { TeamMemberCard } from "./TeamMemberCard";
 import { HomePage } from "./home";
 import { PartnerPage } from "./partner";
 import { StrategyHeroSection } from "./strategy/StrategyHeroSection";
+import { StrategyMethodSection } from "./strategy/StrategyMethodSection";
+import { StrategySectorsSection } from "./strategy/StrategySectorsSection";
 
 type Props = {
   locale: Locale;
@@ -38,6 +40,24 @@ export function PageSections({ locale, pageKey }: Props) {
               key={`${section.title}-${index}`}
               section={section}
               locale={locale}
+            />
+          );
+        }
+
+        if (isStrategy && index === 2) {
+          return (
+            <StrategyMethodSection
+              key={`${section.title}-${index}`}
+              section={section}
+            />
+          );
+        }
+
+        if (isStrategy && index === 3) {
+          return (
+            <StrategySectorsSection
+              key={`${section.title}-${index}`}
+              section={section}
             />
           );
         }

@@ -1,6 +1,7 @@
 export { SectionShell } from "./SectionShell";
 export { SectionEyebrow } from "./SectionEyebrow";
 export { SectionActions } from "./SectionActions";
+export { NumberedFeatureCards } from "./NumberedFeatureCards";
 export {
   variantClass,
   isDarkVariant,
